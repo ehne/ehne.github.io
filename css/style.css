@@ -14,7 +14,7 @@ body {
 	margin: 0px;
 	width: 100%;
 	height: 100%;
-	font: normal 16px "Hind", sans-serif;
+	font: normal 15px "Hind", sans-serif;
 	-webkit-font-smoothing: antialiased;
 }
 body:before {
