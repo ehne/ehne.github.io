@@ -1,6 +1,10 @@
 html {
     height: 100%;
 }
+@import url('https://fonts.googleapis.com/css?family=Schoolbell');
+b {
+	font-family: 'Schoolbell', cursive;		
+}
 body {
 	background: #bcdee7 url("http://victory-design.ru/sandbox/codepen/profile_card/bg.png") no-repeat center center fixed;
     background-size: 120% auto;
