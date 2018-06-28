@@ -3,7 +3,7 @@
     background: -webkit-linear-gradient(left, orange, green, cyan, blue, violet);
     background: -o-linear-gradient(right, orange, green, cyan, blue, violet);
     background: -moz-linear-gradient(right, orange, green, cyan, blue, violet);
-    background: linear-gradient(to right, orange, green, cyan, blue, violet);
+    background: linear-gradient(to right, orange , green, cyan, blue, violet);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -19,7 +19,7 @@ b {
 	font-size: 25px;
 }
 body {
-	background: #bcdee7 url("http://victory-design.ru/sandbox/codepen/profile_card/bg.png") no-repeat center center fixed;
+	background: #bcdee7 url("BirbsWitEyes.png") repeat-y center center fixed;
     background-size: 120% auto;
     position: fixed;
 	padding: 0px;
