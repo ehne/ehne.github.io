@@ -280,7 +280,7 @@ p {
 		animation: puff_landscape 0.5s 1.8s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards, borderRadius 0.2s 2.3s linear forwards;
 	}
 }
-@-webkit-keyframes init {
+/*@-webkit-keyframes init {
     0% {
     	width: 0px;
     	height: 0px;
@@ -529,4 +529,4 @@ p {
     100% {
         opacity: 0;
     }
-}
+}*/
