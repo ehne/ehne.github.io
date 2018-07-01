@@ -4,5 +4,7 @@
 
 how are you?
 
-mobile:
-![screenshot mobile](screenshot-mobile.png)
+### screenshots:
+[mobile!](https://github.com/ehne/ehne.github.io/blob/master/screenshot-mobile.png)
+[desktop!](https://github.com/ehne/ehne.github.io/blob/master/screenshot-desktop.png)
+
