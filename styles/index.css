@@ -21,6 +21,16 @@
     }
 
 /* end fonts */
+.visibledevice {display:none;}
+.visibledesktop {display:display;}
+
+@media (max-width : 320px) {
+    .bold-font {
+	    font-family: "Quasimoda-Light"
+    }
+    .visibledevice {display:block;}
+    .visibledesktop {display:none;}
+}
 
 *+*{
     box-sizing:border-box;
@@ -131,8 +141,4 @@ td,th{
 	font-family: odachi;
 }
 /* end font classes */
-@media (max-width : 320px) {
-    .bold-font {
-	    font-family: "Quasimoda-Light"
-    }
-}
+
