@@ -119,8 +119,9 @@ td,th{
 .line-shrink {
 	line-height: 5px
 }
+
 /* font classes */
-.rational-smbd {
+.bold-font {
 	font-family: "Rational-Display-SmBd"
 }
 .rational-light {
@@ -129,4 +130,9 @@ td,th{
 .odachi {
 	font-family: odachi;
 }
-
+/* end font classes */
+@media (max-width : 320px) {
+    .bold-font {
+	    font-family: "Quasimoda-Light"
+    }
+}
