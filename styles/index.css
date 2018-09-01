@@ -30,13 +30,13 @@
     }
 }
 
-@media  (hover:none) {
-        .visibledevice {
-	        display: block
-        }    
-        .visibledesktop {
-	        display: none
-        }
+@media (hover:none) {
+    .visibledevice {
+	    display: block
+    }    
+    .visibledesktop {
+	    display: none
+    }
 }
 *+*{
     box-sizing:border-box;
