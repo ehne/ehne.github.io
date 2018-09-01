@@ -21,17 +21,25 @@
     }
 
 /* end fonts */
-.visibledevice {display:none;}
-.visibledesktop {display:display;}
-
-@media only screen and (max-device-width: 768px) {
-    .bold-font {
-	    font-family: "Quasimoda-Light"
+@media (hover) {
+    .visibledesktop { 
+	    display: block
     }
-    .visibledevice {display:block;}
-    .visibledesktop {display:none;}
+    .visibledevice {
+	    display: none
+    }
 }
 
+@media  (hover:none) {
+    .can-i-hover::after {
+        .visibledevice {
+	        display: block
+        }    
+        .visibledesktop {
+	        display: none
+        }
+    } 
+}
 *+*{
     box-sizing:border-box;
     margin:.5em 0
