@@ -31,14 +31,12 @@
 }
 
 @media  (hover:none) {
-    .can-i-hover::after {
         .visibledevice {
 	        display: block
         }    
         .visibledesktop {
 	        display: none
         }
-    } 
 }
 *+*{
     box-sizing:border-box;
