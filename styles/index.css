@@ -24,7 +24,7 @@
 .visibledevice {display:none;}
 .visibledesktop {display:display;}
 
-@media (max-width : 320px) {
+@media only screen and (max-device-width: 768px) {
     .bold-font {
 	    font-family: "Quasimoda-Light"
     }
