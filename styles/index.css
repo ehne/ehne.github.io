@@ -21,14 +21,13 @@
     }
 
 /* end fonts */
-@media (hover) {
     .visibledesktop { 
 	    display: block
     }
     .visibledevice {
 	    display: none
     }
-}
+
 
 @media (hover:none) {
     .visibledevice {
@@ -36,6 +35,9 @@
     }    
     .visibledesktop {
 	    display: none
+    }
+    .bold-font {
+	    font-family: "Quasimoda-Light"
     }
 }
 *+*{
