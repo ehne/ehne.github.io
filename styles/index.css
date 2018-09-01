@@ -21,6 +21,18 @@
     }
 
 /* end fonts */
+/* font classes */
+.bold-font {
+	font-family: "Rational-Display-SmBd"
+}
+.rational-light {
+	font-family: "Rational-Display-Light"
+}
+.odachi {
+	font-family: odachi;
+}
+/* end font classes */
+    
     .visibledesktop { 
 	    display: block
     }
@@ -137,16 +149,4 @@ td,th{
 .line-shrink {
 	line-height: 5px
 }
-
-/* font classes */
-.bold-font {
-	font-family: "Rational-Display-SmBd"
-}
-.rational-light {
-	font-family: "Rational-Display-Light"
-}
-.odachi {
-	font-family: odachi;
-}
-/* end font classes */
 
