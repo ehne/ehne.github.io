@@ -28,8 +28,7 @@
 	    display: none
     }
 
-
-@media (hover:none) {
+@media screen and (max-width: 396px) {
     .visibledevice {
 	    display: block
     }    
@@ -39,7 +38,8 @@
     .bold-font {
 	    font-family: "Quasimoda-Light"
     }
-}
+ }
+
 *+*{
     box-sizing:border-box;
     margin:.5em 0
