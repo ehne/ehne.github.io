@@ -40,7 +40,7 @@
 	    display: none
     }
 	.text {
-		font-family: "Rational-Display-SmBd";
+		font-family: "Rational-Display-Light";
 	}
 @media screen and (max-width: 396px) {
     .visibledevice {
