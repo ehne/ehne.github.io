@@ -39,7 +39,9 @@
     .visibledevice {
 	    display: none
     }
-
+	.text {
+		font-family: "Rational-Display-SmBd";
+	}
 @media screen and (max-width: 396px) {
     .visibledevice {
 	    display: block
@@ -48,8 +50,12 @@
 	    display: none
     }
     .bold-font {
-	    font-family: "Quasimoda-Light"
+	    font-family: "Quasimoda-Light";
     }
+    .text {
+	    font-family:  "Quasimoda-Light"
+    }
+    
  }
 
 *+*{
@@ -98,25 +104,25 @@
     max-width:60em;
     padding:1em;
     margin:auto;
-    font:1em/1.6 "Quasimoda-Light"
+    font:1em/1.6 "Rational-Display-Light"
 }
 h6{
-    font:300 1em "Quasimoda-Light"
+    font:300 1em "Rational-Display-Light"
 }
 h5{
-    font:300 1.2em "Quasimoda-Light"
+    font:300 1.2em"Rational-Display-Light"
 }
 h3{
-    font:300 2em "Quasimoda-Light"
+    font:300 2em"Rational-Display-Light"
 }
 h4{
-    font:300 1.5em "Quasimoda-Light"
+    font:300 1.5em"Rational-Display-Light"
 }
 h2{
-    font:300 2.2em "Quasimoda-Light"
+    font:300 2.2em"Rational-Display-Light"
 }
 h1{
-    font:300 2.5em "Quasimoda-Light"
+    font:300 2.5em"Rational-Display-Light"
 }
 a{
     color:#fa0;
@@ -144,7 +150,7 @@ td,th{
     text-transform:uppercase;
     background:#fff;
     border:solid;
-    font:.7em "Quasimoda-Light"
+    font:.7em "Rational-Display-Light"
 }
 .line-shrink {
 	line-height: 5px
