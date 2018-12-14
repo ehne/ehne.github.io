@@ -25,6 +25,19 @@
 		<script   src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
 		
 		<script>
+			let url = new URL(window.location); // or construct from window.location
+			let params = new URLSearchParams(url.search.slice(1));
+			
+			$(document).ready(function(){
+				$(".visible404").toggle();
+				if (params.has("fourofour") == true) {
+					$(".visible404").toggle();
+				};
+			});
+			
+			
+			
+
 		</script>
 		
 		<style type="text/css" media="screen">
@@ -53,8 +66,7 @@
 		<a href="https://instagram.com/coolbezos_420" class="odachi"><i class="twa twa-camera"> </i> Instagram</a> 
 		<a href="mailto:darcy@darcylf.me?subject=Hello" class="odachi"><i class="twa twa-email"> </i> Email</a></h3>
 		</div>
-		
-			
+			<h6 class="sticky-footer visible404">that site doesn't exist</h6>
 		</div>
 	</body>
 </html>
