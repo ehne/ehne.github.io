@@ -30,7 +30,9 @@
 			
 			$(document).ready(function(){
 				$(".visible404").toggle();
+				$(".visible404").toggleClass("visibledesktop")
 				if (params.get("error") == "404") {
+					$(".visible404").toggleClass("visibledesktop")
 					$(".visible404").toggle();
 					
 				};
