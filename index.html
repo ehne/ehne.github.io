@@ -30,7 +30,7 @@
 			
 			$(document).ready(function(){
 				$(".visible404").toggle();
-				if (params.has("fourofour") == true) {
+				if (params.get("error") == "404") {
 					$(".visible404").toggle();
 					
 				};
