@@ -61,38 +61,7 @@
 
   		gtag('config', 'UA-61981599-5');
 		</script>
-		<script   src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous" ></script>
-		
-		<script>
-			let url = new URL(window.location); // get url of window, and save it to url
-			let params = new URLSearchParams(url.search.slice(1)); // get the second half of the url (after the "?")
-			
-			// run when document loads
-			$(document).ready(function(){
-				// hide all error messages
-				$(".visible404").toggle();
-				$(".visibleundefined").toggle();
-				// switch case with string from error query ("?error=")				
-				switch (params.get("error")) {
-					// checks for "404"
-					case "404":
-						$(".visible404").toggle();
-						break;
-					// checks for "undefined"
-					case "undefined":
-						$(".visibleundefined").toggle();
-				}
-				// you can do this with any other query!
-			});
-			
-			
-			
-
-		</script>
-		
-		<style type="text/css" media="screen">
-		</style>
-		
+				
 	</head>
 	<body class="c text">
 		
@@ -117,9 +86,36 @@
 					<a href="mailto:darcy@darcylf.me?subject=Hello" class="odachi"><i class="twa twa-email"> </i> Email</a>
 				</h3>
 			</div>
+			
+			<script   src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous" ></script>
+		
+		<script>
+			let url = new URL(window.location); // get url of window, and save it to url
+			let params = new URLSearchParams(url.search.slice(1)); // get the second half of the url (after the "?")
+			
+			// run when document loads
+			$(document).ready(function(){
+				// switch case with string from error query ("?error=")				
+				switch (params.get("error")) {
+					// checks for "404"
+					case "404":
+						$(".visible404").toggle();
+						break;
+					// checks for "undefined"
+					case "undefined":
+						$(".visibleundefined").toggle();
+				}
+				// you can do this with any other query!
+			});
+			
+			
+			
+
+		</script>
+
 				<br>
-				<h6 class="visible404"> <i class="twa twa-confused"></i> that site doesn't exist</h6>
-				<h6 class="visibleundefined"> <i class="twa twa-confused"></i> that's not good</h6>
+				<h6 class="visible404 hidden"> <i class="twa twa-confused"></i> that site doesn't exist</h6>
+				<h6 class="visibleundefined hidden"> <i class="twa twa-confused"></i> that's not good</h6>
 			
 		</div>
 		
