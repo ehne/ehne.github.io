@@ -31,10 +31,7 @@
 .odachi {
 	font-family: odachi;
 }
-.underline{
-	text-decoration: underline;
-	color: black
-}
+
 /* end font classes */
     
     .visibledesktop { 
@@ -164,3 +161,7 @@ td,th{
 	line-height: 5px
 }
 
+.underline{
+	text-decoration: underline !important;
+	color: black !important;
+}
