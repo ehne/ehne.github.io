@@ -32,7 +32,8 @@
 	font-family: odachi;
 }
 .underline{
-	text-decoration: underline
+	text-decoration: underline;
+	color: black
 }
 /* end font classes */
     
@@ -162,6 +163,4 @@ td,th{
 .line-shrink {
 	line-height: 5px
 }
-a.underline{
-	color: black
-}
+
