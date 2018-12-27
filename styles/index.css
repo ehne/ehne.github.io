@@ -14,11 +14,7 @@
         src:url("https://cdn.jsdelivr.net/gh/ehne/ehne.github.io/styles/Fonts/5366957/e2639237-fb04-4129-944e-72fff90c2f11.eot?#iefix");
         src:url("https://cdn.jsdelivr.net/gh/ehne/ehne.github.io/styles/Fonts/5366957/e2639237-fb04-4129-944e-72fff90c2f11.eot?#iefix") format("eot"),url("https://cdn.jsdelivr.net/gh/ehne/ehne.github.io/styles/Fonts/5366957/c67a126e-f963-4b3f-8224-c639587219b8.woff2") format("woff2"),url("https://cdn.jsdelivr.net/gh/ehne/ehne.github.io/styles/Fonts/5366957/c4957af6-8766-4d4d-8542-d561de2fef63.woff") format("woff"),url("https://cdn.jsdelivr.net/gh/ehne/ehne.github.io/styles/Fonts/5366957/f0b393f8-6c9c-4335-a66c-4fea76a55ea8.ttf") format("truetype");
     }
-    @font-face{
-        font-family:"Quasimoda-Light";
-        src:url("https://cdn.jsdelivr.net/gh/ehne/ehne.github.io/styles/Fonts/5422807/84ddd04d-f13f-4724-9dd7-56ec08dfc69d.eot?#iefix");
-        src:url("https://cdn.jsdelivr.net/gh/ehne/ehne.github.io/styles/Fonts/5422807/84ddd04d-f13f-4724-9dd7-56ec08dfc69d.eot?#iefix") format("eot"),url("https://cdn.jsdelivr.net/gh/ehne/ehne.github.io/styles/Fonts/5422807/3c96c6c7-4ce7-4143-b116-cac77633cdd3.woff2") format("woff2"),url("https://cdn.jsdelivr.net/gh/ehne/ehne.github.io/styles/Fonts/5422807/81b2827a-8cb7-4d03-9696-438060c796f6.woff") format("woff"),url("https://cdn.jsdelivr.net/gh/ehne/ehne.github.io/styles/Fonts/5422807/6875e017-563f-4bff-86d6-7b47fb94220c.ttf") format("truetype");
-    }
+
 
 /* end fonts */
 /* font classes */
@@ -50,13 +46,7 @@
     .visibledesktop {
 	    display: none
     }
-    .bold-font {
-	    font-family: "Quasimoda-Light";
-    }
-    .text {
-	    font-family:  "Quasimoda-Light"
-    }
-    
+   
  }
 
 .hidden {
@@ -161,7 +151,6 @@ td,th{
 	line-height: 5px
 }
 
-.underline{
-	text-decoration: underline !important;
+.black{
 	color: black !important;
 }
