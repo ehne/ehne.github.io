@@ -1,0 +1,4 @@
+.button.is-destructive {
+    // $back-color, $text-color
+    @include make-button($color-red, #fff);
+}

@@ -224,3 +224,7 @@
         margin-right: 0;
     }
 }
+
+.button.is-pink {
+	@include make-button($color-red, #fff);
+}

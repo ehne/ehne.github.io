@@ -91,23 +91,23 @@ $font-family-monospace: monospace, monospace !default;
 // ---------------------------------------------------------------------------
 
 // Base
-$color-black: #111113 !default;
-$color-red: #ee2455 !default;
-$color-orange: #ff6951 !default;
-$color-yellow: #feb701 !default;
-$color-blue: #158df7 !default;
-$color-violet: #7b2ed7 !default;
-$color-green: #20bc71 !default;
+$color-black: #433e34 !default;
+$color-red: #f05 !default;
+$color-orange: #fa0 !default;
+$color-yellow: #fa0 !default;
+$color-blue: #05f !default;
+$color-violet: #a0f !default;
+$color-green: #5f0 !default;
 $color-inverted: #fff !default;
 
 // Text
-$color-text: #111113 !default;
+$color-text: #000 !default;
 $color-text-secondary: rgba($color-text, .6) !default;
 $color-text-tertiary: rgba($color-text, .5) !default;
 $color-text-disabled: rgba($color-text, .4) !default;
 
 // Links
-$color-link: #158df7 !default;
+$color-link: $color-orange !default;
 $color-link-hover: $color-red !default;
 
 // States
@@ -117,11 +117,11 @@ $color-focus: $color-blue !default;
 $color-warning: $color-orange !default;
 
 // Accent
-$color-accent: $color-red !default;
+$color-accent: $color-orange !default;
 $color-highlight: rgba($color-focus, .1) !default;
 
 // Button
-$color-button: #0c3dd7 !default;
+$color-button: $color-orange !default;
 
 
 
