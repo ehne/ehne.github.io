@@ -158,7 +158,7 @@ a {
 }
 
 a:hover {
-  color: rgba(255, 0, 85, 0.6);
+  color: #433e34;
 }
 
 h1,
@@ -553,7 +553,7 @@ a.is-muted:hover {
 
 a.is-color-black:hover,
 .is-color-black a:hover {
-  color: rgba(255, 0, 85, 0.6);
+  color: #433e34;
 }
 
 .is-large {
@@ -1755,7 +1755,7 @@ fieldset > .form-item:last-child {
 .alert a:hover {
   -moz-transition: all linear 0.2s;
   transition: all linear 0.2s;
-  color: rgba(255, 0, 85, 0.6);
+  color: #433e34;
 }
 .alert .close {
   position: absolute;
@@ -2478,7 +2478,7 @@ fieldset > .form-item:last-child {
   color: #433e34;
 }
 .nav-toggle:hover {
-  color: rgba(255, 0, 85, 0.6);
+  color: #433e34;
 }
 
 .is-container {
