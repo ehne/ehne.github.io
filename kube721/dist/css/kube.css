@@ -154,11 +154,11 @@ body {
 }
 
 a {
-  color: #fa0;
+  color: #433e34;
 }
 
 a:hover {
-  color: #433e34;
+  color: #fa0;
 }
 
 h1,
@@ -553,7 +553,7 @@ a.is-muted:hover {
 
 a.is-color-black:hover,
 .is-color-black a:hover {
-  color: #433e34;
+  color: #fa0;
 }
 
 .is-large {
@@ -1537,7 +1537,7 @@ fieldset > .form-item:last-child {
 .is-append a,
 .is-prepend a {
   font-size: 0.875em;
-  color: #fa0;
+  color: #433e34;
   text-decoration: none;
 }
 .is-append a:hover,
@@ -1600,7 +1600,7 @@ fieldset > .form-item:last-child {
 .breadcrumb a:hover {
   -moz-transition: all linear 0.2s;
   transition: all linear 0.2s;
-  color: #fa0;
+  color: #433e34;
   text-decoration: underline;
 }
 .breadcrumb span:after, .breadcrumb a:after {
@@ -1692,7 +1692,7 @@ fieldset > .form-item:last-child {
 .pager.is-stacked a:hover {
   background: none;
   text-decoration: underline;
-  color: #fa0;
+  color: #433e34;
 }
 .pager.is-stacked a.is-prev:before, .pager.is-stacked a.is-next:after {
   content: "";
@@ -1755,7 +1755,7 @@ fieldset > .form-item:last-child {
 .alert a:hover {
   -moz-transition: all linear 0.2s;
   transition: all linear 0.2s;
-  color: #433e34;
+  color: #fa0;
 }
 .alert .close {
   position: absolute;
@@ -2263,10 +2263,10 @@ fieldset > .form-item:last-child {
 .tabs a:hover {
   -moz-transition: all linear 0.2s;
   transition: all linear 0.2s;
-  color: #fa0;
+  color: #433e34;
   background: none;
   text-decoration: none;
-  border-bottom: 2px solid #fa0;
+  border-bottom: 2px solid #433e34;
 }
 .tabs a.is-active {
   cursor: default;
@@ -2478,7 +2478,7 @@ fieldset > .form-item:last-child {
   color: #433e34;
 }
 .nav-toggle:hover {
-  color: #433e34;
+  color: #fa0;
 }
 
 .is-container {
