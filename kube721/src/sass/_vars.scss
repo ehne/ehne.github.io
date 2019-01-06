@@ -108,7 +108,7 @@ $color-text-disabled: rgba($color-text, .4) !default;
 
 // Links
 $color-link: $color-orange !default;
-$color-link-hover: $color-red !default;
+$color-link-hover: rgba($color-red,.6) !default;
 
 // States
 $color-error: $color-red !default;
