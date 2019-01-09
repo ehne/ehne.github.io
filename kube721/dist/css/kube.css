@@ -154,11 +154,19 @@ body {
 }
 
 a {
-  color: #433e34;
+  color: #000;
 }
 
 a:hover {
   color: #fa0;
+}
+
+a.is-pink {
+  color: #f05;
+}
+
+a.is-pink:hover {
+  color: rgba(255, 0, 85, 0.8);
 }
 
 h1,
@@ -415,18 +423,18 @@ figcaption, code, var, kbd {
   font-family: monospace, monospace;
   font-size: 87.5%;
   line-height: 1;
-  color: rgba(67, 62, 52, 0.85);
+  color: rgba(0, 0, 0, 0.85);
 }
 
 figcaption {
   font-size: 80%;
   font-style: italic;
-  color: rgba(67, 62, 52, 0.7);
+  color: rgba(0, 0, 0, 0.7);
 }
 
 code {
-  color: rgba(67, 62, 52, 0.75);
-  background: rgba(67, 62, 52, 0.05);
+  color: rgba(0, 0, 0, 0.75);
+  background: rgba(0, 0, 0, 0.05);
   border: 0 solid transparent;
   border-radius: 4px;
 }
@@ -443,7 +451,7 @@ abbr {
 dfn[title],
 abbr[title] {
   text-decoration: none;
-  border-bottom: 1px dotted rgba(67, 62, 52, 0.5);
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.5);
   cursor: help;
 }
 
@@ -454,9 +462,9 @@ code, kbd {
 }
 
 kbd {
-  color: rgba(67, 62, 52, 0.75);
+  color: rgba(0, 0, 0, 0.75);
   background: none;
-  border: 1px solid rgba(67, 62, 52, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
 
@@ -495,14 +503,14 @@ pre code {
   top: 0;
   display: block;
   line-height: 1.5;
-  color: #433e34;
+  color: #000;
   overflow: auto;
   white-space: pre;
 }
 
 pre {
   padding: 1rem;
-  border: 1px solid rgba(67, 62, 52, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 4px;
 }
 
@@ -519,7 +527,7 @@ figure div + figcaption, figure pre + figcaption {
 
 figure pre {
   background-color: none;
-  border: 1px solid rgba(67, 62, 52, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   margin-bottom: 0.5rem;
 }
@@ -532,23 +540,23 @@ ul.is-unstyled, ul.is-unstyled ul {
 }
 
 .is-muted {
-  color: rgba(67, 62, 52, 0.6);
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .is-muted a,
 a.is-muted {
-  color: rgba(67, 62, 52, 0.6);
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .is-muted a:hover,
 a.is-muted:hover {
   -moz-transition: all linear 0.2s;
   transition: all linear 0.2s;
-  color: #433e34;
+  color: #000;
 }
 
 .is-color-black, .is-color-black a {
-  color: #433e34;
+  color: #000;
 }
 
 a.is-color-black:hover,
@@ -848,7 +856,7 @@ table.is-striped th:last-child {
   text-transform: none;
   line-height: 20px;
   background: #f3f3f3;
-  color: rgba(67, 62, 52, 0.85);
+  color: rgba(0, 0, 0, 0.85);
   padding: 0 8px;
   border: 1px solid transparent;
   border-radius: 4px;
@@ -866,7 +874,7 @@ table.is-striped th:last-child {
 }
 
 a.label {
-  color: rgba(67, 62, 52, 0.85);
+  color: rgba(0, 0, 0, 0.85);
 }
 a.label:hover {
   text-decoration: underline;
@@ -879,8 +887,8 @@ a.label:hover {
   text-transform: none;
   padding: 0 0.5em;
   background: none;
-  color: rgba(67, 62, 52, 0.85);
-  border: 1px solid rgba(67, 62, 52, 0.2);
+  color: rgba(0, 0, 0, 0.85);
+  border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
 
@@ -1021,7 +1029,7 @@ a.label:hover {
   cursor: default;
   font-style: normal;
   color: #fff;
-  background-color: rgba(67, 62, 52, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   opacity: 0.55;
 }
 .button.is-secondary {
@@ -1053,8 +1061,8 @@ a.label:hover {
   border-bottom-color: #fff;
 }
 .button.is-secondary:disabled, .button.is-secondary.is-disabled {
-  color: rgba(67, 62, 52, 0.5);
-  border-color: rgba(67, 62, 52, 0.3);
+  color: rgba(0, 0, 0, 0.5);
+  border-color: rgba(0, 0, 0, 0.3);
   background: none;
 }
 .button.is-secondary:disabled:hover, .button.is-secondary.is-disabled:hover {
@@ -1090,10 +1098,10 @@ a.label:hover {
 }
 .button.is-tertiary:disabled, .button.is-tertiary.is-disabled {
   text-decoration: none;
-  color: rgba(67, 62, 52, 0.5);
+  color: rgba(0, 0, 0, 0.5);
 }
 .button.is-inverted {
-  color: #433e34;
+  color: #000;
   background-color: #fff;
 }
 .button.is-inverted:hover {
@@ -1110,7 +1118,7 @@ a.label:hover {
 .button.is-inverted.is-secondary:hover {
   opacity: 1;
   background-color: #fff;
-  color: rgba(67, 62, 52, 0.95);
+  color: rgba(0, 0, 0, 0.95);
   border-color: #fff;
 }
 .button.is-inverted.is-secondary:disabled:hover, .button.is-inverted.is-secondary.is-disabled:hover {
@@ -1168,7 +1176,7 @@ a.label:hover {
 }
 .button.is-pink:disabled, .button.is-pink.is-disabled {
   color: #fff;
-  background-color: rgba(67, 62, 52, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .button.is-pink.is-secondary {
   background: none;
@@ -1181,8 +1189,8 @@ a.label:hover {
   border-color: #f05;
 }
 .button.is-pink.is-secondary:disabled, .button.is-pink.is-secondary.is-disabled {
-  color: rgba(67, 62, 52, 0.5);
-  border-color: rgba(67, 62, 52, 0.3);
+  color: rgba(0, 0, 0, 0.5);
+  border-color: rgba(0, 0, 0, 0.3);
 }
 .button.is-pink.is-secondary:disabled:hover, .button.is-pink.is-secondary.is-disabled:hover {
   background-color: transparent;
@@ -1200,29 +1208,127 @@ a.label:hover {
 }
 .button.is-pink.is-tertiary:disabled, .button.is-pink.is-tertiary.is-disabled {
   text-decoration: none;
-  color: rgba(67, 62, 52, 0.5);
+  color: rgba(0, 0, 0, 0.5);
 }
 .button.is-pink.is-secondary.is-loading:before, .button.is-pink.is-tertiary.is-loading:before {
   border-color: rgba(255, 0, 85, 0.25);
   border-bottom-color: #f05;
 }
 
+.button.is-black {
+  color: #fff;
+  background-color: #000;
+}
+.button.is-black:hover {
+  color: #fff;
+  background-color: #1a1a1a;
+}
+.button.is-black:disabled, .button.is-black.is-disabled {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.button.is-black.is-secondary {
+  background: none;
+  border: 2px solid #000;
+  color: #000;
+}
+.button.is-black.is-secondary:hover {
+  color: rgba(255, 255, 255, 0.95);
+  background-color: #000;
+  border-color: #000;
+}
+.button.is-black.is-secondary:disabled, .button.is-black.is-secondary.is-disabled {
+  color: rgba(0, 0, 0, 0.5);
+  border-color: rgba(0, 0, 0, 0.3);
+}
+.button.is-black.is-secondary:disabled:hover, .button.is-black.is-secondary.is-disabled:hover {
+  background-color: transparent;
+}
+.button.is-black.is-secondary.is-loading:hover:before {
+  border-color: rgba(255, 255, 255, 0.25);
+  border-bottom-color: #fff;
+}
+.button.is-black.is-tertiary {
+  background: none;
+  color: #000;
+}
+.button.is-black.is-tertiary:hover {
+  color: #000;
+}
+.button.is-black.is-tertiary:disabled, .button.is-black.is-tertiary.is-disabled {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+.button.is-black.is-secondary.is-loading:before, .button.is-black.is-tertiary.is-loading:before {
+  border-color: rgba(0, 0, 0, 0.25);
+  border-bottom-color: #000;
+}
+
+.button.is-blue {
+  color: #fff;
+  background-color: #05f;
+}
+.button.is-blue:hover {
+  color: #fff;
+  background-color: #3377ff;
+}
+.button.is-blue:disabled, .button.is-blue.is-disabled {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.button.is-blue.is-secondary {
+  background: none;
+  border: 2px solid #05f;
+  color: #05f;
+}
+.button.is-blue.is-secondary:hover {
+  color: rgba(255, 255, 255, 0.95);
+  background-color: #05f;
+  border-color: #05f;
+}
+.button.is-blue.is-secondary:disabled, .button.is-blue.is-secondary.is-disabled {
+  color: rgba(0, 0, 0, 0.5);
+  border-color: rgba(0, 0, 0, 0.3);
+}
+.button.is-blue.is-secondary:disabled:hover, .button.is-blue.is-secondary.is-disabled:hover {
+  background-color: transparent;
+}
+.button.is-blue.is-secondary.is-loading:hover:before {
+  border-color: rgba(255, 255, 255, 0.25);
+  border-bottom-color: #fff;
+}
+.button.is-blue.is-tertiary {
+  background: none;
+  color: #05f;
+}
+.button.is-blue.is-tertiary:hover {
+  color: #05f;
+}
+.button.is-blue.is-tertiary:disabled, .button.is-blue.is-tertiary.is-disabled {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+.button.is-blue.is-secondary.is-loading:before, .button.is-blue.is-tertiary.is-loading:before {
+  border-color: rgba(0, 85, 255, 0.25);
+  border-bottom-color: #05f;
+}
+
 ::placeholder {
-  color: rgba(67, 62, 52, 0.4);
+  color: rgba(0, 0, 0, 0.4);
   opacity: 1;
 }
 
 :-ms-input-placeholder {
-  color: rgba(67, 62, 52, 0.4);
+  color: rgba(0, 0, 0, 0.4);
 }
 
 ::-ms-input-placeholder {
-  color: rgba(67, 62, 52, 0.4);
+  color: rgba(0, 0, 0, 0.4);
 }
 
 fieldset {
   font-family: inherit;
-  border: 1px solid rgba(67, 62, 52, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   padding: 32px;
   margin-bottom: 16px;
@@ -1232,7 +1338,7 @@ legend {
   font-size: 0.75em;
   font-weight: bold;
   text-transform: uppercase;
-  color: rgba(67, 62, 52, 0.5);
+  color: rgba(0, 0, 0, 0.5);
   padding: 0 1rem;
   margin-left: -1rem;
   top: 2px;
@@ -1251,11 +1357,11 @@ select {
   font-weight: normal;
   height: 2.6666666667em;
   background-color: #fff;
-  border: 1px solid rgba(67, 62, 52, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   box-shadow: none;
   padding: 0 8px;
-  color: rgba(67, 62, 52, 0.8);
+  color: rgba(0, 0, 0, 0.8);
 }
 
 textarea {
@@ -1286,7 +1392,7 @@ select:hover {
   outline: none;
   color: inherit;
   background-color: #fff;
-  border: 1px solid rgba(67, 62, 52, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.2);
   box-shadow: none;
 }
 input:focus,
@@ -1352,8 +1458,8 @@ select.is-disabled:hover {
   opacity: 0.7;
   cursor: default;
   font-style: italic;
-  color: rgba(67, 62, 52, 0.6);
-  border: 1px solid rgba(67, 62, 52, 0.1);
+  color: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: none;
   background-color: #fff;
 }
@@ -1523,7 +1629,7 @@ fieldset > .form-item:last-child {
   flex-direction: column;
   justify-content: center;
   padding: 0 16px;
-  border: 1px solid rgba(67, 62, 52, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #fff;
   white-space: nowrap;
 }
@@ -1532,12 +1638,12 @@ fieldset > .form-item:last-child {
   font-size: 0.875em;
   font-weight: normal;
   text-transform: none;
-  color: rgba(67, 62, 52, 0.5);
+  color: rgba(0, 0, 0, 0.5);
 }
 .is-append a,
 .is-prepend a {
   font-size: 0.875em;
-  color: #433e34;
+  color: #000;
   text-decoration: none;
 }
 .is-append a:hover,
@@ -1549,13 +1655,13 @@ fieldset > .form-item:last-child {
 .is-prepend a[class^=icon-kube-],
 .is-prepend a[class*=" icon-kube-"] {
   font-size: 1rem;
-  color: rgba(67, 62, 52, 0.6);
+  color: rgba(0, 0, 0, 0.6);
 }
 .is-append a.icon:hover, .is-append a[class^=icon-kube-]:hover, .is-append a[class*=" icon-kube-"]:hover,
 .is-prepend a.icon:hover,
 .is-prepend a[class^=icon-kube-]:hover,
 .is-prepend a[class*=" icon-kube-"]:hover {
-  color: #433e34;
+  color: #000;
   text-decoration: none;
 }
 
@@ -1600,20 +1706,20 @@ fieldset > .form-item:last-child {
 .breadcrumb a:hover {
   -moz-transition: all linear 0.2s;
   transition: all linear 0.2s;
-  color: #433e34;
+  color: #000;
   text-decoration: underline;
 }
 .breadcrumb span:after, .breadcrumb a:after {
   display: inline-block;
   content: "/";
-  color: rgba(67, 62, 52, 0.4);
+  color: rgba(0, 0, 0, 0.4);
   padding-left: 8px;
 }
 .breadcrumb span:last-child:after, .breadcrumb a:last-child:after {
   display: none;
 }
 .breadcrumb span, .breadcrumb span:last-child {
-  color: rgba(67, 62, 52, 0.55);
+  color: rgba(0, 0, 0, 0.55);
   text-decoration: none;
 }
 
@@ -1632,7 +1738,7 @@ fieldset > .form-item:last-child {
 .pager a, .pager span {
   float: left;
   padding: 8px 16px;
-  border: 1px solid rgba(67, 62, 52, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-right-color: transparent;
   color: #000;
   text-decoration: none;
@@ -1643,7 +1749,7 @@ fieldset > .form-item:last-child {
   border-bottom-left-radius: 4px;
 }
 .pager a:last-child, .pager span:last-child {
-  border-right-color: rgba(67, 62, 52, 0.1);
+  border-right-color: rgba(0, 0, 0, 0.1);
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
 }
@@ -1670,15 +1776,15 @@ fieldset > .form-item:last-child {
 .pager a:hover {
   -moz-transition: all linear 0.2s;
   transition: all linear 0.2s;
-  background-color: rgba(67, 62, 52, 0.04);
+  background-color: rgba(0, 0, 0, 0.04);
 }
 .pager a.is-disabled {
   background-color: transparent;
-  color: rgba(67, 62, 52, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 .pager span, .pager a.is-current, .pager a.is-active {
-  background-color: rgba(67, 62, 52, 0.04);
-  color: rgba(67, 62, 52, 0.5);
+  background-color: rgba(0, 0, 0, 0.04);
+  color: rgba(0, 0, 0, 0.5);
 }
 .pager.is-stacked a {
   position: relative;
@@ -1692,7 +1798,7 @@ fieldset > .form-item:last-child {
 .pager.is-stacked a:hover {
   background: none;
   text-decoration: underline;
-  color: #433e34;
+  color: #000;
 }
 .pager.is-stacked a.is-prev:before, .pager.is-stacked a.is-next:after {
   content: "";
@@ -1709,7 +1815,7 @@ fieldset > .form-item:last-child {
   font-weight: normal;
   letter-spacing: 0.03em;
   margin-bottom: 4px;
-  color: rgba(67, 62, 52, 0.5);
+  color: rgba(0, 0, 0, 0.5);
 }
 .pager.is-stacked .is-next {
   text-align: right;
@@ -1741,7 +1847,7 @@ fieldset > .form-item:last-child {
   color: #000;
   padding: 16px 32px 16px 16px;
   box-shadow: none;
-  border: 1px solid rgba(67, 62, 52, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   position: relative;
   margin-bottom: 16px;
@@ -1773,7 +1879,7 @@ fieldset > .form-item:last-child {
   color: #f05;
 }
 .alert.is-error a:hover {
-  color: #433e34;
+  color: #000;
 }
 
 .alert.is-success {
@@ -1782,7 +1888,7 @@ fieldset > .form-item:last-child {
   color: #5f0;
 }
 .alert.is-success a:hover {
-  color: #433e34;
+  color: #000;
 }
 
 .alert.is-focus {
@@ -1791,7 +1897,7 @@ fieldset > .form-item:last-child {
   color: #05f;
 }
 .alert.is-focus a:hover {
-  color: #433e34;
+  color: #000;
 }
 
 .alert.is-inverted {
@@ -2171,7 +2277,7 @@ fieldset > .form-item:last-child {
   right: 8px;
   width: 360px;
   background: #fff;
-  box-shadow: 0 6px 24px rgba(67, 62, 52, 0.12);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   z-index: 400;
   border: 1px solid transparent;
@@ -2234,7 +2340,7 @@ fieldset > .form-item:last-child {
 }
 
 .message.is-black {
-  background: #433e34;
+  background: #000;
   color: #fff;
   border-color: transparent;
 }
@@ -2248,7 +2354,7 @@ fieldset > .form-item:last-child {
   font-weight: normal;
   text-transform: none;
   margin-bottom: 20px;
-  border-bottom: 1px solid rgba(67, 62, 52, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 .tabs a {
   position: relative;
@@ -2256,24 +2362,24 @@ fieldset > .form-item:last-child {
   display: block;
   padding: 8px 20px;
   border-bottom: 2px solid transparent;
-  color: rgba(67, 62, 52, 0.65);
+  color: rgba(0, 0, 0, 0.65);
   background-color: transparent;
   text-decoration: none;
 }
 .tabs a:hover {
   -moz-transition: all linear 0.2s;
   transition: all linear 0.2s;
-  color: #433e34;
+  color: #000;
   background: none;
   text-decoration: none;
-  border-bottom: 2px solid #433e34;
+  border-bottom: 2px solid #000;
 }
 .tabs a.is-active {
   cursor: default;
-  color: #433e34;
+  color: #000;
   background: none;
   text-decoration: none;
-  border-bottom: 2px solid #433e34;
+  border-bottom: 2px solid #000;
 }
 
 @media only screen and (max-width: 767px) {
@@ -2285,7 +2391,7 @@ fieldset > .form-item:last-child {
   position: absolute;
   z-index: 300;
   background: #fff;
-  box-shadow: 0 6px 24px rgba(67, 62, 52, 0.12);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   width: 280px;
   font-size: 0.9375em;
@@ -2305,12 +2411,12 @@ fieldset > .form-item:last-child {
 }
 .dropdown a:hover {
   text-decoration: underline;
-  color: #433e34;
-  background: rgba(67, 62, 52, 0.04);
+  color: #000;
+  background: rgba(0, 0, 0, 0.04);
 }
 .dropdown a.is-separator {
   padding-bottom: 8px;
-  border-bottom: 1px solid rgba(67, 62, 52, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 .dropdown a:first-child, .dropdown span:first-child {
   border-top-left-radius: 4px;
@@ -2340,7 +2446,7 @@ fieldset > .form-item:last-child {
   padding: 0;
   font-family: inherit;
   background: #fff;
-  box-shadow: 0 15px 40px rgba(67, 62, 52, 0.2);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   color: #000;
 }
@@ -2368,7 +2474,7 @@ fieldset > .form-item:last-child {
   font-weight: bold;
   background: none;
   padding: 20px 24px;
-  border-bottom: 1px solid rgba(67, 62, 52, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 .modal-header:empty {
   display: none;
@@ -2385,7 +2491,7 @@ fieldset > .form-item:last-child {
   font-weight: normal;
   background-color: none;
   padding: 16px 24px;
-  border-top: 1px solid rgba(67, 62, 52, 0.05);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 .modal-footer:empty {
   display: none;
@@ -2411,7 +2517,7 @@ fieldset > .form-item:last-child {
   left: 0;
   z-index: 11000;
   width: 100%;
-  background-color: rgba(67, 62, 52, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .kube-progress span {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
@@ -2443,7 +2549,7 @@ fieldset > .form-item:last-child {
   min-height: 100vh;
   width: 300px;
   padding: 16px 20px;
-  background-color: #433e34;
+  background-color: #000;
   font-size: 0.9375em;
   color: #fff;
 }
@@ -2471,11 +2577,11 @@ fieldset > .form-item:last-child {
 .nav-toggle {
   position: relative;
   top: 1px;
-  color: #433e34;
+  color: #000;
   text-decoration: none;
 }
 .nav-toggle:active {
-  color: #433e34;
+  color: #000;
 }
 .nav-toggle:hover {
   color: #fa0;
@@ -2694,27 +2800,27 @@ fieldset > .form-item:last-child {
   }
 }
 .is-shadow-1 {
-  box-shadow: 0 1px 3px rgba(67, 62, 52, 0.15);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
 }
 
 .is-shadow-2 {
-  box-shadow: 0 6px 24px rgba(67, 62, 52, 0.12);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
 }
 
 .is-shadow-3 {
-  box-shadow: 0 15px 40px rgba(67, 62, 52, 0.2);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
 }
 
 .is-border {
-  border: 1px solid rgba(67, 62, 52, 0.07);
+  border: 1px solid rgba(0, 0, 0, 0.07);
 }
 
 .is-border-top {
-  border-top: 1px solid rgba(67, 62, 52, 0.07);
+  border-top: 1px solid rgba(0, 0, 0, 0.07);
 }
 
 .is-border-bottom {
-  border-bottom: 1px solid rgba(67, 62, 52, 0.07);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
 }
 
 .is-border-radius {
@@ -2771,7 +2877,7 @@ figure .is-video-container {
   transition: all linear 0.2s;
   opacity: 1;
   color: #fff;
-  background-color: #433e34;
+  background-color: #000;
 }
 .close.is-big {
   font-size: 14px;
@@ -2821,7 +2927,7 @@ figure .is-video-container {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(67, 62, 52, 0.18);
+  background-color: rgba(0, 0, 0, 0.18);
 }
 .overlay > .close {
   position: fixed;

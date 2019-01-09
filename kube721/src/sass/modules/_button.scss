@@ -228,3 +228,9 @@
 .button.is-pink {
 	@include make-button($color-red, #fff);
 }
+.button.is-black {
+	@include make-button($color-black,#fff);
+}
+.button.is-blue {
+	@include make-button($color-blue,#fff);
+}

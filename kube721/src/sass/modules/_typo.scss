@@ -18,6 +18,12 @@ a:hover {
     color: $color-link-hover;
 }
 
+a.is-pink {
+	color: $color-red;
+}
+a.is-pink:hover {
+	color: rgba($color-red, .8);
+}
 
 // Headings
 h1,
