@@ -616,6 +616,24 @@ a.is-color-black:hover,
   background-color: rgba(0, 85, 255, 0.1);
 }
 
+.is-pink {
+  color: #f05;
+}
+
+.is-blue {
+  color: #05f;
+}
+
+.is-orange,
+.is-yellow,
+.is-brand {
+  color: #fa0;
+}
+
+.is-white {
+  color: #fff;
+}
+
 table {
   font-size: 0.9375em;
   border-collapse: collapse;
@@ -2030,6 +2048,86 @@ fieldset > .form-item:last-child {
     text-align: left;
   }
 }
+.is-10-v {
+  height: 10%;
+  min-height: 10%;
+}
+
+.is-20-v {
+  height: 20%;
+  min-height: 20%;
+}
+
+.is-25-v {
+  height: 25%;
+  min-height: 25%;
+}
+
+.is-30-v {
+  height: 30%;
+  min-height: 30%;
+}
+
+.is-33-v,
+.is-34-v {
+  height: 33.3333%;
+  min-height: 33.3333%;
+}
+
+.is-35-v {
+  height: 35%;
+  min-height: 35%;
+}
+
+.is-40-v {
+  height: 40%;
+  min-height: 40%;
+}
+
+.is-50-v {
+  height: 50%;
+  min-height: 50%;
+}
+
+.is-60-v {
+  height: 60%;
+}
+
+.is-65-v {
+  height: 65%;
+}
+
+.is-66-v,
+.is-67-v {
+  height: 66.6666%;
+  min-height: 66.6666%;
+}
+
+.is-70-v {
+  height: 70%;
+  min-height: 70%;
+}
+
+.is-75-v {
+  height: 75%;
+  min-height: 75%;
+}
+
+.is-80-v {
+  height: 80%;
+  min-height: 80%;
+}
+
+.is-90-v {
+  height: 90%;
+  min-height: 90%;
+}
+
+.is-100-v {
+  height: 100%;
+  min-height: 100%;
+}
+
 @keyframes slideUp {
   to {
     height: 0;

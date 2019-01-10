@@ -360,3 +360,23 @@ a.is-color-black:hover,
 .is-highlight {
     background-color: $color-highlight;
 }
+
+/// text colours
+
+.is-pink {
+	color: $color-red;
+}
+.is-blue {
+	color: $color-blue;
+}
+.is-orange,
+.is-yellow,
+.is-brand {
+	color: $color-orange;
+}
+.is-white {
+	color: $color-inverted;
+}
+
+
+
