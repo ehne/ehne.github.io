@@ -1,22 +1,60 @@
-<!doctype html>
-<html>
-<head>
-    <title>Basic Template</title>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="theme-color" content="#000" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Links for Darcy's MMF shows">
+		<meta name="author" content="Darcy Lugt-Falk">
+		<!-- end meta tags -->
+		<title></title>
+		<link rel="stylesheet" href="dist/css/kube.css" type="text/css" charset="utf-8">
+		<style type="text/css" media="screen">
+			h2 a{
+				color:#fa0
+			}
+			h2 a:hover{
+				color:rgba(255, 171, 0, 0.75)
+			}	
+			.twa {
+				display: inline-block;
+				height: 1em;
+				width: 1em;
+				margin: 0 .05em 0 .1em;
+				vertical-align: -0.1em;
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: 1em 1em; 
+			}
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Kube CSS -->
-    <link rel="stylesheet" href="dist/css/kube.min.css">
-
-</head>
-<body>
-    <h1>Hello, world!</h1>
-
-    <!-- Kube JS (optional if you are using Kube CSS only) -->
-    <script src="dist/js/kube.min.js"></script>
-    <script>
-        $K.init();
-    </script>
-</body>
+			.twa-lg {
+				height: 1.33em;
+				width: 1.33em;
+				margin: 0 0.0665em 0 0.133em;
+				vertical-align: -0.133em;
+				background-size: 1.33em 1.33em; 
+			}
+			.twa-wave {
+				background-image: url("https://twemoji.maxcdn.com/2/svg/1f44b.svg"); 
+			}
+		</style>
+	</head>
+	<body>
+		<div class="page debug-grid">
+			<main class="main is-width-medium is-center">
+				<div class="is-inset-2 is-inset-28-mobile is-center is-inset-top-12-mobile is-inset-12">
+						<h1>hi! <i class="twa twa-lg twa-wave"></i></h1>
+						<h1>I'm <em>Darcy Lugt-Falk</em></h1>
+						<h1>and I make <em>websites</em></h1>
+						
+							<h2 class="is-container">
+								<a href="https://github.com/ehne" class="is-inset-right-8">github </a> 
+								<a href="https://instagram.com/coolbezos_420" class="is-inset-right-8">instagram </a> 
+								<a href="mailto:darcy@darcylf.me?subject=hi%20%F0%9F%91%8B">email</a>
+							</h2>
+						
+				</div>
+			</main>
+		</div>
+	</body>
 </html>
