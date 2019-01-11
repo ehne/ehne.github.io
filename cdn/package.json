@@ -2,9 +2,9 @@
   "name": "cdn",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": ""
+    "kube": "cd kube721 && sass src/sass/kube.scss dist/css/kube.css && now && now ln && cd ../..",
+    "all": "npm run kube"
   },
   "keywords": [],
   "author": "",
