@@ -1,0 +1,12 @@
+{
+  "name": "cdn",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "kube": "sass src/sass/kube.scss dist/css/kube.css && now && now ln",
+    "cool": "echo cool"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
