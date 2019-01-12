@@ -19,13 +19,13 @@
 /* end fonts */
 /* font classes */
 .bold-font {
-	font-family: "Rational-Display-SmBd"
+	font-family: "Rational-Display-SmBd", sans-serif
 }
 .rational-light {
-	font-family: "Rational-Display-Light"
+	font-family: "Rational-Display-Light", sans-serif
 }
 .odachi {
-	font-family: odachi;
+	font-family: odachi, sans-serif
 }
 
 /* end font classes */
@@ -37,7 +37,7 @@
 	    display: none
     }
 	.text {
-		font-family: "Rational-Display-Light";
+		font-family: "Rational-Display-Light", sans-serif
 	}
 @media screen and (max-width: 396px) {
     .visibledevice {
@@ -99,25 +99,25 @@
     max-width:60em;
     padding:1em;
     margin:auto;
-    font:1em/1.6 "Rational-Display-Light"
+    font:1em/1.6 "Rational-Display-Light", sans-serif
 }
 h6{
-    font:300 1em "Rational-Display-Light"
+    font:300 1em "Rational-Display-Light", sans-serif
 }
 h5{
-    font:300 1.2em"Rational-Display-Light"
+    font:300 1.2em"Rational-Display-Light", sans-serif
 }
 h3{
-    font:300 2em"Rational-Display-Light"
+    font:300 2em"Rational-Display-Light", sans-serif
 }
 h4{
-    font:300 1.5em"Rational-Display-Light"
+    font:300 1.5em"Rational-Display-Light", sans-serif
 }
 h2{
-    font:300 2.2em"Rational-Display-Light"
+    font:300 2.2em"Rational-Display-Light", sans-serif
 }
 h1{
-    font:300 2.5em"Rational-Display-Light"
+    font:300 2.5em"Rational-Display-Light", sans-serif
 }
 a{
     color:#fa0;
@@ -145,7 +145,7 @@ td,th{
     text-transform:uppercase;
     background:#fff;
     border:solid;
-    font:.7em "Rational-Display-Light"
+    font:.7em "Rational-Display-Light", sans-serif
 }
 .line-shrink {
 	line-height: 5px
