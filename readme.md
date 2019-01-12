@@ -1,8 +1,5 @@
 # this is a real cool site, on the net.
 
-cdn for css =
-`https://cdn.jsdelivr.net/gh/ehne/ehne.github.io/styles/index.css`
+cdn:
 
-
-cdn for tachyons (for more complex stuff) = 
-`https://cdn.jsdelivr.net/gh/ehne/ehne.github.io/styles/tachyons.min.css`
+[cdn.darcylf.me](https://cdn.darcylf.me)
