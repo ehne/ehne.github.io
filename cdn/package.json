@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "kube": "cd kube721 && sass src/sass/kube.scss dist/css/kube.css && now && now ln && cd ../..",
-    "all": "npm run kube"
+    "kube": "cd kube721 ; sass src/sass/kube.scss dist/css/kube.css ; cd .. ; npm run now",
+    "now": "now && now ln"
+    
   },
   "keywords": [],
   "author": "",
