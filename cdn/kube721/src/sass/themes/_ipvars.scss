@@ -1,0 +1,39 @@
+// =COLORS
+// ---------------------------------------------------------------------------
+// DONE Update Colours To iP Brand
+// Base
+$color-black: #000 !default;
+$color-red: #db3482 !default; // FIXME switch to pink
+$color-orange: #db8a34 !default;
+$color-yellow: #d8db34 !default;
+$color-blue: #3485db !default;
+$color-violet: #8a34db !default;
+$color-green: #29ae2b !default;
+$color-inverted: #fff !default;
+
+// Text
+$color-text: #000 !default;
+$color-text-secondary: rgba($color-text, .6) !default;
+$color-text-tertiary: rgba($color-text, .5) !default;
+$color-text-disabled: rgba($color-text, .4) !default;
+
+// Links
+$color-link: $color-black !default;
+$color-link-hover: $color-red !default;
+
+// States
+$color-error: $color-red !default;
+$color-success: $color-green !default;
+$color-focus: $color-blue !default;
+$color-warning: $color-orange !default;
+
+// Accent
+$color-accent: $color-red !default;
+$color-highlight: rgba($color-focus, .1) !default;
+
+// Button
+$color-button: $color-red !default;
+
+/// inputs
+$input-focus-border-color: $color-black !default;
+$input-focus-box-shadow: none !default;
