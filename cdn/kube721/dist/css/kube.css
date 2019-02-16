@@ -968,20 +968,20 @@ a.label:hover {
 }
 
 .label.is-success {
-  background-color: rgba(85, 255, 0, 0.07);
-  color: #5f0;
+  background-color: rgba(0, 203, 34, 0.07);
+  color: #00cb22;
 }
 .label.is-success.is-secondary {
   background-color: transparent;
-  color: #5f0;
-  border-color: rgba(85, 255, 0, 0.3);
+  color: #00cb22;
+  border-color: rgba(0, 203, 34, 0.3);
 }
 .label.is-success.is-tertiary {
   background-color: transparent;
-  color: #5f0;
+  color: #00cb22;
 }
 .label.is-success .close:hover {
-  background-color: #5f0;
+  background-color: #00cb22;
 }
 
 .label.is-warning {
@@ -1440,15 +1440,15 @@ select.is-error:focus {
 input.is-success,
 textarea.is-success,
 select.is-success {
-  background-color: rgba(85, 255, 0, 0.05);
-  border: 1px solid rgba(85, 255, 0, 0.5);
+  background-color: rgba(0, 203, 34, 0.05);
+  border: 1px solid rgba(0, 203, 34, 0.5);
   box-shadow: none inset;
 }
 input.is-success:focus,
 textarea.is-success:focus,
 select.is-success:focus {
-  border-color: rgba(85, 255, 0, 0.75);
-  box-shadow: 0 0 3px rgba(85, 255, 0, 0.5) inset;
+  border-color: rgba(0, 203, 34, 0.75);
+  box-shadow: 0 0 3px rgba(0, 203, 34, 0.5) inset;
 }
 input.is-warning,
 textarea.is-warning,
@@ -1488,7 +1488,7 @@ input[type=checkbox].is-error {
 }
 input[type=radio].is-success,
 input[type=checkbox].is-success {
-  outline: 2px solid rgba(85, 255, 0, 0.5);
+  outline: 2px solid rgba(0, 203, 34, 0.5);
 }
 
 input[type=file] {
@@ -1550,7 +1550,7 @@ form {
 }
 form span.is-success, form div.is-success {
   font-size: 0.75em;
-  color: #5f0;
+  color: #00cb22;
 }
 form span.is-error, form div.is-error {
   font-size: 0.75em;
@@ -1901,9 +1901,9 @@ fieldset > .form-item:last-child {
 }
 
 .alert.is-success {
-  background: rgba(85, 255, 0, 0.07);
-  border-color: rgba(85, 255, 0, 0.3);
-  color: #5f0;
+  background: rgba(0, 203, 34, 0.07);
+  border-color: rgba(0, 203, 34, 0.3);
+  color: #00cb22;
 }
 .alert.is-success a:hover {
   color: #000;
@@ -2048,6 +2048,90 @@ fieldset > .form-item:last-child {
     text-align: left;
   }
 }
+.is-toggle-label {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.is-toggle-label-text {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.is-toggle {
+  isolation: isolate;
+  position: relative;
+  height: 24px;
+  width: 48px;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.18);
+  overflow: hidden;
+}
+
+.is-toggle-inner {
+  z-index: 2;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  height: 22px;
+  width: 46px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.is-toggle-active-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 200%;
+  background: #fa0;
+  transform: translate3d(-100%, 0, 0);
+  transition: transform 0.05s linear 0.17s;
+}
+
+.is-toggle-state {
+  display: none !important;
+}
+
+.is-toggle-indicator {
+  height: 100%;
+  width: 200%;
+  background: white;
+  border-radius: 13px;
+  transform: translate3d(-75%, 0, 0);
+  transition: transform 0.35s cubic-bezier(0.85, 0.05, 0.18, 1.35);
+}
+
+.is-toggle-state:checked ~ .is-toggle-active-bg {
+  transform: translate3d(-50%, 0, 0);
+}
+
+.is-toggle-state:checked ~ .is-toggle-inner .is-toggle-indicator {
+  transform: translate3d(25%, 0, 0);
+}
+
+.is-toggle-active-bg.is-red {
+  background: #f05;
+}
+
+.is-toggle-active-bg.is-blue {
+  background: #05f;
+}
+
+.is-toggle-active-bg.is-green {
+  background: #00cb22;
+}
+
+.is-toggle-active-bg.is-black {
+  background: #000;
+}
+
+.is-toggle-active-bg.is-violet {
+  background: #a0f;
+}
+
 .is-10-v {
   height: 10%;
   min-height: 10%;
@@ -2420,7 +2504,7 @@ fieldset > .form-item:last-child {
 }
 
 .message.is-success {
-  background: #5f0;
+  background: #00cb22;
   color: #fff;
   border-color: transparent;
 }
