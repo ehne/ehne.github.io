@@ -4,6 +4,10 @@
 	max-width:100%
 }
 
+.is-width-small {
+  max-width: 600px;
+}
+
 .is-center,
 .is-centered {
   margin-left: auto;
