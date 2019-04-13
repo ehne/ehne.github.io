@@ -1,5 +1,5 @@
 <projects>
-            	<a href="{link}" class="button is-outset-4 hover-bg-black hover-white white"  each={project} if={!opts.is_list}>{title}</a>
+            	<a href="{link}" class="button is-outset-4 hover-bg-black hover-white white is-outset-2-mobile"  each={project} if={!opts.is_list}>{title}</a>
 
             <ul if={opts.is_list}>
                 <li each={project} class="hover-darcylf black"><a href="{link}" class="hover-darcylf black pr3" ><b>{title}</b></a></li>
@@ -12,10 +12,12 @@
       { title: 'integer.party', link:"https://integer.party" },
       { title: 'Sun Weather App', link:"https://sun.darcylf.me" },
       { title: 'Is PTV late?', link:"https://ptv.darcylf.me" },
-      { title: 'Is my Browser Internet Explorer?', link:"https://darcylf.me/isIE/" },
       { title: 'Stellae De Crucis', link:"https://stellaedecrucis.space" },
       { title: 'Navigate for Compass', link:"https://github.com/ehne/Navigate" },
       { title: 'Pongball', link:"https://github.com/Double-Fine-Game-Club/pongball" },
+      { title: 'Hair Simulator', link:"https://lonepaperclip.itch.io/ohs" },
+      { title: 'Octothorpe Shuffler', link:"https://lonepaperclip.itch.io/octothorpe" },
+      { title: 'Is my Browser Internet Explorer?', link:"https://darcylf.me/isIE/" },
 
 
     ]
