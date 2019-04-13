@@ -1,5 +1,5 @@
 <projects>
-            	<a href="{link}" class="button is-outset-4 hover-bg-black hover-white"  each={project} if={!opts.is_list}>{title}</a>
+            	<a href="{link}" class="button is-outset-4 hover-bg-black hover-white white"  each={project} if={!opts.is_list}>{title}</a>
 
             <ul if={opts.is_list}>
                 <li each={project} class="hover-darcylf black"><a href="{link}" class="hover-darcylf black pr3" ><b>{title}</b></a></li>
@@ -41,6 +41,9 @@
     color:#000;
 }
 .hover-white:hover {
+    color:#fff;
+}
+.white {
     color:#fff;
 }
 .hover-bg-black:hover {
