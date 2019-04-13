@@ -1,6 +1,6 @@
 <projects>
-            	<a href="{link}" class="button is-outset-4 hover-bg-black hover-white white is-outset-2-mobile {extras} is-hidden-mobile"  each={project} if={!opts.is_list}>{title}</a>
-                <a href="{link}" class="button is-outset-4 hover-bg-black hover-white white is-outset-2-mobile {extras} is-shown-mobile is-100"  each={project} if={!opts.is_list}>{title}</a>
+            	<a href="{link}" class="button is-outset-4 hover-bg-black hover-white white is-outset-2-mobile {extras} is-big is-hidden-mobile"  each={project} if={!opts.is_list}>{title}</a>
+                <a href="{link}" class="button is-outset-4 hover-bg-black hover-white white is-outset-2-mobile {extras} is-shown-mobile is-100 is-big is-stack-4"  each={project} if={!opts.is_list}>{title}</a>
             <ul if={opts.is_list}>
                 <li each={project} class="hover-darcylf black"><a href="{link}" class="hover-darcylf black pr3" ><b>{title}</b></a></li>
             </ul>
