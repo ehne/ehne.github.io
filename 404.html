@@ -18,6 +18,13 @@
   		gtag('js', new Date());
 
   		gtag('config', 'UA-61981599-5');
+  			ga('create', 'UA-61981599-5');
+            ga('send', {
+              hitType: 'event',
+              eventCategory: '404 Response',
+              eventAction: window.location.href,
+              eventLabel: document.referrer
+         	 });
 		</script>
         
         <script src="./instantclick-1.2.2.js" type="module"></script>
