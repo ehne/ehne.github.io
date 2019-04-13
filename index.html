@@ -83,6 +83,7 @@ ul.is-unstyled, ul.is-unstyled ul {
 		<script>
 			let url = new URL(window.location); // get url of window, and save it to url
 			let params = new URLSearchParams(url.search.slice(1)); // get the second half of the url (after the "?")
+			var JSONurl = "./darcylf.json"
 			
 			// run when document loads
 			$(document).ready(function(){
@@ -97,6 +98,7 @@ ul.is-unstyled, ul.is-unstyled ul {
 						$(".visibleundefined").toggle();
 				}
 				// you can do this with any other query!
+				
 			});
 			
 			
@@ -112,15 +114,15 @@ ul.is-unstyled, ul.is-unstyled ul {
 		<div class="line-shrink">
             <div class="visibledesktop">
 			<h1 style="">Hi. <i class="twa twa-wave twa-lg"></i></h1>
-			<h2 class="">I'm <b class="bold-font">Darcy Lugt-Falk</b></h2>
-			<h3>And I <a href="https://getmakerlog.com/@coolbezos_420" class="black">make</a> pretty neat <b class="bold-font"><a href="https://integer.party" class="black" title="and other things">websites</a></b></h3>
+			<h2 class="">I'm <b class="bold-font" id="my_name"> Darcy Lugt-Falk </b></h2>
+			<h3>And I make <span id="adjective_phrase"> pretty neat </span> <b class="bold-font"><a href="https://darcylf.me/things" class="black" title="and other things" id="projects_link" style="text-decoration: underline">websites</a></b></h3>
 				
 			
 			
 				<h3>
-					<a href="https://github.com/ehne" class="odachi borderLeftRight"><i class="twa twa-wrench"> </i> Github</a>
-					<a href="https://instagram.com/coolbezos_420" class="odachi"><i class="twa twa-camera"> </i> Instagram</a> 
-					<a href="mailto:darcy@darcylf.me?subject=hi%20%F0%9F%91%8B" class="odachi"><i class="twa twa-email"> </i> Email</a>
+					<a href="https://github.com/ehne" class="odachi borderLeftRight" id="github"><i class="twa twa-wrench"> </i> Github</a>
+					<a href="https://instagram.com/coolbezos_420" class="odachi" id="instagram"><i class="twa twa-camera"> </i> Instagram</a> 
+					<a href="mailto:darcy@darcylf.me?subject=hello!%20%F0%9F%91%8B" class="odachi" id="email"><i class="twa twa-email"> </i> Email</a>
 				</h3>
 				
 			</div>
@@ -128,17 +130,17 @@ ul.is-unstyled, ul.is-unstyled ul {
     			<hr>
     			<h3 style="">Hi. 👋
         			<br>
-                I'm <b class="bold-font">Darcy Lugt-Falk</b>
+                I'm <b class="bold-font" id="my_name">Darcy Lugt-Falk</b>
                 <br>
-                And I <a href="https://getmakerlog.com/@coolbezos_420" class="black">make</a> pretty neat <b class="bold-font"><a href="https://integer.party" class="black">websites</a></b>
+                And I make <span id="adjective_phrase"> pretty neat </span> <b class="bold-font"><a href="https://darcylf.me/things" class="black" id="projects_link" style="text-decoration: underline">websites</a></b>
 
                 <br>
     			
-    			<a href="https://github.com/ehne">github 🛠</a>
+    			<a href="https://github.com/ehne" id="github">github 🛠</a>
     			<br>
-    			<a href="https://instagram.com/coolbezos_420">instagram 📷</a>
+    			<a href="https://instagram.com/coolbezos_420" id="instagram">instagram 📷</a>
     			<br>
-    			<a href="mailto:darcy@darcylf.me?subject=hello!%20%F0%9F%91%8B">email 📮</a>
+    			<a href="mailto:darcy@darcylf.me?subject=hello!%20%F0%9F%91%8B" id="email">email 📮</a>
                 </h3>
 			</div>
 			

@@ -1,24 +1,44 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 	<head>
-		<!-- created on 28/2/19 -->
+		<!-- created on 12/4/19 -->
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta name="description" content="Things what I've made.">
 		<meta name="theme-color" content="#fa0" />
+		<meta name="author" content="Darcy Lugt-Falk">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- end meta tags -->
-		<title>Things what darcy has made</title>
-		<link rel="stylesheet" href="./things.css" type="text/css" media="screen" charset="utf-8">
-	</head>
-	<body class="is-100">
-    	<div class="is-center is-width-small">
-            <div class="is-centered">
-            	image
-            </div>
-    	</div>
+		<title>Darcy's project things</title>
+		<link rel="stylesheet" href="https://cdn.darcylf.me/kube721/dist/css/kube.css" type="text/css" charset="utf-8">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-        <script src="https://gitcdn.xyz/repo/davidjbradshaw/imagemap-resizer/master/js/imageMapResizer.min.js"></script>
-		<script>
-			imageMapResize();
-		</script>
+
+		<style type="text/css" media="screen">
+			.sans-serif {
+  font-family: -apple-system, BlinkMacSystemFont,
+               'avenir next', avenir,
+               'helvetica neue', helvetica,
+               ubuntu,
+               roboto, noto,
+               'segoe ui', arial,
+               sans-serif;
+}
+
+
+		</style>
+		<script src="./projects.tag" type="riot/tag"></script>
+        <!-- import riot -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/riot/3.13.2/riot+compiler.min.js"></script>
+        <!-- mount components -->
+        <script>
+            riot.mount('*',{is_list:false});
+        </script>
+	</head>
+	<body class="">
+    	<div class="is-width-medium is-centered is-inset-top-12 is-inset-left-12-mobile is-inset-left-2">
+    	<a href="https://darcylf.me" class=""><i class="fa fa-arrow-left"> </i><span class="is-inset-left-4"><b>go back</b></span></a>
+    	</div>
+    	<div class="is-width-medium is-centered is-inset-8">
+    	<projects></projects>
+		</div>
 	</body>
 </html>
