@@ -9,9 +9,7 @@
 		<!-- end meta tags -->
 		<title>Darcy's project things</title>
 		<link rel="stylesheet" href="https://cdn.darcylf.me/kube721/dist/css/kube.css" type="text/css" charset="utf-8">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
-
+		
 		<style type="text/css" media="screen">
 			.sans-serif {
   font-family: -apple-system, BlinkMacSystemFont,
@@ -23,27 +21,44 @@
                sans-serif;
 }
 
-
 		</style>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
 		<script src="./projects.tag" type="riot/tag"></script>
         <!-- import riot -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/riot/3.13.2/riot+compiler.min.js"></script>
         <!-- mount components -->
         <script>
-            riot.mount('*',{is_list:false});
+            let url = new URL(window.location); // get url of window, and save it to url
+			let params = new URLSearchParams(url.search.slice(1)); // get the second half of the url (after the "?")
+			
+			switch (params.has("is-list")) {
+				// checks for true
+				case true:
+					riot.mount('*',{is_list:true});
+					break;
+				// checks for false
+				case false:
+					riot.mount('*',{is_list:false});
+            }
+            
+            /* 
+                The above could probably be achieved using:
+                    riot.mount('*',{is_list:params.has("is-list")});
+                IDK why I didn't do that in the first place.
+            */
+            				
         </script>
 	</head>
 	<body class="">
-    	<div class="is-width-medium is-centered is-inset-top-12 is-inset-left-12-mobile is-inset-left-2">
- 
-    	
-    	
-    	</div>
-    	<div class="is-width-medium is-centered is-inset-8 ">
-        	<fieldset class="is-inset-x-24 is-inset-y-12">
-                <legend><a href="https://darcylf.me" class=""><i class="fa fa-arrow-left"> </i><span class="is-inset-left-4"><b>go back</b></span></a></legend>
-                <projects></projects>
-            </fieldset>
+    	<div class="is-width-medium is-centered is-inset-8 is-inset-top-32 is-inset-top-8-mobile">
+        	<div class="">
+        		<fieldset class="is-inset-x-24 is-inset-y-12">
+                    <legend class="is-inset-bottom-2"><a href="https://darcylf.me"><i class="fa fa-arrow-left"></i><span class="is-inset-left-4"><b>go back</b></span></a></legend>
+                    <projects></projects>
+                </fieldset>
+        	</div>
+        	
     	
 		</div>
 	</body>
