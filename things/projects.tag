@@ -8,7 +8,7 @@
             <a href="{link}" class="button is-outset-4 hover-bg-black hover-white white is-outset-2-mobile {extras} is-shown-mobile is-100 is-big is-stack-4 is-hidden-print"  each={project} if={!opts.is_list}>{title}</a>
             
             <!-- is list -->
-            <ul if={opts.is_list}>
+            <ul if={opts.is_list} class="is-hidden-print">
                 <li each={project} class="hover-darcylf black"><a href="{link}" class="hover-darcylf black pr3" ><b>{title}</b></a></li>
             </ul>
             <div class="is-hidden-screen is-shown-print ">
