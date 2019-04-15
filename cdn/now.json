@@ -3,8 +3,7 @@
 	"name":"kube",
 	"builds": [
 	{ "src": "./index.html", "use": "@now/static" },
-	{ "src": "./kube721/dist/css/kube.css", "use": "@now/static"},
-	{ "src": "./kube721/dist/css/ip.kube.css", "use": "@now/static"},
+	{ "src": "./kube721/dist/css/*", "use": "@now/static"},
 	{ "src": "./lit/lit.css", "use": "@now/static"},
 	{ "src": "./slackbot.png", "use": "@now/static"},
 	{ "src": "./jquery-mobile/*", "use": "@now/static"},
