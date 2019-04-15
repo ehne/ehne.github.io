@@ -9,7 +9,7 @@
             
             <!-- is list -->
             <ul if={opts.is_list} class="is-hidden-print">
-                <li each={project} class="hover-darcylf black"><a href="{link}" class="hover-darcylf black pr3" ><b>{title}</b></a></li>
+                <li each={project} class="hover-darcylf black {opts.spacing}"><a href="{link}" class="hover-darcylf black pr3" ><b>{title}</b></a></li>
             </ul>
             <div class="is-hidden-screen is-shown-print ">
                 <ul>
