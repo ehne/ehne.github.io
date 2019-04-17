@@ -31,6 +31,7 @@
       { title: 'Hair Simulator', link:"https://lonepaperclip.itch.io/ohs" },
       { title: 'Octothorpe Shuffler', link:"https://lonepaperclip.itch.io/octothorpe" },
       { title: 'Is my Browser Internet Explorer?', link:"https://darcylf.me/isIE/"},
+      { title: 'Shifting Weather', link:"https://github.com/ehne/shifting"},
       { title: 'darcylf.me', link:"https://github.com/ehne/ehne.github.io" },
       { title: 'My Resume', link:"https://github.com/ehne/resume" },
 
