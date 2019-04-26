@@ -9,7 +9,8 @@
 	{ "src": "./jquery-mobile/*", "use": "@now/static"},
 	{ "src": "./tags/*.tag", "use": "@now/static"},
 	{ "src": "./tile.png", "use": "@now/static"},
-	{ "src": "./scrap.png", "use": "@now/static"}
+	{ "src": "./scrap.png", "use": "@now/static"},
+	{ "src": "./darcy_badge/*", "use": "@now/static"}
 	],
 	"alias":"cdn.darcylf.me"
 	
