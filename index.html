@@ -65,7 +65,11 @@ ul.is-unstyled, ul.is-unstyled ul {
 			.twa-confused {
 				background-image: url("https://twemoji.maxcdn.com/2/svg/1f615.svg"); 
 			}
-
+			.bottom-right {
+                 position: fixed;
+                 bottom: 8px;
+                 right: 8px;
+            }
 
 		</style>
 		<!-- Global site tag (gtag.js) - Google Analytics-->
@@ -107,11 +111,11 @@ ul.is-unstyled, ul.is-unstyled ul {
 		</script>
 		<script src="./instantclick-1.2.2.js" type="module"></script>
 	</head>
-	<body class="c text">
+	<body class=" text">
 		
 		<br class="visibledesktop">
 		
-		<div class="line-shrink">
+		<div class="line-shrink c">
             <div class="visibledesktop">
 			<h1>Hi. <i class="twa twa-wave twa-lg"></i></h1>
 			<h2>I'm <b class="bold-font"> Darcy Lugt-Falk </b></h2>
@@ -122,11 +126,11 @@ ul.is-unstyled, ul.is-unstyled ul {
 				<h3>
 					<a href="https://github.com/ehne" class="odachi borderLeftRight"><i class="twa twa-wrench"> </i> Github</a>
 					<a href="https://instagram.com/coolbezos_420" class="odachi"><i class="twa twa-camera"> </i> Instagram</a> 
-					<a href="mailto:darcy@darcylf.me?subject=hello!%20%F0%9F%91%8B" class="odachi"><i class="twa twa-email"> </i> Email</a>
+					<a href="mailto:darcy@darcylf.me?subject=hello!%20%F0%9F%91%8B" class="odachi mailtoui"><i class="twa twa-email"> </i> Email</a>
 				</h3>
 				
 			</div>
-			<div class="visibledevice " style="font-weight: 400">
+			<div class="visibledevice is-100-v" style="font-weight: 400">
     			<hr>
     			<h3 style="">Hi. 👋
         			<br>
@@ -140,7 +144,7 @@ ul.is-unstyled, ul.is-unstyled ul {
     			<br>
     			<a href="https://instagram.com/coolbezos_420">instagram 📷</a>
     			<br>
-    			<a href="mailto:darcy@darcylf.me?subject=hello!%20%F0%9F%91%8B">email 📮</a>
+    			<a class="mailtoui" href="mailto:darcy@darcylf.me?subject=hello!%20%F0%9F%91%8B">email 📮</a>
                 </h3>
 			</div>
 			
@@ -150,8 +154,10 @@ ul.is-unstyled, ul.is-unstyled ul {
 				<br>
 				<h6 class="visible404 hidden"> <i class="twa twa-confused"></i> that site doesn't exist</h6>
 				<h6 class="visibleundefined hidden"> <i class="twa twa-confused"></i> that's not good</h6>
-			
 		</div>
+		<div class="bottom-right">
+			
 
-	</body>
+		</div>
+			</body>
 </html>
