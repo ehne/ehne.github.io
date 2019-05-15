@@ -219,6 +219,11 @@
             padding-right: 0;
         }
 	}
+	//fab
+	&.is-fab {
+    	border-radius: 24px;
+	}
+	
     // Loading
     &:empty.is-loading:before {
         margin-right: 0;
@@ -233,4 +238,7 @@
 }
 .button.is-blue {
 	@include make-button($color-blue,#fff);
+}
+.button.is-green {
+	@include make-button($color-green,#fff);
 }

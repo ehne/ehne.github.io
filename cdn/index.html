@@ -17,6 +17,7 @@
 html { font-family: 'Inter', sans-serif; }
 .inter {font-family: 'Inter', sans-serif !important}
 		</style>
+		<link rel="stylesheet" href="./inter/inter.css">
 	</head>
 	<body>
 		<div class="page debug-grid">
@@ -34,6 +35,7 @@ html { font-family: 'Inter', sans-serif; }
 							<li class="is-stack-8"><kbd><a href="./kube721/dist/css/ip.kube.css">./kube721/dist/css/ip.kube.css</a></kbd></li>
 							<li class="is-stack-8"><kbd><a href="https://magicfalk.com/tag/shows.tag">https://magicfalk.com/tag/shows.tag</a></kbd></li>
 							<li class="is-stack-8"><kbd><a href="./kube721/dist/css/kube.space.css">./kube721/dist/css/kube.space.css</a></kbd></li>
+							<li class="is-stack-8"><kbd><a href="./mdc.css">./mdc.css</a></kbd></li>
 							<li class="is-stack-8">
 								<details>
 									<summary><kbd>./jquery-mobile/darcy.min.css</kbd></summary>
@@ -57,98 +59,7 @@ html { font-family: 'Inter', sans-serif; }
 						</h4>
 						
 						<h5 class="is-hidden-mobile"><div class="alert">in production replace <code>cdn.darcylf.me</code> with <code>cdn.jsdelivr.net/gh/ehne/ehne.github.io/cdn</code> <br><i>note:</i> now comes with its own CDN <br><i>note:</i> jsdelivr does not have a way to purge the CDN cache</div></h5>
-						<details>
-                            <summary>custom toggle thingo </summary>
-                            <p class="codepen" data-height="300" data-theme-id="26265" data-default-tab="html,result" data-user="coolbezos_420" data-slug-hash="exQZLy" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="exQZLy">
-          <span>See the Pen <a href="https://codepen.io/coolbezos_420/pen/exQZLy/">
-          exQZLy</a> by coolbezos_420 (<a href="https://codepen.io/coolbezos_420">@coolbezos_420</a>)
-          on <a href="https://codepen.io">CodePen</a>.</span>
-        </p>
-        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-                            <div class="is-inset-y-12">
-                                All go in <code>.is-toggle-active-bg</code> div
-                            <ul class="is-unstyled is-inset-top-8">
-                                <li>
-                                    <label class="is-toggle-label is-center">
-                                    	<div class="is-toggle">
-                                    		<input class="is-toggle-state is-night-toggle" type="checkbox" name="check" value="check" checked/>
-                                    		<div class="is-toggle-inner">
-                                    			<div class="is-toggle-indicator"></div>
-                                    		</div>
-                                    		<div class="is-toggle-active-bg"></div>
-                                    	</div>
-                                    	<div class="is-toggle-label-text"><code>standard (accent)</code></div>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label class="is-toggle-label is-center">
-                                    	<div class="is-toggle">
-                                    		<input class="is-toggle-state is-night-toggle" type="checkbox" name="check" value="check" checked/>
-                                    		<div class="is-toggle-inner">
-                                    			<div class="is-toggle-indicator"></div>
-                                    		</div>
-                                    		<div class="is-toggle-active-bg is-red"></div>
-                                    	</div>
-                                    	<div class="is-toggle-label-text"><code>.is-red</code></div>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label class="is-toggle-label is-center">
-                                    	<div class="is-toggle">
-                                    		<input class="is-toggle-state is-night-toggle" type="checkbox" name="check" value="check" checked/>
-                                    		<div class="is-toggle-inner">
-                                    			<div class="is-toggle-indicator"></div>
-                                    		</div>
-                                    		<div class="is-toggle-active-bg is-blue"></div>
-                                    	</div>
-                                    	<div class="is-toggle-label-text"><code>.is-blue</code></div>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label class="is-toggle-label is-center">
-                                    	<div class="is-toggle">
-                                    		<input class="is-toggle-state is-night-toggle" type="checkbox" name="check" value="check" checked/>
-                                    		<div class="is-toggle-inner">
-                                    			<div class="is-toggle-indicator"></div>
-                                    		</div>
-                                    		<div class="is-toggle-active-bg is-green"></div>
-                                    	</div>
-                                    	<div class="is-toggle-label-text"><code>.is-green</code></div>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label class="is-toggle-label is-center">
-                                    	<div class="is-toggle">
-                                    		<input class="is-toggle-state is-night-toggle" type="checkbox" name="check" value="check" checked/>
-                                    		<div class="is-toggle-inner">
-                                    			<div class="is-toggle-indicator"></div>
-                                    		</div>
-                                    		<div class="is-toggle-active-bg is-violet"></div>
-                                    	</div>
-                                    	<div class="is-toggle-label-text"><code>.is-violet</code></div>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label class="is-toggle-label is-center">
-                                    	<div class="is-toggle">
-                                    		<input class="is-toggle-state is-night-toggle" type="checkbox" name="check" value="check" checked/>
-                                    		<div class="is-toggle-inner">
-                                    			<div class="is-toggle-indicator"></div>
-                                    		</div>
-                                    		<div class="is-toggle-active-bg is-black"></div>
-                                    	</div>
-                                    	<div class="is-toggle-label-text"><code>.is-black</code></div>
-                                    </label>
-                                </li>
-                                emmet abbreviation:
-                                <code>
-                                label.is-toggle-label>(div.is-toggle>input:c.is-toggle-state[name=check value=check]+(div.is-toggle-inner>div.is-toggle-indicator)+div.is-toggle-active-bg)+(div.is-toggle-label-text{text})
-                                </code>
-                            </ul>	  
-                                           
-                            </div>
-                
-                        </details>
+						
                         <details>
 							<summary>Made by darcylf badge </summary>
 							<h4 class="is-stack-8">For use on light backgrounds:</h4>
@@ -200,6 +111,7 @@ html { font-family: 'Inter', sans-serif; }
 </code>
 <br>						</details>
 				</div>
+				<a href="https://cdn.darcylf.me/kube.html" class="button is-blue is-big is-bottom-right is-fab">see custom kube things</a>
 			</main>
 			
 		</div>

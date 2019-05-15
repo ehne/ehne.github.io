@@ -10,7 +10,11 @@
 	{ "src": "./tags/*.tag", "use": "@now/static"},
 	{ "src": "./tile.png", "use": "@now/static"},
 	{ "src": "./scrap.png", "use": "@now/static"},
-	{ "src": "./darcy_badge/*", "use": "@now/static"}
+	{ "src": "./darcy_badge/*", "use": "@now/static"},
+	{ "src": "./mdc.css", "use": "@now/static"},
+	{ "src": "./kube.html", "use": "@now/static"},
+	{ "src": "./inter/*", "use": "@now/static"}
+
 	],
 	"alias":"cdn.darcylf.me"
 	

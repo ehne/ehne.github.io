@@ -16,3 +16,24 @@
 .is-80-v  { height: 80%; min-height: 80%; }
 .is-90-v  { height: 90%; min-height: 90%; }
 .is-100-v { height: 100%; min-height: 100%; }
+
+.is-bottom-right {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+}
+.is-top-left {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+}
+.is-top-right {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+}
+.is-bottom-left {
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+}
