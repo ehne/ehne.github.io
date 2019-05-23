@@ -16,140 +16,127 @@
     }
 */
 @font-face {
-	font-family: "odachi";
-	src: url("https://cdn.jsdelivr.net/gh/ehne/ehne.github.io/cdn/lit/Odachi.woff") format('woff');
-}
+  font-family: "odachi";
+  src: url("https://cdn.jsdelivr.net/gh/ehne/ehne.github.io/cdn/lit/Odachi.woff") format("woff"); }
 /* end fonts */
 /* font classes */
 .bold-font, b {
-	font-family: "manrope", sans-serif;
-	font-weight: 800
-}
-.odachi {
-	font-family: odachi, sans-serif
-}
+  font-family: "manrope", sans-serif;
+  font-weight: 800; }
 
+.odachi {
+  font-family: odachi, sans-serif; }
 
 /* end font classes */
-    
-    .visibledesktop { 
-	    display: block
-    }
-    .visibledevice {
-	    display: none
-    }
+.visibledesktop {
+  display: block; }
+
+.visibledevice {
+  display: none; }
+
 @media screen and (max-width: 396px) {
-    .visibledevice {
-	    display: block
-    }    
-    .visibledesktop {
-	    display: none
-    }
-   
- }
+  .visibledevice {
+    display: block; }
 
+  .visibledesktop {
+    display: none; } }
 .hidden {
-	display: none;
-}
+  display: none; }
 
-*+*{
-    box-sizing:border-box;
-    margin:.5em 0
-}
-@media(min-width:35em){
-    .col{
-        display:table-cell
-    }
-    .\31{
-        width:5%
-    }
-    .\33{
-        width:22%
-    }
-    .\34{
-        width:30%
-    }
-    .\35{
-        width:40%
-    }
-    .\32{
-        width:15%
-    }
-    .row{
-        display:table;
-        border-spacing:1em 0
-    }
-}
-.row,.w-100{
-    width:100%
-}
-.card:focus,hr{
-    outline:0;
-    border:solid #fa0
-}
-.card,pre{
-    padding:1em;
-    border:solid #eee
-}
-.btn:hover,a:hover{
-    opacity:.6
-}
-.c{
-    max-width:60em;
-    padding:1em;
-    margin:auto;
-    font:1em/1.6    "manrope", sans-serif;
-}
-h6{
-    font:300 1em    "manrope", sans-serif
-}
-h5{
-    font:300 1.2em  "manrope", sans-serif
-}
-h3{
-    font:300 2em    "manrope", sans-serif
-}
-h4{
-    font:300 1.5em  "manrope", sans-serif
-}
-h2{
-    font:300 2.2em  "manrope", sans-serif
-}
-h1{
-    font:300 2.5em  "manrope", sans-serif
-}
-a{
-    color:#fa0;
-    text-decoration:none; !important
-    
-}
+* + * {
+  box-sizing: border-box;
+  margin: 0.5em 0; }
 
-.btn.primary{
-    color:#fff;
-    background:#fa0;
-    border:solid #fa0
-}
-pre{
-    overflow:auto
-}
-td,th{
-    padding:1em;
-    text-align:left;
-    border-bottom:solid #eee
-}
-.btn{
-    cursor:pointer;
-    padding:1em;
-    letter-spacing:.1em;
-    text-transform:uppercase;
-    background:#fff;
-    border:solid;
-    font:.7em "Manrope", sans-serif
-}
+@media (min-width: 35em) {
+  .col {
+    display: table-cell; }
+
+  .\31  {
+    width: 5%; }
+
+  .\33  {
+    width: 22%; }
+
+  .\34  {
+    width: 30%; }
+
+  .\35  {
+    width: 40%; }
+
+  .\32  {
+    width: 15%; }
+
+  .row {
+    display: table;
+    border-spacing: 1em 0; } }
+.row, .w-100 {
+  width: 100%; }
+
+.card:focus, hr {
+  outline: 0;
+  border: solid #05f; }
+
+.card, pre {
+  padding: 1em;
+  border: solid #eee; }
+
+.btn:hover, a:hover {
+  color: #05f; }
+
+.c {
+  max-width: 60em;
+  padding: 1em;
+  margin: auto;
+  font: 1em/1.6    "manrope", sans-serif; }
+
+h6 {
+  font: 300 1em "manrope", sans-serif; }
+
+h5 {
+  font: 300 1.2em "manrope", sans-serif; }
+
+h3 {
+  font: 300 2em "manrope", sans-serif; }
+
+h4 {
+  font: 300 1.5em "manrope", sans-serif; }
+
+h2 {
+  font: 300 2.2em "manrope", sans-serif; }
+
+h1 {
+  font: 300 2.5em "manrope", sans-serif; }
+
+a {
+  color: #fa0;
+  text-decoration: none; }
+
+.btn.primary {
+  color: #fff;
+  background: #fa0;
+  border: solid #fa0; }
+
+pre {
+  overflow: auto; }
+
+td, th {
+  padding: 1em;
+  text-align: left;
+  border-bottom: solid #eee; }
+
+.btn {
+  cursor: pointer;
+  padding: 1em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  background: #fff;
+  border: solid;
+  font: 0.7em "Manrope", sans-serif; }
+
 .line-shrink {
-	line-height: 5px
-}
+  line-height: 5px; }
 
-.black{
-	color: black !important;
-}
+.black {
+  color: #000; }
+
+/*# sourceMappingURL=lit.css.map */
