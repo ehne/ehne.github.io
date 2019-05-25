@@ -2,10 +2,10 @@
             <!-- is buttons (default) -->    
             
             <!-- is-desktop -->
-            <a href="{link}" class="button is-outset-4 hover-bg-black hover-white white is-outset-2-mobile {extras} is-big is-hidden-mobile is-hidden-print"  each={project} if={!opts.is_list}>{title}</a>
+            <a href="{link}" class="button blue-hover is-outset-4 is-outset-2-mobile {extras} is-big is-hidden-mobile is-hidden-print"  each={project} if={!opts.is_list}>{title}</a>
             
             <!-- is-mobile-->
-            <a href="{link}" class="button is-outset-4 hover-bg-black hover-white white is-outset-2-mobile {extras} is-shown-mobile is-100 is-big is-stack-4 is-hidden-print"  each={project} if={!opts.is_list}>{title}</a>
+            <a href="{link}" class="button blue-hover is-outset-4 is-outset-2-mobile {extras} is-shown-mobile is-100 is-big is-stack-4 is-hidden-print"  each={project} if={!opts.is_list}>{title}</a>
             
             <!-- is list -->
             <ul if={opts.is_list} class="is-hidden-print">
@@ -40,24 +40,21 @@
     
   </script>
   <style type="text/css">
-    @media screen {
-      .is-hidden-screen {
-        display: none;
-      }
-    }
-  	span{word-wrap:normal;}
-    .b--darcylf{border-color:#fa0;}
-    .hover-bg-black:hover{background-color:#000;}
-    .pt2{padding-top:.5rem;}
-    .pr3{padding-right:1rem;}
-    .darcylf,.hover-darcylf:hover,.hover-darcylf:focus{color:#fa0;}
-    .bg-darcylf,.hover-bg-darcylf:hover,.hover-bg-darcylf:focus{background-color:#fa0;}
-    .hover-black:hover,.black{color:#000;}
-    .hover-white:hover,.white{color:#fff;}
-    .is-underlined {
-        text-decoration: underline;
-        color:#05f
-    }
+      :root{
+    /* set default sRGB colors*/
+    --yellow: #fa0;
+    --accent: #05f;
+}
+
+@supports (color: color(display-p3 1 1 1 / 1)) {
+	/* Set correct yellow & blue directly. */
+	/* For details, see <https://twitter.com/i/web/status/1106633444157607936> */
+	:root{
+    	--yellow: color(display-p3 1 0.67 0.00 / 1);
+        --accent: #05f;
+	} 
+}
+   
  </style>
 </projects>
 

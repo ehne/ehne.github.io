@@ -20,6 +20,27 @@
                'segoe ui', arial,
                sans-serif;
 }
+:root{
+    /* set default sRGB colors*/
+    --yellow: #fa0;
+    --accent: #05f;
+}
+
+@supports (color: color(display-p3 1 1 1 / 1)) {
+	/* Set correct yellow & blue directly. */
+	/* For details, see <https://twitter.com/i/web/status/1106633444157607936> */
+	:root{
+    	--yellow: color(display-p3 1 0.67 0.00 / 1);
+	} 
+}
+
+.button{
+    background: var(--yellow)
+}
+.blue-hover:hover {
+       background: var(--accent)
+   }
+
 
 		</style>
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
