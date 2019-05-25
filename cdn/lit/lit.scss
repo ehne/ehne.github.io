@@ -57,7 +57,8 @@ $color-bg: #fff;
 /* end font classes */
 body{
     background-color: $color-bg;
-    color: $color-text
+    color: $color-text;
+    border-top: 10px solid $color-brand;
 }
     
     .visibledesktop { 
@@ -73,6 +74,10 @@ body{
     .visibledesktop {
 	    display: none
     }
+    body {
+        border: none;
+    }
+    
    
  }
 

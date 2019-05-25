@@ -42,7 +42,8 @@
 /* end font classes */
 body {
   background-color: #fff;
-  color: #000; }
+  color: #000;
+  border-top: 10px solid var(--yellow); }
 
 .visibledesktop {
   display: block; }
@@ -55,7 +56,10 @@ body {
     display: block; }
 
   .visibledesktop {
-    display: none; } }
+    display: none; }
+
+  body {
+    border: none; } }
 .hidden {
   display: none; }
 
