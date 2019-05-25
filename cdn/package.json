@@ -5,8 +5,8 @@
   "scripts": {
     "kube:darcylf": "cd kube721 ; sass src/sass/kube.scss dist/css/kube.css ; cd .. ; npm run now",
     "now": "now && now ln",
-    "kube:ip":"cd kube721; sass src/sass/ip.theme.scss dist/css/ip.kube.css; cd .. ; npm run now"
-    
+    "kube:ip":"cd kube721; sass src/sass/ip.theme.scss dist/css/ip.kube.css; cd .. ; npm run now",
+    "lit": "cd lit; sass ./lit.scss ./lit.css; cd .."
   },
   "keywords": [],
   "author": "",

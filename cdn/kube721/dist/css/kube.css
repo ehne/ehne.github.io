@@ -972,6 +972,8 @@ a.label {
     padding-right: 0; }
 .button.is-fab {
   border-radius: 24px; }
+  .button.is-fab.is-fab-shadow {
+    box-shadow: 0px 3px 5px -1px rgba(255, 170, 0, 0.2), 0px 6px 10px 0px rgba(255, 170, 0, 0.14), 0px 1px 18px 0px rgba(255, 170, 0, 0.12); }
 .button:empty.is-loading:before {
   margin-right: 0; }
 
@@ -1011,6 +1013,8 @@ a.label {
   .button.is-pink.is-secondary.is-loading:before, .button.is-pink.is-tertiary.is-loading:before {
     border-color: rgba(255, 0, 85, 0.25);
     border-bottom-color: #f05; }
+  .button.is-pink.is-fab.is-fab-shadow {
+    box-shadow: 0px 3px 5px -1px rgba(255, 0, 85, 0.2), 0px 6px 10px 0px rgba(255, 0, 85, 0.14), 0px 1px 18px 0px rgba(255, 0, 85, 0.12); }
 
 .button.is-black {
   color: #fff;
@@ -1048,6 +1052,8 @@ a.label {
   .button.is-black.is-secondary.is-loading:before, .button.is-black.is-tertiary.is-loading:before {
     border-color: rgba(0, 0, 0, 0.25);
     border-bottom-color: #000; }
+  .button.is-black.is-fab.is-fab-shadow {
+    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12); }
 
 .button.is-blue {
   color: #fff;
@@ -1085,6 +1091,8 @@ a.label {
   .button.is-blue.is-secondary.is-loading:before, .button.is-blue.is-tertiary.is-loading:before {
     border-color: rgba(0, 85, 255, 0.25);
     border-bottom-color: #05f; }
+  .button.is-blue.is-fab.is-fab-shadow {
+    box-shadow: 0px 3px 5px -1px rgba(0, 85, 255, 0.2), 0px 6px 10px 0px rgba(0, 85, 255, 0.14), 0px 1px 18px 0px rgba(0, 85, 255, 0.12); }
 
 .button.is-green {
   color: #fff;
@@ -1122,6 +1130,8 @@ a.label {
   .button.is-green.is-secondary.is-loading:before, .button.is-green.is-tertiary.is-loading:before {
     border-color: rgba(0, 203, 34, 0.25);
     border-bottom-color: #00cb22; }
+  .button.is-green.is-fab.is-fab-shadow {
+    box-shadow: 0px 3px 5px -1px rgba(0, 203, 34, 0.2), 0px 6px 10px 0px rgba(0, 203, 34, 0.14), 0px 1px 18px 0px rgba(0, 203, 34, 0.12); }
 
 ::placeholder {
   color: rgba(0, 0, 0, 0.4);

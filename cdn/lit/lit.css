@@ -1,3 +1,13 @@
+:root {
+  --yellow: #fa0;
+  --blue: #05f; }
+
+@supports (color: color(display-p3 1 1 1/1)) {
+  /* Set correct green directly. */
+  /* For details, see <https://twitter.com/i/web/status/1106633444157607936> */
+  :root {
+    --yellow: color(display-p3 1 0.67 0.00 / 1);
+    --blue: color(display-p3 0 0.33 1 / 1); } }
 /* fonts */
 /*
 @font-face {
@@ -74,14 +84,14 @@
 
 .card:focus, hr {
   outline: 0;
-  border: solid #05f; }
+  border: solid var(--yellow); }
 
 .card, pre {
   padding: 1em;
   border: solid #eee; }
 
 .btn:hover, a:hover {
-  color: #05f; }
+  color: var(--blue); }
 
 .c {
   max-width: 60em;
@@ -108,13 +118,13 @@ h1 {
   font: 300 2.5em "manrope", sans-serif; }
 
 a {
-  color: #fa0;
+  color: var(--yellow);
   text-decoration: none; }
 
 .btn.primary {
   color: #fff;
-  background: #fa0;
-  border: solid #fa0; }
+  background: var(--yellow);
+  border: solid var(--yellow); }
 
 pre {
   overflow: auto; }

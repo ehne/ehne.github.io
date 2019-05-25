@@ -1,7 +1,21 @@
 
 // VARS
-$color-brand: #fa0;
-$color-accent: #05f;
+:root{
+    --yellow: #fa0;
+    --blue: #05f;
+}
+
+@supports (color: color(display-p3 1 1 1 / 1)) {
+	/* Set correct green directly. */
+	/* For details, see <https://twitter.com/i/web/status/1106633444157607936> */
+	:root{
+    	--yellow: color(display-p3 1 0.67 0.00 / 1);
+        --blue: color(display-p3 0 0.33 1 / 1);
+	} 
+}
+$color-brand: var(--yellow);
+$color-accent: var(--blue);
+
 $color-text: #000;
 $color-bg: #fff;
 
@@ -92,7 +106,7 @@ $color-bg: #fff;
 }
 .card:focus,hr{
     outline:0;
-    border:solid $color-accent
+    border:solid $color-brand
 }
 .card,pre{
     padding:1em;
@@ -126,7 +140,7 @@ h1{
     font:300 2.5em  "manrope", sans-serif
 }
 a{
-    color:#fa0;
+    color:$color-brand;
     text-decoration:none;
     
 }
