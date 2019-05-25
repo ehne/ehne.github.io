@@ -1,13 +1,15 @@
 :root {
+  /* set default sRGB colors*/
   --yellow: #fa0;
   --blue: #05f; }
 
 @supports (color: color(display-p3 1 1 1/1)) {
-  /* Set correct green directly. */
+  /* Set correct yellow & blue directly. */
   /* For details, see <https://twitter.com/i/web/status/1106633444157607936> */
   :root {
     --yellow: color(display-p3 1 0.67 0.00 / 1);
     --blue: color(display-p3 0 0.33 1 / 1); } }
+/* place css vars into scss vars */
 /* fonts */
 /*
 @font-face {
@@ -38,6 +40,10 @@
   font-family: odachi, sans-serif; }
 
 /* end font classes */
+body {
+  background-color: #fff;
+  color: #000; }
+
 .visibledesktop {
   display: block; }
 
