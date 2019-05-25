@@ -40,19 +40,10 @@
     
   </script>
   <style type="text/css">
-      :root{
-    /* set default sRGB colors*/
-    --yellow: #fa0;
-    --accent: #05f;
-}
 
-@supports (color: color(display-p3 1 1 1 / 1)) {
-	/* Set correct yellow & blue directly. */
-	/* For details, see <https://twitter.com/i/web/status/1106633444157607936> */
-	:root{
-    	--yellow: color(display-p3 1 0.67 0.00 / 1);
-        --accent: #05f;
-	} 
+.is-underlined{
+    text-decoration: underline;
+    color:#05f
 }
    
  </style>
