@@ -59,6 +59,9 @@ body{
     background-color: $color-bg;
     color: $color-text;
     border-top: 10px solid $color-brand;
+    &.darkmode--activated{
+        border-top:10px solid $color-bg;
+    }
 }
     
     .visibledesktop { 
@@ -75,7 +78,12 @@ body{
 	    display: none
     }
     body {
+        margin-top:8px;
         border: none;
+        &.darkmode--activated{
+            margin-top:0px;
+            border-top: 8px solid #000;
+        }
     }
     
    
@@ -119,6 +127,10 @@ body{
 .card:focus,hr{
     outline:0;
     border:solid $color-brand
+
+}
+.darkmode--activated hr {
+    border:solid $color-accent
 }
 .card,pre{
     padding:1em;
@@ -154,9 +166,13 @@ h1{
 a{
     color:$color-brand;
     text-decoration:none;
-    
 }
-
+.darkmode--activated a{
+    color: $color-accent
+}
+.darkmode--activated a:hover{
+    color: $color-text
+}
 .btn.primary{
     color:$color-bg;
     background:$color-brand;

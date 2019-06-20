@@ -44,6 +44,8 @@ body {
   background-color: #fff;
   color: #000;
   border-top: 10px solid var(--yellow); }
+  body.darkmode--activated {
+    border-top: 10px solid #fff; }
 
 .visibledesktop {
   display: block; }
@@ -59,7 +61,11 @@ body {
     display: none; }
 
   body {
-    border: none; } }
+    margin-top: 8px;
+    border: none; }
+    body.darkmode--activated {
+      margin-top: 0px;
+      border-top: 8px solid #000; } }
 .hidden {
   display: none; }
 
@@ -96,6 +102,9 @@ body {
   outline: 0;
   border: solid var(--yellow); }
 
+.darkmode--activated hr {
+  border: solid var(--blue); }
+
 .card, pre {
   padding: 1em;
   border: solid #eee; }
@@ -130,6 +139,12 @@ h1 {
 a {
   color: var(--yellow);
   text-decoration: none; }
+
+.darkmode--activated a {
+  color: var(--blue); }
+
+.darkmode--activated a:hover {
+  color: #000; }
 
 .btn.primary {
   color: #fff;

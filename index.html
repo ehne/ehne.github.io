@@ -22,7 +22,7 @@
         <link href="https://cdn.jsdelivr.net/gh/sharanda/manrope@master/fonts/web/index.css" rel="stylesheet">
 		<link async rel="stylesheet" href="./cdn/lit/lit.css">
 
-		
+
 		<!-- emoji css--> 
 		<!-- https://cdn.jsdelivr.net/gh/ellekasai/twemoji-awesome@4e2c2952cd1cfb9a8870850454d42c541b564c97/twemoji-awesome.css -->
 		<style type="text/css" media="screen">
@@ -67,9 +67,16 @@ ul.is-unstyled, ul.is-unstyled ul {
 			}
 			.bottom-right {
                  position: fixed;
-                 bottom: 8px;
-                 right: 8px;
+                 bottom: 1rem;
+                 right: 1rem;
             }
+            .bottom {
+                position: fixed;
+                right:1rem;
+                left:1rem;
+                bottom:1rem
+			}
+			
 
 		</style>
 		<!-- Global site tag (gtag.js) - Google Analytics-->
@@ -117,34 +124,33 @@ ul.is-unstyled, ul.is-unstyled ul {
 		
 		<div class="line-shrink c">
             <div class="visibledesktop">
-			<h1 style="">Hi. <i class="twa twa-wave twa-lg"></i></h1>
+			<h1 style="">Hi. <i class="twa twa-wave twa-lg darkmode-ignore"></i></h1>
 			<h2 style="">I'm <b class="bold-font"> Darcy Lugt-Falk </b></h2>
 			<h3 style="">And I make <span> pretty neat </span> <b class="bold-font"><a href="https://darcylf.me/things" class="black" title="and other things" style="text-decoration: underline">websites</a></b></h3>
 				
 			
 			
 				<h3>
-					<a href="https://github.com/ehne" class="odachi borderLeftRight"><i class="twa twa-wrench"> </i> Github</a>
-					<a href="https://instagram.com/coolbezos_420" class="odachi"><i class="twa twa-camera"> </i> Instagram</a> 
-					<a href="mailto:darcy@darcylf.me?subject=hello!%20%F0%9F%91%8B" class="odachi mailtoui"><i class="twa twa-email"> </i> Email</a>
+					<a href="https://github.com/ehne" class="odachi borderLeftRight "><i class="twa twa-wrench darkmode-ignore"> </i> Github</a>
+					<a href="https://instagram.com/coolbezos_420" class="odachi "><i class="twa twa-camera darkmode-ignore"> </i> Instagram</a> 
+					<a href="mailto:darcy@darcylf.me?subject=hello!%20%F0%9F%91%8B" class="odachi mailtoui "><i class="twa twa-email darkmode-ignore"> </i> Email</a>
 				</h3>
 				
 			</div>
 			<div class="visibledevice" style="font-weight: 400">
     			<hr style="">
-    			<h3 style="">Hi. 👋
+    			<h3 style="">Hi. <span class="darkmode-ignore">👋</span>
         			<br>
                 I'm <b class="bold-font">Darcy Lugt-Falk</b>
                 <br>
                 And I make <span> pretty neat </span> <b class="bold-font"><a href="https://darcylf.me/things" class="black" style="text-decoration: underline">websites</a></b>
-
                 <br>
     			
-    			<a href="https://github.com/ehne">github 🛠</a>
+    			<a href="https://github.com/ehne">github <span class="darkmode-ignore">🛠</span></a>
     			<br>
-    			<a href="https://instagram.com/coolbezos_420">instagram 📷</a>
+    			<a href="https://instagram.com/coolbezos_420">instagram <span class="darkmode-ignore">📷</span></a>
     			<br>
-    			<a class="mailtoui" href="mailto:darcy@darcylf.me?subject=hello!%20%F0%9F%91%8B">email 📮</a>
+    			<a class="mailtoui" href="mailto:darcy@darcylf.me?subject=hello!%20%F0%9F%91%8B">email <span class="darkmode-ignore">📮</span></a>
                 </h3>
 			</div>
 			
@@ -159,5 +165,9 @@ ul.is-unstyled, ul.is-unstyled ul {
 			
 
 		</div>
+		<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.3.4/lib/darkmode-js.min.js"></script>
+		<script>
+		  new Darkmode().showWidget();
+		</script>
 			</body>
 </html>
