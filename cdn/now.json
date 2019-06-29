@@ -1,6 +1,7 @@
 {
 	"version":2,
 	"name":"kube",
+	"alias" : "cdn.darcylf.me",
 	"builds": [
 	{ "src": "./index.html", "use": "@now/static" },
 	{ "src": "./kube721/dist/css/*", "use": "@now/static"},
@@ -13,9 +14,9 @@
 	{ "src": "./darcy_badge/*", "use": "@now/static"},
 	{ "src": "./mdc.css", "use": "@now/static"},
 	{ "src": "./kube.html", "use": "@now/static"},
+	{ "src": "./*.svg", "use": "@now/static"},
 	{ "src": "./inter/*", "use": "@now/static"}
 
-	],
-	"alias":"cdn.darcylf.me"
+	]
 	
 }
