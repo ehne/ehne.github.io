@@ -53,6 +53,9 @@ body {
 .visibledevice {
   display: none; }
 
+.darkmode-toggle {
+  display: block !important; }
+
 @media screen and (max-width: 396px) {
   .visibledevice {
     display: block; }
@@ -60,12 +63,15 @@ body {
   .visibledesktop {
     display: none; }
 
+  .darkmode-toggle {
+    display: none !important; }
+
   body {
-    margin-top: 8px;
-    border: none; }
+    margin-top: 0px;
+    border-top: 0px solid #fff; }
     body.darkmode--activated {
       margin-top: 0px;
-      border-top: 8px solid #000; } }
+      border-top: 0px solid #fff; } }
 .hidden {
   display: none; }
 

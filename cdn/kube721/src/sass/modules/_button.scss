@@ -245,3 +245,19 @@
 .button.is-green {
 	@include make-button($color-green,#fff);
 }
+
+// semantic button names to migrate over to eventually
+
+.button.is-error {
+    @include make-button($color-error, #fff)
+}
+.button.is-success {
+    @include make-button($color-success, #fff)
+}
+.button.is-warning {
+    @include make-button($color-warning, #fff)
+}
+.button.is-focus {
+    @include make-button($color-focus, #fff)
+}
+

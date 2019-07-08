@@ -1,14 +1,14 @@
 // =COLORS
 // ---------------------------------------------------------------------------
 // DONE Update Colours To iP Brand
-// Base
+// Base colours created using eva and a bit of simple stuff
 $color-black: #000 !default;
 $color-red: #d38 !default; // FIXME switch to pink
-$color-orange: #d83 !default;
+$color-orange: #FC7616 !default;
 $color-yellow: #dd3 !default;
-$color-blue: #38d !default;
+$color-blue: #2A74FC !default;
 $color-violet: #83d !default;
-$color-green: #2a2 !default;
+$color-green: #4AA332 !default;
 $color-inverted: #fff !default;
 
 // Text
@@ -22,7 +22,7 @@ $color-link: $color-black !default;
 $color-link-hover: $color-red !default;
 
 // States
-$color-error: $color-red !default;
+$color-error: #F93654 !default;
 $color-success: $color-green !default;
 $color-focus: $color-blue !default;
 $color-warning: $color-orange !default;
