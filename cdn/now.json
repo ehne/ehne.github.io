@@ -15,6 +15,7 @@
 	{ "src": "./mdc.css", "use": "@now/static"},
 	{ "src": "./kube.html", "use": "@now/static"},
 	{ "src": "./*.svg", "use": "@now/static"},
+	{ "src": "./*.png", "use": "@now/static"},
 	{ "src": "./inter/*", "use": "@now/static"}
 
 	]
