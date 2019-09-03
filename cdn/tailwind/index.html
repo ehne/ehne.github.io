@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tailwind | cdn.darcylf.me</title>
+    <link rel="stylesheet" href="https://cdn.darcylf.me/tailwind/tailwind.css" />
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+    ></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $.getJSON("https://cdn.darcylf.me/tailwind/colors.json", function(data) {
+          var template = Handlebars.compile($("#item-template").html());
+          $("#items").html(template(data));
+        });
+      });
+    </script>
+    <script id="item-template" type="text/x-handlebars-template">
+
+      {{#each this}}
+      <!-- color: {{title}} -->
+      <h3 class="markdown no-toc mb-4 mt-8 text-large">{{title}}</h3>
+      <div class="md:-mx-2 md:-mt-5 md:flex md:flex-wrap md:justify-between" >
+        <!-- {{title}}-100 -->
+      <div class="md:w-1/3 md:px-2">
+        <div class="flex items-center mt-5">
+          <div class="h-12 w-12 rounded-lg shadow-inner bg-{{title}}-100"></div>
+          <div class="ml-2 text-gray-800 text-xs leading-none pl-1">
+            <div class="font-semibold">100</div>
+            <div class="mt-1 font-normal opacity-75">{{100}}</div>
+          </div>
+        </div>
+      </div>
+       <!-- {{title}}-200 -->
+       <div class="md:w-1/3 md:px-2">
+        <div class="flex items-center mt-5">
+          <div class="h-12 w-12 rounded-lg shadow-inner bg-{{title}}-200"></div>
+          <div class="ml-2 text-gray-800 text-xs leading-none pl-1">
+            <div class="font-semibold">200</div>
+            <div class="mt-1 font-normal opacity-75">{{200}}</div>
+          </div>
+        </div>
+      </div>
+       <!-- {{title}}-300 -->
+       <div class="md:w-1/3 md:px-2">
+        <div class="flex items-center mt-5">
+          <div class="h-12 w-12 rounded-lg shadow-inner bg-{{title}}-300"></div>
+          <div class="ml-2 text-gray-800 text-xs leading-none pl-1">
+            <div class="font-semibold">300</div>
+            <div class="mt-1 font-normal opacity-75">{{300}}</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- {{title}}-400 -->
+      <div class="md:w-1/3 md:px-2">
+        <div class="flex items-center mt-5">
+          <div class="h-12 w-12 rounded-lg shadow-inner bg-{{title}}-400"></div>
+          <div class="ml-2 text-gray-800 text-xs leading-none pl-1">
+            <div class="font-semibold">400</div>
+            <div class="mt-1 font-normal opacity-75">{{400}}</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- {{title}}-500 -->
+      <div class="md:w-1/3 md:px-2">
+        <div class="flex items-center mt-5">
+          <div class="h-12 w-12 rounded-lg shadow-inner bg-{{title}}-500"></div>
+          <div class="ml-2 text-gray-800 text-xs leading-none pl-1">
+            <div class="font-semibold">500</div>
+            <div class="mt-1 font-normal opacity-75">{{500}}</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- {{title}}-600 -->
+      <div class="md:w-1/3 md:px-2">
+        <div class="flex items-center mt-5">
+          <div class="h-12 w-12 rounded-lg shadow-inner bg-{{title}}-600"></div>
+          <div class="ml-2 text-gray-800 text-xs leading-none pl-1">
+            <div class="font-semibold">600</div>
+            <div class="mt-1 font-normal opacity-75">{{600}}</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- {{title}}-700 -->
+      <div class="md:w-1/3 md:px-2">
+        <div class="flex items-center mt-5">
+          <div class="h-12 w-12 rounded-lg shadow-inner bg-{{title}}-700"></div>
+          <div class="ml-2 text-gray-800 text-xs leading-none pl-1">
+            <div class="font-semibold">700</div>
+            <div class="mt-1 font-normal opacity-75">{{700}}</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- {{title}}-800 -->
+      <div class="md:w-1/3 md:px-2">
+        <div class="flex items-center mt-5">
+          <div class="h-12 w-12 rounded-lg shadow-inner bg-{{title}}-800"></div>
+          <div class="ml-2 text-gray-800 text-xs leading-none pl-1">
+            <div class="font-semibold">800</div>
+            <div class="mt-1 font-normal opacity-75">{{800}}</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- {{title}}-900 -->
+      <div class="md:w-1/3 md:px-2">
+        <div class="flex items-center mt-5">
+          <div class="h-12 w-12 rounded-lg shadow-inner bg-{{title}}-900"></div>
+          <div class="ml-2 text-gray-800 text-xs leading-none pl-1">
+            <div class="font-semibold">900</div>
+            <div class="mt-1 font-normal opacity-75">{{900}}</div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+      {{/each}}
+    </script>
+  </head>
+  <body>
+    <a href="https://cdn.darcylf.me" class="">
+      <div
+        class="bg-info-100 
+               text-info-900 
+               py-2 px-4 
+               border-info-900 
+               md:mx-12 mt-4
+               md:rounded-full
+               rounded-r-lg
+               mr-4
+               border-solid 
+               md:border-4
+               border-4
+               border-l-0
+               
+               text-center
+               underline
+               text-xl
+               hover:bg-info-900
+               hover:text-info-100
+               transition-fast
+        "
+      >
+        Go back
+      </div>
+    </a>
+    <div class="md:w-2/3 md:mx-auto my-4 p-4">
+      <h1 class="text-2xl"><b>Colors:</b></h1>
+      <div class="w-1/2 px-2 md:w-full relative mt-4" id="items"></div>
+    </div>
+    <div class="md:w-2/3 md:mx-auto my-4 p-4 ">
+      <h1 class="text-2xl"><b>Transition styles:</b></h1>
+      <div class=" px-2 md:w-full relative mt-4 bg-gray-400 rounded-lg text-info-900">
+      <pre>
+        <code >
+.transition {
+  transition-duration: .25s;
+}
+
+.transition-slower {
+  transition-duration: .75s;
+}
+
+.transition-slow {
+  transition-duration: .5s;
+}
+
+.transition-fast {
+  transition-duration: .15s;
+}
+
+.transition-faster {
+  transition-duration: .075s;
+}
+
+.transition {
+  transition-property: all;
+}
+
+.transition-property-all {
+  transition-property: all;
+}
+
+.transition-property-none {
+  transition-property: none;
+}
+
+.transition-property-bg {
+  transition-property: background;
+}
+
+.transition-property-opacity {
+  transition-property: opacity;
+}
+
+.transition-property-color {
+  transition-property: color;
+}
+
+.transition-property-shadow {
+  transition-property: box-shadow;
+}
+
+.transition {
+  transition-timing-function: ease-in-out;
+}
+
+.transition-timing-linear {
+  transition-timing-function: linear;
+}
+
+.transition-timing-ease {
+  transition-timing-function: ease;
+}
+
+.transition-timing-ease-in {
+  transition-timing-function: ease-in;
+}
+
+.transition-timing-ease-out {
+  transition-timing-function: ease-out;
+}
+
+.transition-timing-ease-in-out {
+  transition-timing-function: ease-in-out;
+}
+
+.transition {
+  transition-delay: .1s;
+}
+
+.transition-delay-long {
+  transition-delay: .2s;
+}
+
+.transition-delay-longer {
+  transition-delay: .3s;
+}
+
+.transition-delay-longest {
+  transition-delay: .4s;
+}
+
+.transition-delay-none {
+  transition-delay: 0s;
+}
+        </code>
+      </pre>
+      </div>
+    </div>
+  </body>
+</html>

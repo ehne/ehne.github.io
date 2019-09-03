@@ -16,6 +16,10 @@
 	{ "src": "./kube.html", "use": "@now/static"},
 	{ "src": "./*.svg", "use": "@now/static"},
 	{ "src": "./*.png", "use": "@now/static"},
+	{ "src": "./tailwind/tailwind.css", "use": "@now/static"},
+	{ "src": "./tailwind/index.html", "use": "@now/static"},
+	{ "src": "./tailwind/colors.json", "use": "@now/static"},
+
 	{ "src": "./inter/*", "use": "@now/static"}
 
 	]
