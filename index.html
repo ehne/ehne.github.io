@@ -108,32 +108,20 @@ ul.is-unstyled, ul.is-unstyled ul {
 		<script   src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous" ></script>
 		
 		
-		<script>
-			let url = new URL(window.location); // get url of window, and save it to url
-			let params = new URLSearchParams(url.search.slice(1)); // get the second half of the url (after the "?")
-			var JSONurl = "./darcylf.json"
-			
-			// run when document loads
-			$(document).ready(function(){
-				// switch case with string from error query ("?error=")				
-				switch (params.get("error")) {
-					// checks for "404"
-					case "404":
-						$(".visible404").toggle();
-						break;
-					// checks for "undefined"
-					case "undefined":
-						$(".visibleundefined").toggle();
-				}
-				// you can do this with any other query!
-				
-			});
-			
-			
-			
-
-		</script>
 		<script src="./instantclick-1.2.2.js" type="module"></script>
+				<!-- global climate strike script -->
+		<script type="text/javascript">
+          var DIGITAL_CLIMATE_STRIKE_OPTIONS = {
+            /**
+             * Prevents the widget iframe from loading Google Analytics. Defaults to
+             * false. (Google Analytics will also be disabled if doNotTrack is set on
+             * the user's browser.)
+             */
+            disableGoogleAnalytics: true, // @type {boolean}
+          };
+        </script>
+		<script src="https://assets.digitalclimatestrike.net/widget.js" async></script>
+
 	</head>
 	<body class=" text">
 		
