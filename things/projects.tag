@@ -9,7 +9,7 @@
             
             <!-- is list -->
             <ul if={opts.is_list} class="is-hidden-print">
-                <li each={project} class="hover-darcylf black {opts.spacing}"><a href="{link}" class="hover-darcylf black pr3" ><b>{title}</b></a></li>
+                <li each={project} class="hover-darcylf black {opts.spacing} "><a href="{link}" class="hover-darcylf black pr3" ><b>{title}</b></a></li>
             </ul>
             <div class="is-hidden-screen is-shown-print ">
                 <ul>
@@ -23,17 +23,14 @@
 
     this.project = [
       { title: 'integer.party', link:"https://github.com/ehne/numberfacts" },
+      // {title: 'Zeke Butterworth\'s website, link: 'idk'},
       { title: 'Sun Weather App', link:"https://sun.darcylf.me" },
-      { title: 'Is PTV late?', link:"https://ptv.darcylf.me" },
+      { title: 'Is PTV late?', link:"https://ptvpwa.ehne.now.sh" },
       { title: 'Stellae De Crucis', link:"https://stellaedecrucis.space" },
-      { title: 'Navigate for Compass', link:"https://github.com/ehne/Navigate" },
       { title: 'Pongball', link:"https://github.com/Double-Fine-Game-Club/pongball" },
-      { title: 'Hair Simulator', link:"https://lonepaperclip.itch.io/ohs" },
-      { title: 'Octothorpe Shuffler', link:"https://lonepaperclip.itch.io/octothorpe" },
       { title: 'Is my Browser Internet Explorer?', link:"https://darcylf.me/isIE/"},
       { title: 'Shifting Weather', link:"https://github.com/ehne/shifting"},
       { title: 'darcylf.me', link:"https://github.com/ehne/ehne.github.io" },
-      { title: 'My Resume', link:"https://github.com/ehne/resume" },
 
     ]
 
@@ -43,6 +40,10 @@
 
 .is-underlined{
     text-decoration: underline;
+    color:#05f
+}
+
+a.hover-darcylf:hover{
     color:#05f
 }
  
