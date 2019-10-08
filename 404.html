@@ -9,8 +9,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- end meta tags -->
 		<title>404 | darcylf.me</title>
-		<link rel="stylesheet" href="https://cdn.darcylf.me/kube721/dist/css/kube.css" type="text/css" media="screen" charset="utf-8">
+		        <link href="https://cdn.jsdelivr.net/gh/sharanda/manrope@master/fonts/web/index.css" rel="stylesheet">
+
 				<!-- Global site tag (gtag.js) - Google Analytics-->
+				<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-61981599-5"></script>
 		<script>
   		window.dataLayer = window.dataLayer || [];
@@ -28,19 +30,54 @@
 		</script>
         
         <script src="./instantclick-1.2.2.js" type="module"></script>
-        <style type="text/css" media="screen">
-
-        </style>
+         <style>
+     body, html{
+        height:100%;
+        display: grid;
+        font-size: calc(1em + 0.5vw);
+        font-family: "Manrope", sans-serif;
+        text-align: center
+     }
+     body{
+        background-image: radial-gradient(#fa0 5%, transparent 0);
+        background-size: 30px 30px;
+     }
+     .image{
+         width: 100%
+     }
+     .c{
+         padding:8px;
+         max-width:600px;
+         margin:auto;
+         background-color: #fff;
+         
+     }
+     a{
+         color: #05f;
+         transition: all linear 0.15s
+     }
+     a:hover{
+         color: #f05
+     }
+     h1{
+         margin-top:0px;
+         margin-bottom:0px;
+         padding:6px
+     }
+     
+</style>
 	</head>
-	<body class="page is-100-v">
-		<main class="main is-width-medium is-center ">
-			<div class="is-inset-28 is-inset-top-48 is-inset-top-28-mobile">
-				    
-				    <h1 class="is-100">404</h1>
-				    <h2 class="is-100">that's an error.</h2>
-				    <h4 class="is-100"><a href="https://darcylf.me">go to darcylf.me</a></h4>
-				    
-			</div>
-		</main>
+	<body class="">
+		<div class="c">
+        <div>
+            <h1>404</h1>
+        </div>
+        <div>
+        looks like that page doesn't exist.
+        </div>
+        <div>
+        <a href="javascript:history.back()">go back</a> - <a href="/">go to darcylf.me</a>
+        </div>
+    </div>
 	</body>
 </html>
