@@ -17,7 +17,9 @@
 	{ "src": "./*.svg", "use": "@now/static"},
 	{ "src": "./*.png", "use": "@now/static"},
 	{ "src": "./inter/*", "use": "@now/static"},
-	{ "src": "./space_grot/*", "use": "@now/static"}
+	{ "src": "./space_grot/*", "use": "@now/static"},
+	{ "src": "./tailwind/*.css", "use":"@now/static"},
+	{ "src": "./tailwind/*.html", "use":"@now/static"}
 
 	]
 	
