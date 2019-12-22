@@ -66,7 +66,7 @@
 <title>darcy has the best website</title>
 <!-- lit code -->
 <link
-  href="https://cdn.jsdelivr.net/gh/sharanda/manrope@master/fonts/web/index.css"
+  href="https://unpkg.com/manrope@2.0.0/index.css"
   rel="stylesheet"
 />
 
@@ -218,4 +218,28 @@ li {
   font-size: calc(1.5em + 1vw);
   font-weight: 300;
 }
-</style><body><div class="main visibledesktop"><h2 class="top">Hi! 👋</h2><h1>I'm Darcy Lugt-Falk</h1><h2>and I make pretty neat websites</h2><div class="socials"><a href="//github.com/ehne">github</a><span>—</span><a href="//instagram.com/coolbezos_420">instagram</a><span>—</span><a href="mailto:darcy@darcylf.me?subject=hello!%20%F0%9F%91%8B">email</a></div></div><div class="visibledevice mobile"><h2 class="top">Hi! 👋</h2><h1>I'm Darcy Lugt-Falk</h1><h2>and I make pretty neat websites</h2><ul class="socials"><li><a href="//github.com/ehne">github<span class="left">🛠</span></a></li><li><a href="//instagram.com/coolbezos_420">instagram <span class="left">📷</span></a></li><li><a href="mailto:darcy@darcylf.me?subject=hello!%20%F0%9F%91%8B"> email<span class="left">📮</span></a></li></ul></div></body></html>
+
+.shimmer{
+  background-image: radial-gradient(circle, rgba(0,85,255,1) 0%, rgba(85,0,255,1) 21%, rgba(255,0,85,1) 67%, rgba(255,170,0,1) 99%);
+    background-size: 200% auto;
+    color: #000;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: shine 10s linear infinite;
+            animation: shine 10s linear infinite;
+}
+
+@-webkit-keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+</style><body><div class="main visibledesktop"><h2 class="top">Hi! 👋</h2><h1>I'm <span>Darcy Lugt-Falk</span></h1><h2>and I make pretty neat websites</h2><div class="socials"><a href="//github.com/ehne">github</a><span>—</span><a href="//instagram.com/coolbezos_420">instagram</a><span>—</span><a href="mailto:darcy@darcylf.me?subject=hello!%20%F0%9F%91%8B">email</a></div></div><div class="visibledevice mobile"><h2 class="top">Hi! 👋</h2><h1>I'm Darcy Lugt-Falk</h1><h2>and I make pretty neat websites</h2><ul class="socials"><li><a href="//github.com/ehne">github<span class="left">🛠</span></a></li><li><a href="//instagram.com/coolbezos_420">instagram <span class="left">📷</span></a></li><li><a href="mailto:darcy@darcylf.me?subject=hello!%20%F0%9F%91%8B"> email<span class="left">📮</span></a></li></ul></div></body></html>
