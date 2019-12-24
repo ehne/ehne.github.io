@@ -8,7 +8,6 @@
 	{ "src": "./lit/lit.css", "use": "@now/static"},
 	{ "src": "./slackbot.png", "use": "@now/static"},
 	{ "src": "./jquery-mobile/*", "use": "@now/static"},
-	{ "src": "./tags/*.tag", "use": "@now/static"},
 	{ "src": "./tile.png", "use": "@now/static"},
 	{ "src": "./scrap.png", "use": "@now/static"},
 	{ "src": "./darcy_badge/*", "use": "@now/static"},
@@ -18,8 +17,7 @@
 	{ "src": "./*.png", "use": "@now/static"},
 	{ "src": "./inter/*", "use": "@now/static"},
 	{ "src": "./space_grot/*", "use": "@now/static"},
-	{ "src": "./tailwind/*.css", "use":"@now/static"},
-	{ "src": "./tailwind/*.html", "use":"@now/static"}
+	{ "src": "./awsm/*.css", "use": "@now/static"}
 
 	]
 	
