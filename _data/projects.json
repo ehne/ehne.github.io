@@ -1,0 +1,45 @@
+[
+    {
+        "title": "Svelte-emoji-picker",
+        "icon":"smile",
+        "description": "a simple \"emoji picker\" component for svelte.",
+        "href":"https://github.com/ehne/svelte-emoji-picker"
+    },
+    {
+        "title": "Is my browser IE?",
+        "icon":"chrome",
+        "description": "a website that answers the question, \"is my browser Internet Explorer?\".",
+        "href":"https://darcylf.me/isIE"
+    },
+    {
+        "title":"Sun weather app",
+        "icon":"sun",
+        "description":"a progressive web app that tells you the weather, using the darksky api and jquery.",
+        "href":"https://sun.darcylf.me/"
+    },
+    {
+        "title":"Pico-8 weather",
+        "icon":"cloud",
+        "description":"a weather app in pico-8, a fantasy console that cannot connect to the internet easily.",
+        "href":"https://lonepaperclip.itch.io/p8-weather"
+    },
+    {
+        "title":"Zekemagic.com",
+        "icon":"user",
+        "description":"the online homepage of award winning melbourne based magician Zeke Butterworth. on which it is possible to contact him about performing at your event.",
+        "href":"https://zekemagic.com"
+    },
+    {
+        "title":"JMSS Murder",
+        "icon":"zap",
+        "description":"a fun real life battle royale style game, in which participants had to poke each other with plastic spoons. created & run at John Monash Science School in 2019.",
+        "href":"https://github.com/Midataur/JMSS-murder-board"
+    },
+    {
+        "title":"Darcylf.me",
+        "icon":"home",
+        "description":"the website that you are currently on. It was built using 11ty, pugjs & github pages.",
+        "href":"https://darcylf.me"
+    }
+
+]

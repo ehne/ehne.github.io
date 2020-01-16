@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link
+<!DOCTYPE html><html lang="en"><link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1"
 />
@@ -107,17 +104,68 @@
   };
 </script>
 <script src="https://assets.digitalclimatestrike.net/widget.js" async></script>
-<link rel="stylesheet" href="/index.css">
-</head>
-<body>
-    <div class="main">
-        <h2>Hi! 👋</h2>
-        <h1>My name's Darcy Lugt-Falk</h1>
-        <h2 class="bottom">I make pretty neat <a href="/things" class="underlined">websites</a></h2>
-        <div class="socials">
-            <a href="https://github.com/ehne">github</a> — <a href="https://instagram.com/coolbezos_420">instagram</a> — <a href="/email_form">email</a>
-        </div>
-    </div>
-   
-</body>
-</html>
+
+<script src="./instantclick-1.2.2.js" type="module"></script>
+<style>:root {
+  --color-accent: #fa0;
+  --color-background: #fff;
+  --color-text: #000;
+  --color-link-hover: #f05;
+  --color-link: #05f;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-accent: #ffc53f;
+    --color-background: #000;
+    --color-text: #fff;
+    --color-link-hover: #ffc53fcc;
+    --color-link: #ffc53f;
+    --weight-link: 400;
+  }
+}
+body,
+html {
+  height: 100%;
+  display: grid;
+  font-size: calc(1em + 0.5vw);
+  font-family: "Manrope", sans-serif;
+  text-align: center;
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+body {
+  background-image: radial-gradient(
+    var(--color-accent) 5%,
+    transparent 0
+  );
+  background-size: 30px 30px;
+}
+.image {
+  width: 100%;
+}
+.c {
+  padding: 16px;
+  max-width: 600px;
+  margin: auto;
+  background-color: var(--color-background);
+}
+a {
+  color: var(--color-link);
+  transition: all linear 0.15s;
+}
+a:hover {
+  color: var(--color-link-hover);
+}
+h1 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  padding: 6px;
+}
+
+.looks{
+margin-bottom: 8px;
+}
+span.em-dash {
+  margin-left: 8px;
+  margin-right: 8px;
+}</style><body><div class="c"><div> <h1>404</h1></div><div class="looks">looks like that page doesn't exist.</div><div> <a href="javascript:history.back()">go back</a><span class="em-dash">—</span><a href="/">go to darcylf.me</a></div></div></body></html>
