@@ -9,7 +9,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("icons");
     return {
         dir: {
-          output: "docs"
+          output: "_site"
         }
       };
   };
