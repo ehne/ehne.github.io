@@ -23,12 +23,12 @@
         $(document).ready(function(){
             $.getJSON('../_data/links.json', function(data) {
                 console.log(data.length)
-                if (data.length && data[0].title=="home"){
+                if (data.length == 1 && data[0].title=="darcylf.me home"){
                     window.location.replace("/");
                 }
                 var template = Handlebars.compile($('#item-template').html())
                 $('#items').html(template(data))
-                
+                feather.replace();
             })
         })
     </script>
@@ -47,7 +47,6 @@
   </head>
   <body>
     <div class="main">
-      <div class="small"><a class="link" href="/">go to darcylf.me</a></div>
       <p class="wonky">Darcy Lugt-Falk</p>
       <br />
         <div id="items">
@@ -56,6 +55,6 @@
     </div>
   </body>
   <script>
-    feather.replace();
+    
   </script>
 </html>
