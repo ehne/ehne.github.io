@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="theme-color" content="#ffc53f" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>websites | darcylf.me</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/sharanda/manrope@1a6035ff9cc9ce819ae2982dfa4cceb040aad77a/fonts/web/index.css"
+    />
+    <link rel="stylesheet" href="/things.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.getJSON('https://darcylf.me/_data/links.json', function(data) {
+                console.log(data.length)
+                if (data.length && data[0].title=="home"){
+                    window.location.replace("/");
+                }
+                var template = Handlebars.compile($('#item-template').html())
+                $('#items').html(template(data))
+                
+            })
+        })
+    </script>
+    <script id="item-template" type="text/x-handlebars-template">
+        {{#each this}}
+        <a href="{{href}}">
+            <div class="box">
+              <div class="box__icon"><i data-feather="{{icon}}"></i></div>
+              <div class="box__text">
+                {{title}}
+              </div>
+            </div>
+          </a>
+        {{/each}}
+    </script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="small"><a class="link" href="/">go to darcylf.me</a></div>
+      <p class="wonky">Darcy Lugt-Falk</p>
+      <br />
+        <div id="items">
+
+        </div>
+    </div>
+  </body>
+  <script>
+    feather.replace();
+  </script>
+</html>
