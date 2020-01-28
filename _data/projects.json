@@ -1,5 +1,11 @@
 [
     {
+        "title":"11Photo",
+        "icon":"image",
+        "description":"a static site generator for making photo essays.",
+        "href":"https://darcylf.me/11Photo"
+    },
+    {
         "title": "Svelte-emoji-picker",
         "icon":"smile",
         "description": "a simple \"emoji picker\" component for svelte.",
