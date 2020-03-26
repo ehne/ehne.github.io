@@ -1,5 +1,11 @@
 [
     {
+        "title":"leven",
+        "icon":"wind",
+        "description":"a pretty simple tweening library to make small animations for python.",
+        "href":"https://darcylf.me/leven"
+    },
+    {
         "title":"11Photo",
         "icon":"image",
         "description":"a static site generator for making photo essays.",
