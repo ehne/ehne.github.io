@@ -288,24 +288,26 @@ form {
   output {
     display: block;
   }
-  p{
-    max-width: 20em;
-    font-size: 2em;
-  }
-  p.small{
-    font-size:1em;
-    max-width: 100%;
-  }
   </style>
 </head>
 <body>
     <div class="main">
         <h3><a href="/">go home</a></h3>
+        <form action=" https://formsubmit.co/darcy@darcylf.me" method="POST">
+            <fieldset>
+
+                <label for="name">Full name</label>
+                <input type="text" name="name" placeholder="Hugh Saturation">
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="hugh@example.com">
+                <input type="hidden" name="_replyto">
+                <label for="message">Message</label>
+                <textarea  name="message" rows="4"></textarea>
+                <button type="submit">Send</button>
+            </fieldset>
+        </form>
         <p>
-          If you are interested in getting me to make a website for you, please go through <a href="http://www.requestcreative.com/darcylf">RequestCreative</a>
-        </p>
-        <p class="small">
-          <a href="/contact/email_form/">Or, just send me an email</a>
+          <a href="mailto:darcy@darcylf.me?subject=hi!%20%F0%9F%91%8B">darcy at darcylf.me</a>
         </p>
     </div>
    
