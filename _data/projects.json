@@ -1,5 +1,11 @@
 [
     {
+        "title":"JMSS time updated",
+        "icon":"clock",
+        "description":"an update to the jmss timetable site, it now supports the new timetable introduced in 2020, as well as letting users set custom images to use as the background.",
+        "href":"https://jmss-time.github.io/time-updated/"
+    },
+    {
         "title":"leven",
         "icon":"wind",
         "description":"a pretty simple tweening library to make small animations for python.",
