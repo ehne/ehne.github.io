@@ -1,0 +1,5 @@
+body,
+html {
+height: calc(100% - 10px);
+font-family: "Manrope", sans-serif;
+}
