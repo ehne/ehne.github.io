@@ -4,7 +4,7 @@ import styled from "@emotion/styled"
 import Layout from "../components/layout"
 import Projects from "../components/projects"
 import {Box} from "rebass"
-
+import Header from "../components/header"
 export const query = graphql`
 query MyQuery {
     __typename
@@ -43,11 +43,13 @@ const projects = ({data}) => {
                 sx={{
                     padding:"8px",
                     paddingTop:"28px",
-                    maxWidth:"800px",
+                    maxWidth:"720px",
                     marginX:"auto"
                 }}
             >
-
+                <Header>Projects</Header>
+                
+                
                 <ProjectsList projects={data.allProjectsJson.nodes}></ProjectsList>
             </Box>
             
