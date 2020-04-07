@@ -29,10 +29,7 @@ function SEO({ description, lang, meta, title }) {
 
   return (
     <>
-    <link
-      href="https://cdn.jsdelivr.net/gh/sharanda/manrope@1a6035ff9cc9ce819ae2982dfa4cceb040aad77a/fonts/web/index.css"
-      rel="stylesheet"
-    />
+    
     <Helmet
       htmlAttributes={{
         lang,
