@@ -1,11 +1,25 @@
 import React from 'react';
-import styled from "@emotion/styled"
+import {Box, Flex} from "rebass"
+import * as Icon from "react-feather"
 
-const Projects = () => (
-    <div>
+const projects = (props) => {
+    const IconTagName = Icon[props.icon]
+    return (
+        <Box>
+            <a href={props.href}>
+                <Flex>
+                    <Box>
+                        
+                        <IconTagName/>
+                    </Box>
+                    <Box>
+                        <b>{props.title}:</b> {props.description}
+                    </Box>
+                </Flex>
+                
+            </a>
+        </Box>
+    );
+}
 
-        
-    </div>
-)
-
-export default Projects
+export default projects;

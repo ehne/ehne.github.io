@@ -1,23 +1,41 @@
 import React from "react"
-import { Link } from "gatsby"
-import styled from "@emotion/styled"
-import {css,jsx} from "@emotion/core"
-import Head from "../components/htmlHead"
+
 import Header from "../components/header"
-import Border from "../components/border"
-import Projects from "../components/projects"
 import Socials from "../components/socials"
-import {Box} from 'rebass';
-
-
+import { Box, Flex, Text } from "rebass"
+import Layout from "../components/layout"
+import {Link} from "gatsby"
 const IndexPage = () => (
-  <>
-    <Head></Head>
-    <Border></Border>
-    <Box>
-      
-    </Box>
-  </>
+  <Layout>
+    <Flex
+      sx={{
+        height: "100vh",
+        width: "100vw",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <Box
+        sx={{
+          textAlign: "center",
+          padding: "8px",
+        }}
+      >
+        Hi! I'm
+        <Header>Darcy Lugt-Falk</Header>
+        <Text
+          sx={{
+            maxWidth: "80%",
+            marginX: "auto",
+          }}
+        >
+          A web designer and developer based in Melbourne.  <Link to="/projects/">-></Link>
+        </Text>
+        
+        <Socials></Socials>
+      </Box>
+    </Flex>
+  </Layout>
 )
 
 export default IndexPage

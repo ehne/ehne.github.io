@@ -5,7 +5,7 @@ const BackgroundColour=styled.span`
     background-color:#ffc53f;
     padding-left:0.5em;
     padding-right:0.5em;
-`
+    `
 const Rotator = styled.div`
     transform:rotate(-2deg);
     padding:8px;
