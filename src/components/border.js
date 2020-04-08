@@ -42,14 +42,18 @@ const BorderTop = styled.div`
 		right: 0;
 		left: 0;
         height:${borderWidth};
-        background-image: ${borderColour}
+        background-image: ${borderColour};
+        z-index:50
+`
+const BorderContainer = styled.div`
+    
 `
 const Border = () => (
-    <div>
+    <BorderContainer>
         {/* <BorderLeft></BorderLeft>
         <BorderRight></BorderRight>
         <BorderBottom></BorderBottom> */}
         <BorderTop></BorderTop>
-    </div>
+    </BorderContainer>
 )
 export default Border

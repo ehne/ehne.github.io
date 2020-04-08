@@ -1,12 +1,12 @@
-import React from "react"
-import { Link,graphql } from "gatsby"
+import React,{useState} from "react"
+import { Link, graphql } from "gatsby"
 import styled from "@emotion/styled"
 import Layout from "../components/layout"
-import Projects from "../components/projects"
-import {Box} from "rebass"
+import Project from "../components/project"
+import { Box, Text } from "rebass"
 import Header from "../components/header"
 export const query = graphql`
-query MyQuery {
+  query MyQuery {
     __typename
     allProjectsJson {
       nodes {
@@ -17,47 +17,69 @@ query MyQuery {
       }
     }
   }
-  
-  
 `
-function ProjectsList(props){
-    const items = props.projects
-    const generated = items.map((i)=>
-        <Projects
-            href={i.href}
-            title={i.title}
-            icon={i.icon}
-            description={i.description}
-        ></Projects>
-    )
-    return (generated)
+
+
+
+
+function ProjectsList(props) {
+
+  const items = props.projects
+  const generated = items.map(i => (
+    <Project
+      href={i.href}
+      title={i.title}
+      icon={i.icon}
+      description={i.description}
+    ></Project>
+    
+  ))
+  return generated
 }
 const FontSize = styled.div`
-    font-size:0.7em
+  font-size: 0.7em;
 `
-const projects = ({data}) => {
-    return (
-        <Layout>
-            <FontSize>
-            <Box 
-                sx={{
-                    padding:"8px",
-                    paddingTop:"28px",
-                    maxWidth:"720px",
-                    marginX:"auto"
-                }}
+const Projects = ({ data }) => {
+  return (
+    <Layout>
+      <FontSize>
+        <Box
+          sx={{
+            display: "grid",
+            gridTemplateColumns: "1fr 1fr",
+            gridTemplateRows: "1fr",
+            gridTemplateAreas: ". .",
+            "@media (max-width:570px)": {
+              display: "block",
+            },
+          }}
+        >
+          <Box
+            sx={{
+              padding: "8px",
+              paddingTop: "28px",
+              maxWidth: "720px",
+              marginX: "auto",
+            }}
+          >
+            <Text
+              sx={{
+                textAlign: "center",
+                fontSize: "1.2em",
+              }}
             >
-                <Header>Projects</Header>
-                
-                
-                <ProjectsList projects={data.allProjectsJson.nodes}></ProjectsList>
-            </Box>
-            
-            </FontSize>
-            
+              <Header>Projects</Header>
+            </Text>
 
-        </Layout>
-    );
+            <ProjectsList projects={data.allProjectsJson.nodes}></ProjectsList>
+          </Box>
+              <Box>
+                  hello
+              </Box>
+        </Box>
+      </FontSize>
+    </Layout>
+  )
 }
 
-export default projects;
+export default Projects

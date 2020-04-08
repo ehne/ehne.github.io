@@ -9,7 +9,7 @@ const IndexPage = () => (
   <Layout>
     <Flex
       sx={{
-        height: "100vh",
+        height: "calc(100vh - 70px)",
         width: "100vw",
         justifyContent: "center",
         alignItems: "center",

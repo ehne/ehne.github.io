@@ -2,7 +2,7 @@ import React from 'react';
 import {Box, Flex} from "rebass"
 import * as Icon from "react-feather"
 
-const projects = (props) => {
+const project = (props) => {
     const IconTagName = Icon[props.icon]
     return (
         <Box>
@@ -49,4 +49,4 @@ const projects = (props) => {
     );
 }
 
-export default projects;
+export default project;
