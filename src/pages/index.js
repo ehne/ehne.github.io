@@ -32,7 +32,7 @@ const IndexPage = () => (
         >
           A web designer and developer based in Melbourne.  
           {/* <AniLink cover direction="right" to="/projects/" bg="#ffc53f">-></AniLink> */}
-          <CoverWithSlide to="/projects/" hex="#ffc53f" bg="#ffc53f" direction="left" >-></CoverWithSlide>
+          <CoverWithSlide to="/projects/" direction="left" >-></CoverWithSlide>
         </Text>
         
         <Socials></Socials>
