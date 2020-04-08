@@ -1,4 +1,4 @@
-import React,{useState} from "react"
+import React, { useState } from "react"
 import { Link, graphql } from "gatsby"
 import styled from "@emotion/styled"
 import Layout from "../components/layout"
@@ -19,11 +19,7 @@ export const query = graphql`
   }
 `
 
-
-
-
 function ProjectsList(props) {
-
   const items = props.projects
   const generated = items.map(i => (
     <Project
@@ -32,7 +28,6 @@ function ProjectsList(props) {
       icon={i.icon}
       description={i.description}
     ></Project>
-    
   ))
   return generated
 }
@@ -45,10 +40,13 @@ const Projects = ({ data }) => {
       <FontSize>
         <Box
           sx={{
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr",
-            gridTemplateRows: "1fr",
-            gridTemplateAreas: ". .",
+            display: "block",
+            gridTemplateColumns: "1fr 1fr 0.6fr",
+            gridTemplateRows: "0.01fr 1fr",
+            maxWidth:"720px",
+            marginX:"auto",
+            marginTop:"2em",
+            gridTemplateAreas: "'heading heading heading' 'filters list .'",
             "@media (max-width:570px)": {
               display: "block",
             },
@@ -57,25 +55,35 @@ const Projects = ({ data }) => {
           <Box
             sx={{
               padding: "8px",
-              paddingTop: "28px",
-              maxWidth: "720px",
-              marginX: "auto",
+              gridArea: "heading",
             }}
           >
             <Text
               sx={{
-                textAlign: "center",
+                textAlign: "left",
                 fontSize: "1.2em",
+                paddingTop: "28px",
               }}
             >
               <Header>Projects</Header>
             </Text>
+          </Box>
+          <Box
+            sx={{
+                gridArea:"filters",
+                paddingLeft:"1em",
 
+            }}
+          >
+              
+          </Box>
+          <Box 
+            sx={{
+                gridArea:"list"
+            }}
+          >
             <ProjectsList projects={data.allProjectsJson.nodes}></ProjectsList>
           </Box>
-              <Box>
-                  hello
-              </Box>
         </Box>
       </FontSize>
     </Layout>
