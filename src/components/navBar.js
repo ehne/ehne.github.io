@@ -40,7 +40,7 @@ const navBar = () => {
           padding: "1em",
         }}
       >
-        <Text className="navbar-link">contact</Text>
+        <Link className="navbar-link" to="/contact">contact</Link>
       </Box>
     </Flex>
   )

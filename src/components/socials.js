@@ -8,7 +8,7 @@ const Socials = () => (
     paddingTop="0.7em"
     fontSize="0.8em"
     >
-         <a href="https://github.com/ehne">github</a> — <a href="https://instagram.com/coolbezos_420">instagram</a> — <a href="/contact">contact</a>
+         <a href="https://github.com/ehne">github</a> — <a href="https://instagram.com/coolbezos_420">instagram</a> — <Link to="/contact">contact</Link>
     </Box>
 )
 
