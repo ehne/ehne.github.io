@@ -2,41 +2,73 @@ import React from "react"
 import Layout from "../components/layout"
 import Header from "../components/header"
 import { Label, Input, Select, Textarea, Radio, Checkbox } from "@rebass/forms"
-import { Box, Button } from "rebass"
+import { Box, Button,Text } from "rebass"
+import styled from "@emotion/styled"
+
+const FontSize = styled.div`
+  font-size: 0.7em;
+`
 const contact = () => {
   return (
     <Layout navbar={true} secondary={{
-        title:"projects",
-        to:"/projects"
-    }}>
+      title:"projects",
+      to:"/projects"
+  }}>
+    <FontSize>
       <Box
         sx={{
-          fontSize: "0.7em",
-          marginTop: "1em",
-          maxWidth: "720px",
-          mx: "auto",
+          display: "block",
+          gridTemplateColumns: "1fr 1fr 0.6fr",
+          gridTemplateRows: "0.01fr 1fr",
+          maxWidth:"720px",
+          marginX:"auto",
+          marginTop:"2em",
+          padding:"0.5em",
+          gridTemplateAreas: "'heading heading heading' 'list list list'",
+          "@media (max-width:570px)": {
+            display: "block",
+          },
         }}
       >
-        <Box padding="1em">
-          <Header>Contact</Header>
+        <Box
+          sx={{
+            padding: "8px",
+            gridArea: "heading",
+          }}
+        >
+          <Text
+            sx={{
+              textAlign: "left",
+              fontSize: "1.2em",
+              paddingTop: "28px",
+            }}
+          >
+            <Header>Contact</Header>
+          </Text>
+        </Box>
+        <Box 
+          sx={{
+              gridArea:"list"
+          }}
+        >
           <form action=" https://formsubmit.co/darcy@darcylf.me" method="POST">
             <Label htmlFor="name" mt="1em">Full name</Label>
             <Input id="name" name="name" placeholder="Jane Doe" mb="1em"  sx={{
                 borderRadius:"10px",
-                borderColor:"#ffc53fcc",
+                borderColor:"#ffffffcc",
                 marginTop:"0.5em"
             }} />
             <Label htmlFor="email">Email</Label>
             <Input id="email" name="email" placeholder="jane@example.com" marginBottom="1em"sx={{
                 borderRadius:"10px",
-                borderColor:"#ffc53fcc",
+                borderColor:"#ffffffcc",
                 marginTop:"0.5em"
             }} />
             <input type="hidden" name="_replyto" />
             <Label htmlFor="message" >Message</Label>
             <Textarea name="message" rows="4" marginBottom="1em" sx={{
                 borderRadius:"10px",
-                borderColor:"#ffc53fcc",
+                borderColor:"#ffffffcc",
                 marginTop:"0.5em"
             }}></Textarea>
             <Button type="submit" sx={{
@@ -52,9 +84,12 @@ const contact = () => {
                 }
             }}>Send</Button>
           </form>
+        
         </Box>
       </Box>
-    </Layout>
+    </FontSize>
+  </Layout>
+
   )
 }
 
