@@ -4,7 +4,9 @@ import Header from "../components/header"
 import Socials from "../components/socials"
 import { Box, Flex, Text } from "rebass"
 import Layout from "../components/layout"
-import {Link} from "gatsby"
+import Link from 'gatsby-plugin-transition-link'
+import AniLink from "gatsby-plugin-transition-link/AniLink";
+
 const IndexPage = () => (
   <Layout navbar={false}>
     <Flex
@@ -29,7 +31,7 @@ const IndexPage = () => (
             marginX: "auto",
           }}
         >
-          A web designer and developer based in Melbourne.  <Link to="/projects/">-></Link>
+          A web designer and developer based in Melbourne.  <AniLink cover direction="right" to="/projects/" bg="#ffc53f">-></AniLink>
         </Text>
         
         <Socials></Socials>

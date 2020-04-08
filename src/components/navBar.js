@@ -2,7 +2,9 @@ import React from "react"
 import { Box, Text, Flex } from "rebass"
 import { Link } from "gatsby"
 import Header from "./header"
-const navBar = () => {
+import AniLink from "gatsby-plugin-transition-link/AniLink";
+
+const navBar = (props) => {
   return (
     <Flex
       sx={{
@@ -21,9 +23,7 @@ const navBar = () => {
           padding: "1em",
         }}
       >
-        <Link to="/" className="navbar-link">
-            home
-        </Link>
+        <AniLink paintDrip hex="#ffc53f" className="navbar-link" to="/">home</AniLink>
       </Box>
       <Box
         sx={{
@@ -40,7 +40,7 @@ const navBar = () => {
           padding: "1em",
         }}
       >
-        <Link className="navbar-link" to="/contact">contact</Link>
+        <AniLink paintDrip hex="#ffc53f" className="navbar-link" to={props.secondary.to}>{props.secondary.title}</AniLink>
       </Box>
     </Flex>
   )

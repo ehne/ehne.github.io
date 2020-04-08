@@ -5,7 +5,10 @@ import { Label, Input, Select, Textarea, Radio, Checkbox } from "@rebass/forms"
 import { Box, Button } from "rebass"
 const contact = () => {
   return (
-    <Layout navbar={true}>
+    <Layout navbar={true} secondary={{
+        title:"projects",
+        to:"/projects"
+    }}>
       <Box
         sx={{
           fontSize: "0.7em",

@@ -19,7 +19,7 @@ export default (props) => (
             <Border></Border>
             {props.navbar &&
             <>
-            <NavBar></NavBar>
+            <NavBar secondary={props.secondary}></NavBar>
             </>
             }
 
