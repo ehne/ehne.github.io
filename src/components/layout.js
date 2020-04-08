@@ -10,12 +10,13 @@ font-size:calc(1.3em + 1vw);
 `
 
 
-export default ({ children }) => (
+export default (props) => (
     <BaseTypographicScale>
     <Head></Head>
     <Border></Border>
-    <NavBar></NavBar>
-    {children}
+    {props.navbar &&<NavBar></NavBar>}
+    
+    {props.children}
     </BaseTypographicScale>
 )
 

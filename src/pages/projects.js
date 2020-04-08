@@ -41,7 +41,7 @@ const FontSize = styled.div`
 `
 const Projects = ({ data }) => {
   return (
-    <Layout>
+    <Layout navbar={true}>
       <FontSize>
         <Box
           sx={{

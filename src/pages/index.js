@@ -6,10 +6,10 @@ import { Box, Flex, Text } from "rebass"
 import Layout from "../components/layout"
 import {Link} from "gatsby"
 const IndexPage = () => (
-  <Layout>
+  <Layout navbar={false}>
     <Flex
       sx={{
-        height: "calc(100vh - 70px)",
+        height: "calc(100vh)",
         width: "100vw",
         justifyContent: "center",
         alignItems: "center",
