@@ -4,8 +4,7 @@ import Header from "../components/header"
 import Socials from "../components/socials"
 import { Box, Flex, Text } from "rebass"
 import Layout from "../components/layout"
-import Link from 'gatsby-plugin-transition-link'
-import AniLink from "gatsby-plugin-transition-link/AniLink";
+
 import CoverWithSlide from "../components/coverWithSlide"
 const IndexPage = () => (
   <Layout navbar={false}>
