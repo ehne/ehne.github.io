@@ -25,7 +25,10 @@ const ListOfLinks = () =>{
 const linkinbio = () => {
 
     return (
-        <Layout navbar={true}>
+        <Layout navbar={true} secondary={{
+            title:"contact",
+            to:"/contact"
+        }}>
             <Box fontSize="0.7em" marginTop="2em" sx={{
                 maxWidth: "720px",
                 mx: "auto",
