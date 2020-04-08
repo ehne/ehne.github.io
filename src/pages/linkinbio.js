@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from "../components/header"
 import Layout from "../components/layout"
 import linksData from "../_data/links.json"
 import Project from "../components/project"
