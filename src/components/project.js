@@ -1,5 +1,5 @@
 import React from 'react';
-import {Box, Flex} from "rebass"
+import {Box, Flex,Text} from "rebass"
 import * as Icon from "react-feather"
 
 const project = (props) => {
@@ -40,7 +40,16 @@ const project = (props) => {
                             alignSelf:"center"
                         }}
                     >
-                        <b>{props.title}:</b> {props.description}
+                        {props.type==="project" && 
+                            <Text>
+                                <b>{props.title}:</b> {props.description}
+                            </Text>
+                        }
+                        {props.type==="link" && 
+                            <Text>
+                                {props.title}
+                            </Text>
+                        }
                     </Box>
                 </Box>
                 

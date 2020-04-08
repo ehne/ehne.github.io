@@ -27,6 +27,7 @@ function ProjectsList(props) {
       title={i.title}
       icon={i.icon}
       description={i.description}
+      type="project"
     ></Project>
   ))
   return generated
@@ -46,6 +47,7 @@ const Projects = ({ data }) => {
             maxWidth:"720px",
             marginX:"auto",
             marginTop:"2em",
+            padding:"0.5em",
             gridTemplateAreas: "'heading heading heading' 'filters list .'",
             "@media (max-width:570px)": {
               display: "block",

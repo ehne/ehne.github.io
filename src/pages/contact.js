@@ -9,7 +9,7 @@ const contact = () => {
       <Box
         sx={{
           fontSize: "0.7em",
-          marginTop: "5em",
+          marginTop: "1em",
           maxWidth: "720px",
           mx: "auto",
         }}

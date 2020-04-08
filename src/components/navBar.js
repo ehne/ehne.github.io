@@ -7,7 +7,7 @@ const navBar = () => {
     <Flex
       sx={{
         fontSize: "0.5em",
-        position: "fixed",
+        position: "sticky",
         top: "20px",
         width: "100%",
         backgroundColor: "#000",
