@@ -4,7 +4,6 @@ import Layout from "../components/layout"
 import linksData from "../_data/links.json"
 import Project from "../components/project"
 import {Box} from "rebass"
-import { useEffect } from 'react';
 import { navigate } from 'gatsby';
 
 const ListOfLinks = () =>{
