@@ -6,7 +6,7 @@ import { Box, Flex, Text } from "rebass"
 import Layout from "../components/layout"
 import Link from 'gatsby-plugin-transition-link'
 import AniLink from "gatsby-plugin-transition-link/AniLink";
-
+import CoverWithSlide from "../components/coverWithSlide"
 const IndexPage = () => (
   <Layout navbar={false}>
     <Flex
@@ -31,7 +31,9 @@ const IndexPage = () => (
             marginX: "auto",
           }}
         >
-          A web designer and developer based in Melbourne.  <AniLink cover direction="right" to="/projects/" bg="#ffc53f">-></AniLink>
+          A web designer and developer based in Melbourne.  
+          {/* <AniLink cover direction="right" to="/projects/" bg="#ffc53f">-></AniLink> */}
+          <CoverWithSlide to="/projects/" hex="#ffc53f" bg="#ffc53f" direction="left" >-></CoverWithSlide>
         </Text>
         
         <Socials></Socials>

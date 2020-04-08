@@ -56,7 +56,7 @@
     {
         "title":"Darcylf.me",
         "icon":"Home",
-        "description":"the website that you are currently on. It was built using 11ty, pugjs & github pages.",
+        "description":"the website that you are currently on. It was built using gatsbyjs, react & github pages.",
         "href":"https://darcylf.me"
     }
 

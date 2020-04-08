@@ -3,7 +3,7 @@ import { Box, Text, Flex } from "rebass"
 import { Link } from "gatsby"
 import Header from "./header"
 import AniLink from "gatsby-plugin-transition-link/AniLink";
-
+import CoverWithSlide from "../components/coverWithSlide"
 const navBar = (props) => {
   return (
     <Flex
@@ -23,7 +23,7 @@ const navBar = (props) => {
           padding: "1em",
         }}
       >
-        <AniLink paintDrip hex="#ffc53f" className="navbar-link" to="/">home</AniLink>
+        <CoverWithSlide className="navbar-link" to="/" direction="right">home</CoverWithSlide>
       </Box>
       <Box
         sx={{
@@ -40,7 +40,7 @@ const navBar = (props) => {
           padding: "1em",
         }}
       >
-        <AniLink paintDrip hex="#ffc53f" className="navbar-link" to={props.secondary.to}>{props.secondary.title}</AniLink>
+        <CoverWithSlide className="navbar-link" to={props.secondary.to}>{props.secondary.title}</CoverWithSlide>
       </Box>
     </Flex>
   )
