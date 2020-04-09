@@ -37,6 +37,7 @@ export default props => (
             width:"100vw"
         }}
           >
+                  
 
             { props.navbar &&<NavBar secondary={ props.navbar ? props.secondary : {"to":"/","title":""}}></NavBar>}
           </motion.div></>
