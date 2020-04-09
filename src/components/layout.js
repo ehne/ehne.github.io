@@ -20,11 +20,12 @@ export default props => (
   <BaseTypographicScale>
     <Head></Head>
     <TransitionPortal>
+    <Border></Border>
       <TransitionState>
       
         {({ transitionStatus }) => (
             <>
-            <Border></Border>
+            
           <motion.div 
           initial="hidden"
           variants={variants}
