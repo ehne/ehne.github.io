@@ -19,31 +19,33 @@ const variants = {
 export default props => (
   <BaseTypographicScale>
     <Head></Head>
-    <TransitionPortal>
     <Border></Border>
+    { props.navbar &&
+    <TransitionPortal>
+        <Border></Border>
+        
       <TransitionState>
       
         {({ transitionStatus }) => (
             <>
-            
           <motion.div 
           initial="hidden"
           variants={variants}
           animate={[ 'entering',"entered"].includes(transitionStatus)
           ? 'visible'
           : 'hidden'}
-        transition={{ ease: "easeOut", duration:1}}
-        style={{
-            width:"100vw"
+            transition={{ ease: "easeOut", duration:1}}
+            style={{
+                width:"100vw"
         }}
           >
                   
 
-            { props.navbar &&<NavBar secondary={ props.navbar ? props.secondary : {"to":"/","title":""}}></NavBar>}
+            <NavBar secondary={ props.navbar ? props.secondary : {"to":"/","title":""}}></NavBar>}
           </motion.div></>
         )}
       </TransitionState>
-    </TransitionPortal>
+    </TransitionPortal>}
 
     {props.children}
   </BaseTypographicScale>
