@@ -20,7 +20,18 @@ export default props => (
   <BaseTypographicScale>
     <Head></Head>
     <Border></Border>
+    
     { props.navbar &&
+    <>
+    <noscript>
+      <Box
+        sx={{
+          fontSize:"0.5em"
+        }}
+      >
+          <NavBar secondary={ props.navbar ? props.secondary : {"to":"/","title":""}}></NavBar>
+      </Box>
+    </noscript>
     <TransitionPortal>
         <Border></Border>
         
@@ -41,11 +52,12 @@ export default props => (
           >
                   
 
-            <NavBar secondary={ props.navbar ? props.secondary : {"to":"/","title":""}}></NavBar>}
+            <NavBar secondary={ props.navbar ? props.secondary : {"to":"/","title":""}}></NavBar>
           </motion.div></>
         )}
       </TransitionState>
-    </TransitionPortal>}
+    </TransitionPortal>
+    </>}
 
     {props.children}
   </BaseTypographicScale>
