@@ -20,9 +20,11 @@ export default props => (
   <BaseTypographicScale>
     <Head></Head>
     <TransitionPortal>
-      <Border></Border>
       <TransitionState>
+      
         {({ transitionStatus }) => (
+            <>
+            <Border></Border>
           <motion.div 
           initial="hidden"
           variants={variants}
@@ -36,7 +38,7 @@ export default props => (
           >
 
             { props.navbar &&<NavBar secondary={ props.navbar ? props.secondary : {"to":"/","title":""}}></NavBar>}
-          </motion.div>
+          </motion.div></>
         )}
       </TransitionState>
     </TransitionPortal>
