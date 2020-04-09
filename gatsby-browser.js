@@ -9,6 +9,7 @@
 import "./src/styles/global.css"
 const ReactDOM = require('react-dom')
 
+// ooop
 export function replaceHydrateFunction() {
     return (element, container, callback) => {
         ReactDOM.render(element, container, callback)

@@ -7,9 +7,8 @@ import CoverWithSlide from "../components/coverWithSlide"
 import { TransitionPortal } from "gatsby-plugin-transition-link";
 import styled from "@emotion/styled"
 const BaseTypographicScale = styled.div`
-font-size:calc(1.3em + 1vw);
+font-size:calc(1.3em + 1vw);`
 
-`
 const navBar = (props) => {
   return (
   <BaseTypographicScale>
