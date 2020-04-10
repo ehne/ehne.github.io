@@ -5,6 +5,7 @@ import Project from "../components/project"
 import {Box} from "rebass"
 import { navigate } from 'gatsby';
 import styled from "@emotion/styled"
+import Header from "../components/header"
 
 const FontSize = styled.div`
   font-size: 0.7em;
@@ -27,7 +28,7 @@ const ListOfLinks = () =>{
 const linkinbio = () => {
 
     return (
-        <Layout navbar={true} secondary={{
+        <Layout navbar={false} secondary={{
             title:"contact",
             to:"/contact"
         }}>
@@ -36,8 +37,9 @@ const linkinbio = () => {
                 maxWidth: "720px",
                 mx: "auto",
                 padding:"0.5em",
-                marginTop:"5em"
+                marginTop:"2em"
             }}>
+                <Header>Links</Header>
                 <ListOfLinks></ListOfLinks>
             </Box>
             </FontSize>
