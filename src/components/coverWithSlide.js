@@ -10,7 +10,7 @@ export default class CoverWithSlide extends Component {
 		this.vertical = this.vertical.bind(this)
 
 		this.cover = React.createRef()
-		this.borderColour = color
+		this.borderColour = color("180deg")
 	}
 	
 

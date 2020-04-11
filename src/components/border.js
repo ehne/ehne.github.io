@@ -2,7 +2,7 @@ import React from 'react';
 import styled from "@emotion/styled"
 import {color} from "./baseColor"
 var borderWidth = "20px"
-var borderColour = color
+var borderColour = color("90deg")
 
 const BorderLeft = styled.div`
         position: fixed;
