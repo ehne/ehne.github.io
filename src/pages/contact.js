@@ -69,7 +69,8 @@ const contact = () => {
             <Textarea name="message" rows="4" marginBottom="1em" sx={{
                 backgroundColor:"#ffffff15",
                 border:"none",
-                marginTop:"0.5em"
+                marginTop:"0.5em",
+                resize:"vertical"
             }}></Textarea>
             <Button type="submit" sx={{
                 backgroundColor:"#ffc53f",
