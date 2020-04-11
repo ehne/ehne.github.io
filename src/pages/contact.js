@@ -54,21 +54,21 @@ const contact = () => {
           <form action=" https://formsubmit.co/darcy@darcylf.me" method="POST">
             <Label htmlFor="name" mt="1em">Full name</Label>
             <Input id="name" name="name" placeholder="Jane Doe" mb="1em"  sx={{
-                borderRadius:"10px",
-                borderColor:"#ffffffcc",
+                backgroundColor:"#ffffff15",
+                border:"none",
                 marginTop:"0.5em"
             }} />
             <Label htmlFor="email">Email</Label>
             <Input id="email" name="email" placeholder="jane@example.com" marginBottom="1em"sx={{
-                borderRadius:"10px",
-                borderColor:"#ffffffcc",
+                backgroundColor:"#ffffff15",
+                border:"none",
                 marginTop:"0.5em"
             }} />
             <input type="hidden" name="_replyto" />
             <Label htmlFor="message" >Message</Label>
             <Textarea name="message" rows="4" marginBottom="1em" sx={{
-                borderRadius:"10px",
-                borderColor:"#ffffffcc",
+                backgroundColor:"#ffffff15",
+                border:"none",
                 marginTop:"0.5em"
             }}></Textarea>
             <Button type="submit" sx={{

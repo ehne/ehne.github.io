@@ -16,7 +16,7 @@ export function color(_rotation){
     var date = new Date().getDate();
     var month = new Date().getMonth() + 1; //Current Month
     
-    if (date == 11 && month == 4){
+    if (date == 17 && month == 5){
         borderColour=rainbow
     }
     return borderColour
