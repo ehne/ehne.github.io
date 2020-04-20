@@ -56,13 +56,19 @@ const contact = () => {
             <Input id="name" name="name" placeholder="Jane Doe" mb="1em"  sx={{
                 backgroundColor:"#ffffff15",
                 border:"none",
-                marginTop:"0.5em"
+                marginTop:"0.5em",
+                ":focus":{
+                  outline:"2px solid  #ffc53f"
+                }
             }} />
             <Label htmlFor="email">Email</Label>
             <Input id="email" name="email" placeholder="jane@example.com" marginBottom="1em"sx={{
                 backgroundColor:"#ffffff15",
                 border:"none",
-                marginTop:"0.5em"
+                marginTop:"0.5em",
+                ":focus":{
+                  outline:"2px solid  #ffc53f"
+                }
             }} />
             <input type="hidden" name="_replyto" />
             <Label htmlFor="message" >Message</Label>
@@ -70,7 +76,10 @@ const contact = () => {
                 backgroundColor:"#ffffff15",
                 border:"none",
                 marginTop:"0.5em",
-                resize:"vertical"
+                resize:"vertical",
+                ":focus":{
+                  outline:"2px solid  #ffc53f"
+                }
             }}></Textarea>
             <Button type="submit" sx={{
                 backgroundColor:"#ffc53f",
