@@ -96,7 +96,17 @@ const contact = () => {
           </form>
         
         </Box>
+        <Text
+          sx={{
+            paddingTop:"1em",
+            fontSize:"1rem",
+            paddingRight:"1rem"
+          }}
+          >
+        Emails that contain a <b>.bat, .btm, .cmd, .com, .cpl, .dll, .docm, .exe, .gz, .js, .lnk, .msi, .pif, .prf, .rar, .reg, .scr, .tar, .tar.gz, .tgz, .url, .vbs, .xlsm or .zip</b> attachment are automatically blocked by the spam filter. If you do need to send such files, please consider using a file transfer service such as <a href="https://wetransfer.com">WeTransfer</a>.
+        </Text>
       </Box>
+      
     </FontSize>
   </Layout>
 
