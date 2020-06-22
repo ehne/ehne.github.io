@@ -2,6 +2,9 @@ import React from 'react';
 import {Box, Flex,Text} from "rebass"
 import * as Icon from "react-feather"
 
+
+
+
 const project = (props) => {
     const IconTagName = Icon[props.icon]
     return (
@@ -31,7 +34,6 @@ const project = (props) => {
                             justifySelf:"center"
                         }}
                     >
-                        
                         <IconTagName/>
                     </Box>
                     <Box

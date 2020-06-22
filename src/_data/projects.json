@@ -1,5 +1,11 @@
 [
     {
+        "title":"Unincorporated Languages",
+        "icon":"Database",
+        "description":"a collective that creates esoteric and generally unusable programming languages.",
+        "href":"/unincorporated-languages"
+    },
+    {
         "title":"Wordwang",
         "icon":"Code",
         "description":"a language-agnostic word-based esoteric programming language based off Wang's B-machine.",
