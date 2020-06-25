@@ -20,7 +20,7 @@ const navBar = (props) => {
         left:0,
         right:0,
         width: "100%",
-        backgroundColor: "#000",
+        backgroundColor: "#0d0d0d",
         zIndex: "40",
         display:"flex"
       }}
