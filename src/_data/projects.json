@@ -1,5 +1,11 @@
 [
     {
+        "title":"ERDot",
+        "icon":"Database",
+        "description":"A python CLI script to create Entity Relationship Diagrams from JSON code.",
+        "href":"https://github.com/ehne/ERDot"
+    },
+    {
         "title":"Unincorporated Languages",
         "icon":"FilePlus",
         "description":"a collective that creates esoteric and generally unusable programming languages.",
