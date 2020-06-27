@@ -36,8 +36,11 @@ const IndexPage = () => (
         </Text>
         
         <Socials></Socials>
+        
       </Box>
+      
     </Flex>
+    
   </Layout>
 )
 

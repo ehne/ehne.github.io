@@ -44,19 +44,6 @@ const Head = () => {
       <meta property="twitter:title" content="darcy has the best website"/>
       <meta property="twitter:description" content="Hi! I'm Darcy Lugt-Falk, a web designer and developer based in Melbourne"/>
       <meta property="twitter:image" content="https://og.darcylf.me/image.js"></meta>
-      <script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=UA-61981599-5"
-      ></script>
-      <script>
-        {`window.dataLayer = window.dataLayer || [];
-        function gtag() {
-          dataLayer.push(arguments);
-        }
-        gtag("js", new Date());
-
-        gtag("config", "UA-61981599-5")`}
-      </script>
       </Helmet>
       
     </>
