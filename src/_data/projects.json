@@ -1,5 +1,11 @@
 [
     {
+        "title":"StacksUI",
+        "icon":"Layout",
+        "description":"a UI layout library for the web that uses the paradigm of stacks. Inspired by SwiftUI.",
+        "href":"/StacksUI"
+    },
+    {
         "title":"ERDot",
         "icon":"Database",
         "description":"A python CLI script to create Entity Relationship Diagrams from JSON code.",
