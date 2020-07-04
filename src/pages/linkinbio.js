@@ -7,13 +7,18 @@ import { navigate } from 'gatsby';
 import styled from "@emotion/styled"
 import Header from "../components/header"
 
+const isBrowser = typeof window !== `undefined`
+
 const FontSize = styled.div`
   font-size: 0.7em;
 `
 const ListOfLinks = () =>{
-    if (linksData.length === 1){
-        navigate("/")
+    if (isBrowser){
+        if (linksData.length === 1){
+            navigate("/")
+        }
     }
+    
     const generated = linksData.map(i => (
         <Project
           href={i.href}
