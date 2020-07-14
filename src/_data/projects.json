@@ -12,12 +12,6 @@
         "href":"https://github.com/ehne/ERDot"
     },
     {
-        "title":"Unincorporated Languages",
-        "icon":"FilePlus",
-        "description":"a collective that creates esoteric and generally unusable programming languages.",
-        "href":"/unincorporated-languages"
-    },
-    {
         "title":"Wordwang",
         "icon":"Code",
         "description":"a language-agnostic word-based esoteric programming language based off Wang's B-machine.",
@@ -68,13 +62,13 @@
     {
         "title":"Zekemagic.com",
         "icon":"User",
-        "description":"the online homepage of award winning melbourne based magician Zeke Butterworth. on which it is possible to contact him about performing at your event.",
+        "description":"the online homepage of award winning melbourne based magician Zeke Butterworth. On which it is possible to contact him about performing at your event.",
         "href":"https://zekemagic.com"
     },
     {
         "title":"JMSS Murder",
         "icon":"Zap",
-        "description":"a fun real life battle royale style game, in which participants had to poke each other with plastic spoons. created & run at John Monash Science School in 2019.",
+        "description":"a fun real life battle royale style game, in which participants had to poke each other with plastic spoons. Created & run at John Monash Science School in 2019.",
         "href":"https://github.com/Midataur/JMSS-murder-board"
     },
     {
