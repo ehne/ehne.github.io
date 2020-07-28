@@ -8,7 +8,10 @@ import NavBar from "./navBar"
 import { Box } from "rebass"
 import { TransitionPortal, TransitionState } from "gatsby-plugin-transition-link"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
-import { motion } from "framer-motion"
+import { motion, useViewportScroll, useTransform } from "framer-motion"
+
+import CircularText from "./circularText"
+
 const BaseTypographicScale = styled.div`
   font-size: calc(1.3em + 1vw);
 `
@@ -16,6 +19,12 @@ const variants = {
     visible: { opacity: 1,y:0 },
     hidden: { opacity: 0,y:"-50vh" },
   }
+const Cvariants = {
+    visible: { opacity: 1,x:0 },
+    hidden: { opacity: 0,x:"-21vw" },
+  }
+
+
 export default props => (
   <BaseTypographicScale>
     <Head></Head>
@@ -53,12 +62,30 @@ export default props => (
                   
 
             <NavBar secondary={ props.navbar ? props.secondary : {"to":"/","title":""}}></NavBar>
-          </motion.div></>
+           
+          </motion.div>
+          <motion.div 
+          initial="hidden"
+            variants={Cvariants}
+            animate={[ 'entering',"entered"].includes(transitionStatus)
+            ? 'visible'
+            : 'hidden'}
+              transition={{ ease: "easeOut", duration:1}}
+              style={{
+                zIndex:"-1000 !important"
+              }}
+            >
+          <CircularText></CircularText>
+          </motion.div>
+          </>
         )}
       </TransitionState>
     </TransitionPortal>
     </>}
-
+        
+      
+    
+    
     {props.children}
   </BaseTypographicScale>
 )
