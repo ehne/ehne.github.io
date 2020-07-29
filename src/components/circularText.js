@@ -9,8 +9,8 @@ const CircularText = () => {
     //const  cool = useTransform(scrollY, latest => -latest/7)
     return (
         <motion.img
-            style={{rotate:50}}
-            animate={{rotate: -360}}
+
+            animate={{rotate: [50, -310]}}
             transition={{loop: Infinity,duration:15, ease: "linear"}}
             src={circle} class="circle">
         

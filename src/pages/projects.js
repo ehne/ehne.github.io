@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import Project from "../components/project"
 import { Box, Text } from "rebass"
 import Header from "../components/header"
+import {motion, useViewportScroll, useTransform} from "framer-motion"
 export const query = graphql`
   query MyQuery {
     __typename
@@ -22,19 +23,24 @@ export const query = graphql`
 function ProjectsList(props) {
   const items = props.projects
   const generated = items.map(i => (
-    <Project
-      href={i.href}
-      title={i.title}
-      icon={i.icon}
-      description={i.description}
-      type="project"
-    ></Project>
+
+<Project
+          href={i.href}
+          title={i.title}
+          icon={i.icon}
+          description={i.description}
+          type="project"
+        ></Project>
+  
+    
+
   ))
   return generated
 }
 const FontSize = styled.div`
   font-size: 0.7em;
 `
+
 const Projects = ({ data }) => {
   return (
     <Layout navbar={true} secondary={{
@@ -87,7 +93,9 @@ const Projects = ({ data }) => {
                 gridArea:"list"
             }}
           >
-            <ProjectsList projects={data.allProjectsJson.nodes}></ProjectsList>
+                    <ProjectsList projects={data.allProjectsJson.nodes}></ProjectsList>
+                  
+            
           </Box>
         </Box>
       </FontSize>
