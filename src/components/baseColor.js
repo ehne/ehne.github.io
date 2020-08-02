@@ -24,7 +24,7 @@ export function color(_rotation, _type="gradient"){
 
         case "28,8": //Wear it purple day (28 aug)
             borderColour=`linear-gradient(${_rotation}, rgb(106, 80, 149) 0%,rgb(106, 80, 149) 100%)`
-            color = `rgb(106, 80, 149)`
+            //color = `rgb(106, 80, 149)`
             break;
 
         case "20,9": // digital climate strike (20 sep)
