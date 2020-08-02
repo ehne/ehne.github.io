@@ -5,6 +5,9 @@ import { Label, Input, Select, Textarea, Radio, Checkbox } from "@rebass/forms"
 import { Box, Button,Text } from "rebass"
 import styled from "@emotion/styled"
 
+import {color} from "../components/baseColor"
+var bgColor = color("45deg","color")
+
 const FontSize = styled.div`
   font-size: 0.7em;
 `
@@ -58,7 +61,7 @@ const contact = () => {
                 border:"none",
                 marginTop:"0.5em",
                 ":focus":{
-                  outline:"2px solid  #ffc53f"
+                  outline:`2px solid ${bgColor}`
                 }
             }} />
             <Label htmlFor="email">Email</Label>
@@ -67,7 +70,7 @@ const contact = () => {
                 border:"none",
                 marginTop:"0.5em",
                 ":focus":{
-                  outline:"2px solid  #ffc53f"
+                  outline:`2px solid ${bgColor}`
                 }
             }} />
             <input type="hidden" name="_replyto" />
@@ -78,17 +81,17 @@ const contact = () => {
                 marginTop:"0.5em",
                 resize:"vertical",
                 ":focus":{
-                  outline:"2px solid  #ffc53f"
+                  outline:`2px solid ${bgColor}`
                 }
             }}></Textarea>
             <Button type="submit" sx={{
-                backgroundColor:"#ffc53f",
+                backgroundColor:bgColor,
                 fontWeight:"700",
                 color:"#000",
                 transition: "all cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s",
 
                 ":hover":{
-                   backgroundColor:"#ffc53fcc",
+                   opacity:0.8,
                    cursor:"pointer",
                    transform:"rotate(-3deg)" 
                 }

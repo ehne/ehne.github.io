@@ -2,7 +2,8 @@ import React from 'react';
 import {Box, Flex,Text} from "rebass"
 import * as Icon from "react-feather"
 
-
+import {color} from "./baseColor"
+var bgColor = color("45deg","color")
 
 
 const project = (props) => {
@@ -22,7 +23,7 @@ const project = (props) => {
                         margin:"0.2em",
                         transition:"all cubic-bezier(0.19, 1, 0.22, 1) 0.5s",
                         ":hover":{
-                            backgroundColor:"#ffc53f",
+                            backgroundColor:bgColor,
                             color:"#000"
                         }
                     }}

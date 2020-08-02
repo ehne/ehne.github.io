@@ -2,8 +2,11 @@ import React from "react"
 import styled from "@emotion/styled"
 import { css } from "@emotion/core"
 import { Box, Text, Flex } from "rebass"
+import {color} from "./baseColor"
+var bgColor = color("45deg","color")
+
 const BackgroundColour=styled.span`
-    background-color:#ffc53f;
+    background-color:${bgColor};
     padding-left:0.5em;
     padding-right:0.5em;
     `

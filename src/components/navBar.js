@@ -6,8 +6,21 @@ import AniLink from "gatsby-plugin-transition-link/AniLink";
 import CoverWithSlide from "../components/coverWithSlide"
 import { TransitionPortal } from "gatsby-plugin-transition-link";
 import styled from "@emotion/styled"
+
+import {color} from "./baseColor"
+var bgColor = color("45deg","color")
+
 const BaseTypographicScale = styled.div`
-font-size:calc(1.3em + 1vw);`
+font-size:calc(1.3em + 1vw);
+
+a{
+  
+}
+a:hover{
+  color:${bgColor};
+  opacity:0.8
+}
+`
 
 const navBar = (props) => {
   return (

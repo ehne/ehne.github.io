@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import TransitionLink, { TransitionPortal } from 'gatsby-plugin-transition-link'
 import gsap from 'gsap'
 import {color} from "./baseColor"
-
+var bgColor = color("45deg","color")
 export default class CoverWithSlide extends Component {
 	constructor(props) {
 		super(props)

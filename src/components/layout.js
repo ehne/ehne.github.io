@@ -11,9 +11,17 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { motion, useViewportScroll, useTransform } from "framer-motion"
 
 import CircularText from "./circularText"
+import {color} from "./baseColor"
+var bgColor = color("90deg","color")
 
 const BaseTypographicScale = styled.div`
   font-size: calc(1.3em + 1vw);
+  a{
+    color:${bgColor}
+  }
+  a:hover{
+    opacity:0.8
+  }
 `
 const variants = {
     visible: { opacity: 1,y:0 },
