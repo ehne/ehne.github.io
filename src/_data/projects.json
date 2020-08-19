@@ -1,4 +1,10 @@
 [
+     {
+        "title":"MathSender",
+        "icon":"Hash",
+        "description":"a tool desgined to help teachers ask maths questions to students during online learning. MathSender provides a way to send beautiful LaTeX based expressions in real time via a question and answer system.",
+        "href":"https://mathsender.fun"
+    },
     {
         "title":"StacksUI",
         "icon":"Layout",
@@ -8,7 +14,7 @@
     {
         "title":"ERDot",
         "icon":"Database",
-        "description":"A python CLI script to create Entity Relationship Diagrams from JSON code.",
+        "description":"a python CLI script to create Entity Relationship Diagrams from JSON code.",
         "href":"https://github.com/ehne/ERDot"
     },
     {
