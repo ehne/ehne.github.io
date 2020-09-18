@@ -9,7 +9,7 @@ const Socials = () => (
     paddingTop="0.7em"
     fontSize="0.8em"
     >
-         <a href="https://github.com/ehne">github</a> — <a href="https://instagram.com/coolbezos_420">instagram</a> — <CoverWithSlide to="/contact/" direction="left" >contact</CoverWithSlide>
+         <a href="https://github.com/ehne">github</a> — <CoverWithSlide to="/contact/" direction="left" >contact</CoverWithSlide>
     </Box>
 )
 
