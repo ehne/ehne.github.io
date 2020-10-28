@@ -44,6 +44,12 @@ const Head = () => {
       <meta property="twitter:title" content="darcy has the best website"/>
       <meta property="twitter:description" content="Hi! I'm Darcy Lugt-Falk, a web designer and developer based in Melbourne"/>
       <meta property="twitter:image" content="https://og.darcylf.me/image.js"></meta>
+      
+      <script async src="https://cdn.panelbear.com/analytics.js?site=CPwwSVDDRs3"></script>
+      <script>
+          {`window.panelbear = window.panelbear || function(){ window.panelbearQ = window.panelbearQ || []; panelbearQ.push(arguments); };
+          panelbear('config', { site: 'CPwwSVDDRs3' });`}
+      </script>
       </Helmet>
       
     </>
