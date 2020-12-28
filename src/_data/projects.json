@@ -1,5 +1,11 @@
 [
     {
+        "title":"graphX",
+        "icon":"Share2",
+        "description":"a simple graph theory library for python. Designed to be used with as little pain and confusion as possible. Powered by AlgorithmX. Spiritual successor to Pynode.",
+        "href":"https://github.com/ehne/graphX"
+    },
+    {
         "title":"Microtext",
         "icon":"Type",
         "description":"a library of small (and probably inefficient) utility functions for messing with text.",
