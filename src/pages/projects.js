@@ -3,9 +3,11 @@ import { graphql } from "gatsby"
 import styled from "@emotion/styled"
 import Layout from "../components/layout"
 import Project from "../components/project"
-import { Box, Text } from "rebass"
+import { Box, Text, Button } from "rebass"
 import Header from "../components/header"
 import {motion, useViewportScroll, useTransform} from "framer-motion"
+import * as Panelbear from "@panelbear/panelbear-js";
+
 export const query = graphql`
   query MyQuery {
     __typename

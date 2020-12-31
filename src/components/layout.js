@@ -12,7 +12,7 @@ import {
 } from "gatsby-plugin-transition-link"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { motion, useViewportScroll, useTransform } from "framer-motion"
-
+import { usePanelbear } from "./panelbearHook"
 import CircularText from "./circularText"
 import { color } from "./baseColor"
 var bgColor = color("90deg", "color")
@@ -35,73 +35,76 @@ const Cvariants = {
   hidden: { opacity: 0, x: "-21vw" },
 }
 
-export default props => (
-  <BaseTypographicScale>
-    <Head></Head>
-    <Border></Border>
+export default props => {
+  usePanelbear('CPwwSVDDRs3')
+  return (
+    <BaseTypographicScale>
+      <Head></Head>
+      <Border></Border>
+      
+      {props.navbar && (
+        <>
+          <noscript>
+            <Box
+              sx={{
+                fontSize: "0.5em",
+              }}
+            >
+              <NavBar
+                secondary={
+                  props.navbar ? props.secondary : { to: "/", title: "" }
+                }
+              ></NavBar>
+            </Box>
+          </noscript>
+          <TransitionPortal>
+            <Border></Border>
 
-    {props.navbar && (
-      <>
-        <noscript>
-          <Box
-            sx={{
-              fontSize: "0.5em",
-            }}
-          >
-            <NavBar
-              secondary={
-                props.navbar ? props.secondary : { to: "/", title: "" }
-              }
-            ></NavBar>
-          </Box>
-        </noscript>
-        <TransitionPortal>
-          <Border></Border>
-
-          <TransitionState>
-            {({ transitionStatus }) => (
-              <>
-                <motion.div
-                  initial="hidden"
-                  variants={variants}
-                  animate={
-                    ["entering", "entered"].includes(transitionStatus)
-                      ? "visible"
-                      : "hidden"
-                  }
-                  transition={{ ease: "easeOut", duration: 1 }}
-                  style={{
-                    width: "100vw",
-                  }}
-                >
-                  <NavBar
-                    secondary={
-                      props.navbar ? props.secondary : { to: "/", title: "" }
+            <TransitionState>
+              {({ transitionStatus }) => (
+                <>
+                  <motion.div
+                    initial="hidden"
+                    variants={variants}
+                    animate={
+                      ["entering", "entered"].includes(transitionStatus)
+                        ? "visible"
+                        : "hidden"
                     }
-                  ></NavBar>
-                </motion.div>
-                <motion.div
-                  initial="hidden"
-                  variants={Cvariants}
-                  animate={
-                    ["entering", "entered"].includes(transitionStatus)
-                      ? "visible"
-                      : "hidden"
-                  }
-                  transition={{ ease: "easeOut", duration: 1 }}
-                  style={{
-                    zIndex: "-1000 !important",
-                  }}
-                >
-                  <CircularText></CircularText>
-                </motion.div>
-              </>
-            )}
-          </TransitionState>
-        </TransitionPortal>
-      </>
-    )}
+                    transition={{ ease: "easeOut", duration: 1 }}
+                    style={{
+                      width: "100vw",
+                    }}
+                  >
+                    <NavBar
+                      secondary={
+                        props.navbar ? props.secondary : { to: "/", title: "" }
+                      }
+                    ></NavBar>
+                  </motion.div>
+                  <motion.div
+                    initial="hidden"
+                    variants={Cvariants}
+                    animate={
+                      ["entering", "entered"].includes(transitionStatus)
+                        ? "visible"
+                        : "hidden"
+                    }
+                    transition={{ ease: "easeOut", duration: 1 }}
+                    style={{
+                      zIndex: "-1000 !important",
+                    }}
+                  >
+                    <CircularText></CircularText>
+                  </motion.div>
+                </>
+              )}
+            </TransitionState>
+          </TransitionPortal>
+        </>
+      )}
 
-    {props.children}
-  </BaseTypographicScale>
-)
+      {props.children}
+    </BaseTypographicScale>
+  )
+}

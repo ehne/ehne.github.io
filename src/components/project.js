@@ -1,6 +1,7 @@
 import React from 'react';
 import {Box, Flex,Text} from "rebass"
 import * as Icon from "react-feather"
+import * as Panelbear from "@panelbear/panelbear-js";
 
 import {color} from "./baseColor"
 var bgColor = color("45deg","color")
@@ -8,9 +9,20 @@ var bgColor = color("45deg","color")
 
 const project = (props) => {
     const IconTagName = Icon[props.icon]
+
+    const goToSite = (title, href) => {
+        const noSpaces = title.replace(/ /g, '')
+        console.log(noSpaces)
+        const only30 = `p_${noSpaces}`.slice(0,29)
+        console.log(only30)
+        Panelbear.track(only30)
+
+    }
     return (
         <Box>
-            <a href={props.href}
+            <a 
+            href={props.href}
+            onClick={()=> goToSite(props.title, props.href)}
             >
                 <Box
                     sx={{
