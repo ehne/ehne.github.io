@@ -6,6 +6,8 @@ import { Box, Flex, Text } from "rebass"
 import Layout from "../components/layout"
 
 import CoverWithSlide from "../components/coverWithSlide"
+
+
 const IndexPage = () => (
   <Layout navbar={false}>
     <Flex
@@ -32,7 +34,7 @@ const IndexPage = () => (
         >
           A web designer and developer based in Melbourne.  
           {/* <AniLink cover direction="right" to="/projects/" bg="#ffc53f">-></AniLink> */}
-          <CoverWithSlide to="/projects/" direction="left" >-></CoverWithSlide>
+          <CoverWithSlide to="/projects/" direction="left" >{'->'}</CoverWithSlide>
         </Text>
         
         <Socials></Socials>
