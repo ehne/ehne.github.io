@@ -32,9 +32,11 @@
     "react": "^17.0.2",
     "react-arc-text": "^1.0.5",
     "react-dom": "^17.0.2",
+    "react-emojione": "^5.0.1",
     "react-feather": "^2.0.9",
     "react-helmet": "^6.1.0",
-    "rebass": "^4.0.7"
+    "rebass": "^4.0.7",
+    "swr": "^0.5.5"
   },
   "devDependencies": {
     "prettier": "^2.2.1"

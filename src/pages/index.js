@@ -4,6 +4,7 @@ import Header from "../components/header"
 import Socials from "../components/socials"
 import { Box, Flex, Text } from "rebass"
 import Layout from "../components/layout"
+import GHStatus from '../components/GHStatus';
 
 import CoverWithSlide from "../components/coverWithSlide"
 
@@ -42,7 +43,7 @@ const IndexPage = () => (
       </Box>
       
     </Flex>
-    
+    <GHStatus />
   </Layout>
 )
 
