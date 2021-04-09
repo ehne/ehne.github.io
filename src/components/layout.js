@@ -1,5 +1,4 @@
 import React from "react"
-import ReactDOM from "react-dom"
 
 import styled from "@emotion/styled"
 import Head from "./htmlHead"
@@ -10,8 +9,7 @@ import {
   TransitionPortal,
   TransitionState,
 } from "gatsby-plugin-transition-link"
-import AniLink from "gatsby-plugin-transition-link/AniLink"
-import { motion, useViewportScroll, useTransform } from "framer-motion"
+import { motion } from "framer-motion"
 import { usePanelbear } from "./panelbearHook"
 import CircularText from "./circularText"
 import { color } from "./baseColor"

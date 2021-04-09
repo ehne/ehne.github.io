@@ -1,10 +1,7 @@
 import React from "react"
-import { Box, Text, Flex } from "rebass"
-import { Link } from "gatsby"
+import { Box } from "rebass"
 import Header from "./header"
-import AniLink from "gatsby-plugin-transition-link/AniLink";
 import CoverWithSlide from "../components/coverWithSlide"
-import { TransitionPortal } from "gatsby-plugin-transition-link";
 import styled from "@emotion/styled"
 
 import {color} from "./baseColor"

@@ -1,7 +1,6 @@
 import React from 'react';
 import {Box} from "rebass"
-import {Link} from "gatsby"
-import AniLink from "gatsby-plugin-transition-link/AniLink";
+
 import CoverWithSlide from "./coverWithSlide"
 
 const Socials = () => (

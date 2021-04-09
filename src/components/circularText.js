@@ -1,6 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { motion, useViewportScroll, useTransform } from "framer-motion"
+import { motion, useViewportScroll } from "framer-motion"
 import circle from "../images/circle.svg"
 
 

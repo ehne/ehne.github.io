@@ -1,7 +1,5 @@
 import React from "react"
 import styled from "@emotion/styled"
-import { css } from "@emotion/core"
-import { Box, Text, Flex } from "rebass"
 import {color} from "./baseColor"
 var bgColor = color("45deg","color")
 
