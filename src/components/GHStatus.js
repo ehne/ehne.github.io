@@ -27,8 +27,8 @@ const GHStatusBox = ({ message, emojiShort="" }) => (
 const GHStatus = () => {
   const { data, error } = useSWR('https://issue-card.vercel.app/api/status/ehne', fetcher)
 
-  if (error) return <GHStatusBox message={'Error'} emojiShort=":warning:" />
-  if (!data) return <GHStatusBox message={'...'} />
+  // fail silently
+  if (error || !data) return <div />
 
   // render data
   return <a href="https://github.com/ehne"><GHStatusBox message={data.message} emojiShort={data.emoji} /></a>
