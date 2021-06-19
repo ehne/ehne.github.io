@@ -1,5 +1,11 @@
 [
     {
+        "title": "yOS",
+        "icon": "Grid",
+        "description": "a web OS for small programming experiments that don't warrant a full website.",
+        "href": "https://yos.vercel.app"
+    },
+    {
         "title":"graphX",
         "icon":"Share2",
         "description":"a simple graph theory library for python. Designed to be used with as little pain and confusion as possible. Powered by AlgorithmX. Spiritual successor to Pynode.",
