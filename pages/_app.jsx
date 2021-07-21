@@ -36,7 +36,19 @@ const AppContainer = ({ Component, pageProps }) => {
                 <meta property="twitter:title" content="darcy has the best website"/>
                 <meta property="twitter:description" content="Hi! I'm Darcy Lugt-Falk, a web designer and developer based in Melbourne"/>
                 <meta property="twitter:image" content="https://og.darcylf.me/image.js?text=&theme=darcylf"></meta>
-
+                
+                
+                <link rel="icon" href="/favicon-32x32.png?v=a0dabc26a47e10521f7551a44f55c7b4" type="image/png"/>
+                <meta name="theme-color" content="#ffc53f"/>
+                
+                <link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=a0dabc26a47e10521f7551a44f55c7b4"/>
+                <link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=a0dabc26a47e10521f7551a44f55c7b4"/>
+                <link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=a0dabc26a47e10521f7551a44f55c7b4"/>
+                <link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=a0dabc26a47e10521f7551a44f55c7b4"/>
+                <link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=a0dabc26a47e10521f7551a44f55c7b4"/>
+                <link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=a0dabc26a47e10521f7551a44f55c7b4"/>
+                <link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=a0dabc26a47e10521f7551a44f55c7b4"/
+                ><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=a0dabc26a47e10521f7551a44f55c7b4"/>
             </Head>
             <Box padding={['1em','2em']}>
                 <Box sx={{
