@@ -1,5 +1,29 @@
 [
     {
+        "title":"MathSender",
+        "icon":"Hash",
+        "description":"a tool designed to help teachers ask maths questions to students during online learning. MathSender provides a way to send beautiful LaTeX based expressions in real time via a question and answer system.",
+        "href":"https://collective-fullstack.github.io/work/MathSender"
+    },
+    {
+        "title":"ERDot",
+        "icon":"Database",
+        "description":"a python CLI script to create Entity Relationship Diagrams from JSON code.",
+        "href":"https://github.com/ehne/ERDot"
+    },
+    {
+        "title":"Shareify",
+        "icon": "Music",
+        "description": "a web app that democratizes music in public places. Allowing people to vote on the songs to be played from a Spotify account.",
+        "href": "https://github.com/Collective-Fullstack/communalspotify"
+    },
+    {
+        "title":"JMSS time updated",
+        "icon":"Clock",
+        "description":"an update to the jmss timetable site, it now supports the new timetable introduced in 2020, as well as letting users set custom images to use as the background.",
+        "href":"https://jmss-time.github.io/time-updated/"
+    },
+    {
         "title": "yOS",
         "icon": "Grid",
         "description": "a web OS for small programming experiments that don't warrant a full website.",
@@ -18,34 +42,10 @@
         "href":"https://github.com/ehne/microtext"
     },
     {
-        "title":"MathSender",
-        "icon":"Hash",
-        "description":"a tool designed to help teachers ask maths questions to students during online learning. MathSender provides a way to send beautiful LaTeX based expressions in real time via a question and answer system.",
-        "href":"http://mathsender.fun"
-    },
-    {
         "title":"StacksUI",
         "icon":"Layout",
         "description":"a UI layout library for the web that uses the paradigm of stacks. Inspired by SwiftUI.",
-        "href":"/StacksUI"
-    },
-    {
-        "title":"ERDot",
-        "icon":"Database",
-        "description":"a python CLI script to create Entity Relationship Diagrams from JSON code.",
-        "href":"https://github.com/ehne/ERDot"
-    },
-    {
-        "title":"Wordwang",
-        "icon":"Code",
-        "description":"a language-agnostic word-based esoteric programming language based off Wang's B-machine.",
-        "href":"/wordwang"
-    },
-    {
-        "title":"JMSS time updated",
-        "icon":"Clock",
-        "description":"an update to the jmss timetable site, it now supports the new timetable introduced in 2020, as well as letting users set custom images to use as the background.",
-        "href":"https://jmss-time.github.io/time-updated/"
+        "href":"https://darcylf.me/StacksUI"
     },
     {
         "title":"Leven",
@@ -54,51 +54,21 @@
         "href":"https://darcylf.me/leven"
     },
     {
-        "title":"11Photo",
-        "icon":"Image",
-        "description":"a static site generator for making photo essays.",
-        "href":"https://darcylf.me/11Photo"
-    },
-    {
-        "title": "Svelte-emoji-picker",
-        "icon":"Smile",
-        "description": "a simple \"emoji picker\" component for svelte.",
-        "href":"https://github.com/ehne/svelte-emoji-picker"
-    },
-    {
         "title": "Is my browser IE?",
         "icon":"Chrome",
         "description": "a website that answers the question, \"is my browser Internet Explorer?\".",
         "href":"https://darcylf.me/isIE"
     },
     {
-        "title":"Sun weather app",
-        "icon":"Sun",
-        "description":"a progressive web app that tells you the weather, using the darksky api and jquery.",
-        "href":"https://sun.darcylf.me/"
-    },
-    {
-        "title":"Pico-8 weather",
-        "icon":"Cloud",
-        "description":"a weather app in pico-8, a fantasy console that cannot connect to the internet easily.",
-        "href":"https://lonepaperclip.itch.io/p8-weather"
-    },
-    {
-        "title":"Zekemagic.com",
-        "icon":"User",
-        "description":"the online homepage of award winning melbourne based magician Zeke Butterworth. On which it is possible to contact him about performing at your event.",
-        "href":"https://zekemagic.com"
-    },
-    {
         "title":"JMSS Murder",
         "icon":"Zap",
         "description":"a fun real life battle royale style game, in which participants had to poke each other with plastic spoons. Created & run at John Monash Science School in 2019.",
-        "href":"https://github.com/Midataur/JMSS-murder-board"
+        "href":"https://collective-fullstack.github.io/work/JMSS-Murder"
     },
     {
         "title":"Darcylf.me",
         "icon":"Home",
-        "description":"the website that you are currently on. It was built using gatsbyjs, react & github pages.",
+        "description":"the website that you are currently on. It was built using nextjs, react & github pages.",
         "href":"https://darcylf.me"
     }
 

@@ -1,0 +1,32 @@
+{
+  "name": "darcylf_site",
+  "version": "1.0.0",
+  "description": "site uses nextjs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next build && next export"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ehne/ehne.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ehne/ehne.github.io/issues"
+  },
+  "homepage": "https://github.com/ehne/ehne.github.io#readme",
+  "dependencies": {
+    "@panelbear/panelbear-js": "^1.2.0",
+    "next": "^11.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-emojione": "^5.0.1",
+    "reflexbox": "^4.0.6",
+    "swr": "^0.5.6"
+  }
+}
