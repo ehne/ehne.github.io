@@ -3,6 +3,7 @@ import * as React from 'react';
 import '../lib/styles.css';
 import Head from 'next/head';
 import {Box} from 'reflexbox';
+import { Provider as ReakitProvider } from 'reakit';
 
 import { usePanelbear } from '../lib/usePanelbear';
 
@@ -50,13 +51,15 @@ const AppContainer = ({ Component, pageProps }) => {
                 <link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=a0dabc26a47e10521f7551a44f55c7b4"/
                 ><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=a0dabc26a47e10521f7551a44f55c7b4"/>
             </Head>
-            <Box padding={['1em','2em']}>
-                <Box sx={{
-                    maxWidth: '30em'
-                }}>
-                    <Component {...pageProps}/>
+            <ReakitProvider>
+                <Box padding={['1em','2em']}>
+                    <Box sx={{
+                        maxWidth: '30em'
+                    }}>
+                        <Component {...pageProps}/>
+                    </Box>
                 </Box>
-            </Box>
+            </ReakitProvider>
         </>
     )
 }

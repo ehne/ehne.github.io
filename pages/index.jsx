@@ -6,6 +6,8 @@ import { join } from 'path';
 import ColorBar from '../components/ColorBar';
 import useStatus from '../lib/useStatus';
 import ProjectItem from '../components/ProjectItem';
+import Abbrev from '../components/Abbrev';
+
 
 const GHStatus = () => {
     console.log('hi')
@@ -30,7 +32,7 @@ const index = ({posts}) => {
             <Box paddingY="1em">
                 <ul>
                     <li>GitHub: <a href="https://github.com/ehne">https://github.com/ehne</a></li>
-                    <li>Email: darcy {'(at)'} darcylf.me</li>
+                    <li>Email: darcy {'(at)'} darcylf.me — <Abbrev short="Don't send me .zip files." full="Emails that contain a .bat, .btm, .cmd, .com, .cpl, .dll, .docm, .exe, .gz, .js, .lnk, .msi, .pif, .prf, .rar, .reg, .scr, .tar, .tar.gz, .tgz, .url, .vbs, .xlsm or .zip attachment are automatically blocked by the spam filter. If you do need to send such files, please consider using a file transfer service such as WeTransfer" /></li>
                     <GHStatus />
                 </ul>
             </Box>
