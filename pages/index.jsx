@@ -42,6 +42,10 @@ const index = ({posts}) => {
                 <Box as="p" mb="1em">Here are some of the things that I've made in the past. More work-in-progress projects can be found on my <a href="https://github.com/ehne?tab=repositories">GitHub</a>.</Box>
                 {renderedProjects}
             </Box>
+            
+            <Box paddingY="1em" fontSize="0.9em" opacity="0.8" fontStyle="italic">
+                © darcy 2021
+            </Box>
         </Box>
     );
 }
