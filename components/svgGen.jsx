@@ -39,7 +39,7 @@ const svgGen = (inString) => {
         const x = spacing * (parseInt(i[0]) + 1);
         const y = spacing * (parseInt(i[1]) + 1);
         
-        return (<circle id={`Oval_${i}`} key={`${x}${y}`} stroke="#000" cx={x} cy={y} r={circleRadius}></circle>);
+        return (<circle id={`Oval_${i}`} key={`${x}${y}`} stroke="currentColor" cx={x} cy={y} r={circleRadius}></circle>);
     });
     
     const lines = group.map((i, index) => {
@@ -53,7 +53,7 @@ const svgGen = (inString) => {
         const x2 = spacing * (parseInt(group[index+1][0]) + 1);
         const y2 = spacing * (parseInt(group[index+1][1]) + 1);
         
-        return <line x1={x1} y1={y1} x2={x2} y2={y2} id="Path" stroke="#000"></line>
+        return <line x1={x1} y1={y1} x2={x2} y2={y2} id="Path" stroke="currentColor"></line>
     })
     
     
