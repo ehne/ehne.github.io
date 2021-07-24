@@ -24,18 +24,18 @@ const AppContainer = ({ Component, pageProps }) => {
                 <link href="https://fonts.darcylf.me/css?family=EB%20Garamond:ital,wght@0,400;1,400;0,700;1,700;0,800;1,800&display=swap" rel="stylesheet" />
                 
                 
-                <meta name="description" content="Hi! I'm Darcy Lugt-Falk, a web designer and developer based in Melbourne"/>
+                <meta name="description" content="Hi! I'm Darcy, a web designer and developer based in Melbourne"/>
                 
                 <meta property="og:type" content="website"/>
                 <meta property="og:url" content="https://darcylf.me/"/>
                 <meta property="og:title" content="darcy has the best website"/>
-                <meta property="og:description" content="Hi! I'm Darcy Lugt-Falk, a web designer and developer based in Melbourne"/>
+                <meta property="og:description" content="Hi! I'm Darcy, a web designer and developer based in Melbourne"/>
                 <meta property="og:image" content="https://og.darcylf.me/image.js?text=&theme=darcylf"/>
                 
                 <meta property="twitter:card" content="summary_large_image"/>
                 <meta property="twitter:url" content="https://darcylf.me/"/>
                 <meta property="twitter:title" content="darcy has the best website"/>
-                <meta property="twitter:description" content="Hi! I'm Darcy Lugt-Falk, a web designer and developer based in Melbourne"/>
+                <meta property="twitter:description" content="Hi! I'm Darcy, a web designer and developer based in Melbourne"/>
                 <meta property="twitter:image" content="https://og.darcylf.me/image.js?text=&theme=darcylf"></meta>
                 
                 
