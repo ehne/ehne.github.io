@@ -19,7 +19,7 @@ const GHStatus = () => {
     return  <li>I am currently {data.message}.</li>
 }
 
-const index = ({posts}) => {
+const index = ({posts, year}) => {
     const renderedProjects = posts.map(i => <ProjectItem title={i.title} content={i.description} url={i.href} key={i.title} />)
     return (
         <Box>
@@ -44,7 +44,7 @@ const index = ({posts}) => {
             </Box>
             
             <Box paddingY="1em" fontSize="0.9em" opacity="0.8" fontStyle="italic">
-                © darcy 2021
+                © darcy {year}
             </Box>
         </Box>
     );
@@ -61,6 +61,7 @@ export async function getStaticProps() {
     return {
         props: {
             posts,
+            year: new Date().getFullYear()
         },
     }
 }
