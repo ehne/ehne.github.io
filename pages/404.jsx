@@ -7,7 +7,6 @@ import ColorBar from '../components/ColorBar';
 const Error = () => {
     return (
         <Box>
-            Looks like that's a 
             <br />
             <span style={{fontSize: '2em', fontWeight: '700'}}> 404</span>. 
             <br />
