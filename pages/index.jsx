@@ -24,11 +24,13 @@ const index = ({posts, year}) => {
     const renderedProjects = posts.map(i => <ProjectItem title={i.title} content={i.description} url={i.href} key={i.title}/>)
     return (
         <Box>
-            Hi! I'm 
-            <br />
-            <span style={{fontSize: '2em', fontStyle: 'italic', fontWeight: '700'}}> Darcy</span>. 
-            <br />
-            A web designer and developer from Melbourne, Australia.
+            <Box as="header">
+                Hi! I'm 
+                <br />
+                <span style={{fontSize: '2em', fontStyle: 'italic', fontWeight: '700'}}> Darcy</span>. 
+                <br />
+                A web designer and developer from Melbourne, Australia.
+            </Box>
             {/* Links and stuff */}
             <Box paddingY="1em" as="ul">
                 <li>GitHub: <a href="https://github.com/ehne">https://github.com/ehne</a></li>
