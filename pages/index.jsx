@@ -1,5 +1,5 @@
 import React from 'react';
-import {Box} from 'reflexbox';
+import { Box, Flex } from 'reflexbox';
 import fs from 'fs';
 import { join } from 'path';
 
@@ -37,7 +37,7 @@ const index = ({posts}) => {
                 </ul>
             </Box>
             <ColorBar />
-            {/* Projects */}
+            {/* Things */}
             <Box paddingY="1em">
                 <Box as="p" mb="1em">Here are some of the things that I've made in the past. More work-in-progress projects can be found on my <a href="https://github.com/ehne?tab=repositories">GitHub</a>.</Box>
                 {renderedProjects}
