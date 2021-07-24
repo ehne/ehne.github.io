@@ -4,9 +4,8 @@ import {Box} from 'reflexbox';
 const ProjectItem = ({content, url, title}) => {
     return (
         <Box
-            sx={{
-                marginBottom: '1em'
-            }}
+            marginBottom="1em"
+            as="p"
         >
             <b>{title}: </b> {content} <a href={url}>{url}</a>
         </Box>
