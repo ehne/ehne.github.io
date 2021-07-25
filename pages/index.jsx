@@ -27,7 +27,7 @@ const index = ({posts, year}) => {
             <Box as="header">
                 Hi! I'm 
                 <br />
-                <span style={{fontSize: '2em', fontStyle: 'italic', fontWeight: '700'}}> Darcy</span>. 
+                <h1 style={{fontSize: '2em', fontStyle: 'italic', fontWeight: '700', display: 'inline'}}> Darcy</h1>. 
                 <br />
                 A web designer and developer from Melbourne, Australia.
             </Box>
