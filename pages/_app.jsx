@@ -21,7 +21,6 @@ const AppContainer = ({ Component, pageProps }) => {
                     href="https://cdn.jsdelivr.net/gh/sharanda/manrope@1a6035ff9cc9ce819ae2982dfa4cceb040aad77a/fonts/web/index.css"
                     rel="stylesheet"
                 /> */}
-                <meta name="purpleads-verification" content="78528e7d837fc5820fc6e75a"/>
                 <link href="https://fonts.darcylf.me/css?family=EB%20Garamond:ital,wght@0,400;1,400;0,700;1,700;0,800;1,800&display=swap" rel="stylesheet" />
                 
                 
