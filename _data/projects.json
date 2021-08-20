@@ -8,7 +8,7 @@
     {
         "title":"ERDot",
         "icon":"Database",
-        "description":"a python CLI script to create Entity Relationship Diagrams from JSON code.",
+        "description":"a python CLI script to create Entity Relationship Diagrams from JSON/YAML code.",
         "href":"https://github.com/ehne/ERDot"
     },
     {
