@@ -12,6 +12,12 @@
         "href":"https://github.com/ehne/ERDot"
     },
     {
+        "title": "PyNode Next",
+        "icon":"Share2",
+        "description":"PyNode Next allows you to easily create beautiful graph visualisations and animations via a simple Python library. PyNode Next was created as a modern replacement for PyNode, a program used in the teaching of the Victorian Certificate of Education's Algorithmics subject at John Monash Science School.",
+        "href":"https://github.com/ehne/PyNode-Next"
+    },
+    {
         "title":"Shareify",
         "icon": "Music",
         "description": "a web app that democratizes music in public places. Allowing people to vote on the songs to be played from a Spotify account.",
@@ -28,12 +34,6 @@
         "icon": "Grid",
         "description": "a web OS for small programming experiments that don't warrant a full website.",
         "href": "https://yos.vercel.app"
-    },
-    {
-        "title":"graphX",
-        "icon":"Share2",
-        "description":"a simple graph theory library for python. Designed to be used with as little pain and confusion as possible. Powered by AlgorithmX. Spiritual successor to Pynode.",
-        "href":"https://github.com/ehne/graphX"
     },
     {
         "title":"Microtext",
