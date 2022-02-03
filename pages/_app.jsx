@@ -4,8 +4,10 @@ import '../lib/styles.css';
 import Head from 'next/head';
 import {Box} from 'reflexbox';
 import { Provider as ReakitProvider } from 'reakit';
+import { LazyMotion, domAnimation as framerDom, AnimatePresence } from "framer-motion"
 
 import { usePanelbear } from '../lib/usePanelbear';
+import { useRouter } from 'next/router';
 
 
 const AppContainer = ({ Component, pageProps }) => {
@@ -13,6 +15,24 @@ const AppContainer = ({ Component, pageProps }) => {
         // Uncomment to allow sending events on localhost, and log to console too.
         // debug: true
     });
+    const [isFirstLoad, setIsFirstLoad] = React.useState(true);
+
+    const router = useRouter();
+
+    React.useEffect(() => {
+        const handleStop = () => {
+            console.log('loaded');
+            setIsFirstLoad(false);
+        }
+    
+        router.events.on('routeChangeComplete', handleStop)
+        router.events.on('routeChangeError', handleStop)
+    
+        return () => {
+          router.events.off('routeChangeComplete', handleStop)
+          router.events.off('routeChangeError', handleStop)
+        }
+      }, [router])
     return (
         <>
             <Head>
@@ -52,12 +72,17 @@ const AppContainer = ({ Component, pageProps }) => {
                 ><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=a0dabc26a47e10521f7551a44f55c7b4"/>
             </Head>
             <ReakitProvider>
-                <Box sx={{
-                    maxWidth: ['32em','34em'],
-                    padding: ['1em', '2em']
-                }}>
-                    <Component {...pageProps}/>
-                </Box>
+                <LazyMotion features={framerDom}>
+                    <AnimatePresence exitBeforeEnter>
+                        <Box sx={{
+                            maxWidth: ['32em','34em'],
+                            padding: ['1em', '2em']
+                        }} key={router.route}>
+                            <Component {...pageProps} isFirstLoad={isFirstLoad} />
+                        </Box>
+                    </AnimatePresence>
+                    
+                </LazyMotion>
             </ReakitProvider>
         </>
     )

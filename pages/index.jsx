@@ -1,13 +1,14 @@
 import React from 'react';
 import { Box, Flex } from 'reflexbox';
-import fs from 'fs';
-import { join } from 'path';
+import Link from 'next/link';
 
 import useStatus from '../lib/useStatus';
+import getPageData from '../lib/getPageData'
 
 import ColorBar from '../components/ColorBar';
 import ProjectItem from '../components/ProjectItem';
 import Abbrev from '../components/Abbrev';
+import FeaturedWorkItem from '../components/FeaturedWorkItem';
 
 
 const GHStatus = () => {
@@ -19,8 +20,9 @@ const GHStatus = () => {
     return  <li>I am currently {data.message}.</li>
 }
 
-const index = ({posts, year}) => {
+const index = ({posts, year, works}) => {
     const renderedProjects = posts.map(i => <ProjectItem title={i.title} content={i.description} url={i.href} key={i.title}/>)
+    const renderedWorks = works.map(i => <FeaturedWorkItem title={i.title} leadIn={i.leadIn} slug={i.slug}/>)
     return (
         <>
             <Box as="header">
@@ -37,9 +39,11 @@ const index = ({posts, year}) => {
                 <GHStatus />
             </Box>
             <ColorBar />
+
             {/* Things */}
             <Box paddingY="1em" as="section">
-                <Box as="p" mb="1em">Here are some of the things that I've made in the past. More work-in-progress projects can be found on my <a href="https://github.com/ehne?tab=repositories">GitHub</a>.</Box>
+                <Box as="p" mb="1em">Here are some of the things that I've made in the past. More completed projects can be found on the <a href="https://collective-fullstack.github.io">Collective Fullstack website</a>. And work-in-progress projects can be found on my <a href="https://github.com/ehne?tab=repositories">GitHub</a>.</Box>
+                {renderedWorks}
                 {renderedProjects}
             </Box>
            
@@ -50,21 +54,8 @@ const index = ({posts, year}) => {
     );
 }
 
-export async function getStaticProps() {
-    // Call an external API endpoint to get posts.
-    // You can use any data fetching library
-    const res = await fs.readFileSync(join(process.cwd(), '_data/projects.json'), 'utf8')
-    const posts = await JSON.parse(res)
-    
-    // By returning { props: { posts } }, the Blog component
-    // will receive `posts` as a prop at build time
-    return {
-        props: {
-            posts,
-            year: new Date().getFullYear()
-        },
-    }
-}
+
+export const getStaticProps = async () => await getPageData();
     
 
 export default index;
