@@ -12,44 +12,41 @@ const absoluteFill = {
   bottom: 0,
 };
 
-const variants = {
-  'show': {
-    x: ['100%', '0%']
-  },
-  'hide': {
-    x: ['0%', '100%']
-  },
-};
 
 const Layer = ({children, isFirstLoad}) => {
-  const duration = isFirstLoad ? 0 : .400 ;
+  const duration = isFirstLoad ? 0 : .400;
+  const bgTransition = (t) => ({
+    duration: t*0.5,
+    delay: t*0.5,
+  });
+  const layerTransition = (t) => ({ duration: t });
+
   const [color, setColor] = useState(`linear-gradient(90deg, #ffc53f 0%,#ffc53f 100%)`);
-    useEffect(()=> {
-        setColor(baseColor('45deg'));
-    }, []);
+  useEffect(()=> {
+      setColor(baseColor('45deg'));
+  }, []);
+
   return (
     <>
       <Link href="/" passHref scroll={false}>
         <m.a
           style={{
             ...absoluteFill,
-            opacity: 0.35,
+            opacity: 0.70,
             zIndex: 2,
             backgroundImage: color,
-            filter: 'brightness(0.3)',
-            display: 'block'
+            filter: 'brightness(0.5)',
+            display: 'block',
           }}
-          animate={'show'}
-          transition={{
-            duration: duration*0.5,
-            delay: duration*0.5,
-          }}
+          animate="show"
           variants={{
             'show': {
-              opacity: ['0%', '35%'],
+              opacity: ['0%', '70%'],
+              transition: bgTransition(duration)
             },
             'hide': {
-              opacity: '0%'
+              opacity: '0%',
+              transition: bgTransition(.400)
             }
           }}
           exit="hide"
@@ -66,12 +63,16 @@ const Layer = ({children, isFirstLoad}) => {
           overflow: 'scroll',
           zIndex: 3,
           backgroundColor: '#fff',
-          borderLeft: `4px solid ${baseColor('90deg', 'color')}`
         }}
-        
-        variants={variants}
-        transition={{
-          duration,
+        variants={{
+          'show': {
+            x: ['100%', '0%'],
+            transition: layerTransition(duration),
+          },
+          'hide': {
+            x: ['0%', '100%'],
+            transition: layerTransition(.400),
+          },
         }}
         animate='show'
         exit="hide"
