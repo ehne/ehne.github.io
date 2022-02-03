@@ -8,6 +8,7 @@ import getPageData from '../lib/getPageData'
 import ColorBar from '../components/ColorBar';
 import ProjectItem from '../components/ProjectItem';
 import Abbrev from '../components/Abbrev';
+import FeaturedWorkItem from '../components/FeaturedWorkItem';
 
 
 const GHStatus = () => {
@@ -21,7 +22,7 @@ const GHStatus = () => {
 
 const index = ({posts, year, works}) => {
     const renderedProjects = posts.map(i => <ProjectItem title={i.title} content={i.description} url={i.href} key={i.title}/>)
-    const renderedWorks = works.map(i => <Link href={`/work/${i.slug}`}>{i.title}</Link>)
+    const renderedWorks = works.map(i => <FeaturedWorkItem title={i.title} leadIn={i.leadIn} slug={i.slug}/>)
     return (
         <>
             <Box as="header">
