@@ -18,12 +18,6 @@
         "href":"https://github.com/ehne/PyNode-Next"
     },
     {
-        "title":"JMSS time updated",
-        "icon":"Clock",
-        "description":"an update to the jmss timetable site, it now supports the new timetable introduced in 2020, as well as letting users set custom images to use as the background.",
-        "href":"https://jmss-time.github.io/time-updated/"
-    },
-    {
         "title": "yOS",
         "icon": "Grid",
         "description": "a web OS for small programming experiments that don't warrant a full website.",
