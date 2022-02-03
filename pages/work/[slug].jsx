@@ -8,6 +8,7 @@ import getPageData from '../../lib/getPageData';
 import { useRouter } from 'next/router';
 import { getAllPosts, getPostBySlug } from '../../lib/api';
 import ColorBar from '../../components/ColorBar';
+import { color } from '../../lib/baseColor';
 
 const WorkPage = ({indexData, workData}) => {
   return (
@@ -18,7 +19,6 @@ const WorkPage = ({indexData, workData}) => {
       
       <Link href="/">
         <Box
-          backgroundColor="black"
           opacity={0.3}
           sx={{
             position: 'fixed',
@@ -26,7 +26,9 @@ const WorkPage = ({indexData, workData}) => {
             left: 0, 
             right: 0,
             bottom: 0,
-            zIndex: 2
+            zIndex: 2,
+            backgroundImage: color('90deg'),
+            filter: 'brightness(0.5)'
           }}
         />
       </Link>
