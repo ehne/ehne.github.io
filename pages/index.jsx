@@ -22,7 +22,7 @@ const GHStatus = () => {
 
 const index = ({posts, year, works}) => {
     const renderedProjects = posts.map(i => <ProjectItem title={i.title} content={i.description} url={i.href} key={i.title}/>)
-    const renderedWorks = works.map(i => <FeaturedWorkItem title={i.title} leadIn={i.leadIn} slug={i.slug}/>)
+    const renderedWorks = works.map(i => <FeaturedWorkItem title={i.title} leadIn={i.leadIn} slug={i.slug} key={i.slug}/>)
     return (
         <>
             <Box as="header">
