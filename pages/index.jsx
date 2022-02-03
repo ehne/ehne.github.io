@@ -23,7 +23,7 @@ const GHStatus = () => {
 const index = ({posts, year}) => {
     const renderedProjects = posts.map(i => <ProjectItem title={i.title} content={i.description} url={i.href} key={i.title}/>)
     return (
-        <Box>
+        <>
             <Box as="header">
                 Hi! I'm 
                 <br />
@@ -44,10 +44,10 @@ const index = ({posts, year}) => {
                 {renderedProjects}
             </Box>
            
-            <Box paddingY="1em" fontSize="0.9em" opacity="0.8" fontStyle="italic">
+            <Box paddingY="1em" fontSize="0.9em" opacity="0.8" fontStyle="italic" as="footer">
                 © darcy {year} — <a href="#">Go to top.</a>
             </Box>
-        </Box>
+        </>
     );
 }
 

@@ -52,12 +52,11 @@ const AppContainer = ({ Component, pageProps }) => {
                 ><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=a0dabc26a47e10521f7551a44f55c7b4"/>
             </Head>
             <ReakitProvider>
-                <Box padding={['1em','2em']}>
-                    <Box sx={{
-                        maxWidth: '30em'
-                    }}>
-                        <Component {...pageProps}/>
-                    </Box>
+                <Box sx={{
+                    maxWidth: ['32em','34em'],
+                    padding: ['1em', '2em']
+                }}>
+                    <Component {...pageProps}/>
                 </Box>
             </ReakitProvider>
         </>
