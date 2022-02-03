@@ -14,14 +14,14 @@ const WorkPage = ({indexData, workData, isFirstLoad}) => {
     <>
       <Box
         sx={{
-          position: 'fixed', 
+          position: 'absolute', 
           maxWidth: ['32em', '34em'],
           zIndex: 1, 
           top: 0, 
           left: 0, 
           right: 0, 
           bottom: 0, 
-          padding: ['1em', '2em']
+          padding: ['1em', '2em'],
         }}
       >
         <IndexPage {...indexData} />
