@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box } from 'reflexbox';
 import Link from 'next/link';
+import ReactMarkdown from 'react-markdown'
 
 import IndexPage from '../index';
 import getPageData from '../../lib/getPageData';
@@ -32,14 +33,18 @@ const WorkPage = ({indexData, workData, isFirstLoad}) => {
             paddingY: ['1em', '2em'],
             paddingX: ['1em', '3em']
           }}
+          className="layer-content"
         >
-          <Link href="/"><a>← go back</a></Link>
+          <Link href="/" scroll={false}><a>← Go Back</a></Link>
           <Box as="section" my="2em">
-          <h2 style={{fontSize: '2em', fontStyle: 'italic', fontWeight: '700'}}>{workData.title}</h2>
-          <Box as="p">{workData.leadIn}</Box>
-          <Box as="img" my='1em' src={workData.image}/>
-          <ColorBar />
-          <p>{workData.content}</p>
+            <h2 style={{fontSize: '2em', fontStyle: 'italic', fontWeight: '700'}}>{workData.title}</h2>
+            <Box as="p">{workData.leadIn}</Box>
+            <Box as="img" my='1em' src={workData.image}/>
+            <ColorBar />
+            <ReactMarkdown>{workData.content}</ReactMarkdown>
+            <Box as="p" marginY="2rem" fontSize="0.9em">
+              {workData.links.map(i => <a href={i} style={{display: 'block'}}>{i}</a>)}
+            </Box>
           </Box>
         </Box>
       </Layer>
@@ -49,7 +54,7 @@ const WorkPage = ({indexData, workData, isFirstLoad}) => {
 
 export const getStaticProps = async ({ params }) => {
   const indexData = await getPageData();
-  const workData = getPostBySlug(params.slug, ["slug", "title", "leadIn", 'content', 'image']);
+  const workData = getPostBySlug(params.slug, ["slug", "title", "leadIn", 'content', 'image', 'links']);
   return {
     props: {
       indexData: indexData.props,
