@@ -7,4 +7,5 @@ module.exports = {
     images: {
         loader: 'custom',
     },
+    experimental: { esmExternals: true }
 };
