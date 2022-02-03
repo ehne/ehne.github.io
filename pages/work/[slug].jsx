@@ -12,7 +12,7 @@ import ColorBar from '../../components/ColorBar';
 const WorkPage = ({indexData, workData}) => {
   return (
     <>
-      <Box sx={{position: 'fixed', width: ['32rem', '34rem'], zIndex: 1}}>
+      <Box sx={{position: 'fixed', width: '30em', zIndex: 1}}>
         <IndexPage {...indexData} />
       </Box>
       
