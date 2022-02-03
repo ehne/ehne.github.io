@@ -42,8 +42,8 @@ const WorkPage = ({indexData, workData, isFirstLoad}) => {
             <Box as="img" my='1em' src={workData.image}/>
             <ColorBar />
             <ReactMarkdown>{workData.content}</ReactMarkdown>
-            <Box as="p" marginY="2rem" fontSize="0.9em">
-              {workData.links.map(i => <a href={i} style={{display: 'block'}}>{i}</a>)}
+            <Box as="ul" marginY="1.5rem" fontSize="0.9em">
+              {workData.links.map(i => <li><a href={i} style={{display: 'block'}}>{i}</a></li>)}
             </Box>
           </Box>
         </Box>
