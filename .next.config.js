@@ -4,4 +4,7 @@ module.exports = {
         locales: ['en-AU'],
         defaultLocale: 'en-AU',
     },
+    images: {
+        loader: 'custom',
+    },
 };
