@@ -11,7 +11,6 @@ import Abbrev from '../components/Abbrev';
 
 
 const GHStatus = () => {
-    console.log('hi')
     const { data, error } = useStatus()
     // fail silently
     if (error || !data) return <></>
