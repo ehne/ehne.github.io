@@ -54,7 +54,8 @@ const AppContainer = ({ Component, pageProps }) => {
             <ReakitProvider>
                 <Box padding={['1em','2em']}>
                     <Box sx={{
-                        maxWidth: '30em'
+                        maxWidth: '30em',
+                        position: 'relative'
                     }}>
                         <Component {...pageProps}/>
                     </Box>

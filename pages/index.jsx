@@ -1,9 +1,8 @@
 import React from 'react';
 import { Box, Flex } from 'reflexbox';
-import fs from 'fs';
-import { join } from 'path';
 
 import useStatus from '../lib/useStatus';
+import getPageData from '../lib/getPageData'
 
 import ColorBar from '../components/ColorBar';
 import ProjectItem from '../components/ProjectItem';
@@ -23,7 +22,7 @@ const GHStatus = () => {
 const index = ({posts, year}) => {
     const renderedProjects = posts.map(i => <ProjectItem title={i.title} content={i.description} url={i.href} key={i.title}/>)
     return (
-        <Box>
+        <>
             <Box as="header">
                 Hi! I'm 
                 <br />
@@ -38,34 +37,28 @@ const index = ({posts, year}) => {
                 <GHStatus />
             </Box>
             <ColorBar />
+
+            {/* Featured projects that do the overlay*/}
+            <Box paddingY="1em" as="section">
+                <Box as="p" mb="1em">Featured Projects:</Box>
+                
+            </Box>
+
             {/* Things */}
             <Box paddingY="1em" as="section">
                 <Box as="p" mb="1em">Here are some of the things that I've made in the past. More work-in-progress projects can be found on my <a href="https://github.com/ehne?tab=repositories">GitHub</a>.</Box>
                 {renderedProjects}
             </Box>
            
-            <Box paddingY="1em" fontSize="0.9em" opacity="0.8" fontStyle="italic">
+            <Box paddingY="1em" fontSize="0.9em" opacity="0.8" fontStyle="italic" as="p">
                 © darcy {year} — <a href="#">Go to top.</a>
             </Box>
-        </Box>
+        </>
     );
 }
 
-export async function getStaticProps() {
-    // Call an external API endpoint to get posts.
-    // You can use any data fetching library
-    const res = await fs.readFileSync(join(process.cwd(), '_data/projects.json'), 'utf8')
-    const posts = await JSON.parse(res)
-    
-    // By returning { props: { posts } }, the Blog component
-    // will receive `posts` as a prop at build time
-    return {
-        props: {
-            posts,
-            year: new Date().getFullYear()
-        },
-    }
-}
+
+export const getStaticProps = async () => await getPageData();
     
 
 export default index;
