@@ -11,7 +11,6 @@ import Abbrev from '../components/Abbrev';
 
 
 const GHStatus = () => {
-    console.log('hi')
     const { data, error } = useStatus()
     // fail silently
     if (error || !data) return <></>
@@ -47,7 +46,7 @@ const index = ({posts, year, works}) => {
                 {renderedProjects}
             </Box>
            
-            <Box paddingY="1em" fontSize="0.9em" opacity="0.8" fontStyle="italic" as="p">
+            <Box paddingY="1em" fontSize="0.9em" opacity="0.8" fontStyle="italic" as="footer">
                 © darcy {year} — <a href="#">Go to top.</a>
             </Box>
         </>
