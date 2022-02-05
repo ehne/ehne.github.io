@@ -1,5 +1,10 @@
 [
     {
+        "title": "Collective Fullstack website",
+        "description": "a website for Collective Fullstack, the name that me and one of my friends work under. It was built with Next.JS and is statically generated from markdown files.",
+        "href": "https://github.com/Collective-Fullstack/collective-fullstack.github.io"
+    },
+    {
         "title":"MathSender",
         "icon":"Hash",
         "description":"a tool designed to help teachers ask maths questions to students during online learning. MathSender provides a way to send beautiful LaTeX based expressions in real time via a question and answer system.",
