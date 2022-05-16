@@ -30,7 +30,7 @@ const index = ({posts, year, works}) => {
                 <br />
                 <h1 style={{fontSize: '2em', fontStyle: 'italic', fontWeight: '700', display: 'inline'}}> Darcy</h1>. 
                 <br />
-                An award-winning web designer and developer from Melbourne, Australia.
+                A web designer and developer from Melbourne, Australia.
             </Box>
             {/* Links and stuff */}
             <Box paddingY="1em" as="ul">
