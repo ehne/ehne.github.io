@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Box } from 'reflexbox';
+import { Box } from 'rebass';
 import { color as baseColor } from '../lib/baseColor';
 
 import NoSSR from './NoSSR';

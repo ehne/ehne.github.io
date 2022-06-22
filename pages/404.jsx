@@ -1,5 +1,5 @@
 import React from 'react';
-import {Box} from 'reflexbox';
+import {Box} from 'rebass';
 import Link from 'next/link';
 
 import ColorBar from '../components/ColorBar';

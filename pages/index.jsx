@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Flex } from 'reflexbox';
+import { Box, Flex } from 'rebass';
 
 import getPageData from '../lib/getPageData'
 

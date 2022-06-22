@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import '../lib/styles.css';
 import Head from 'next/head';
-import {Box} from 'reflexbox';
+import {Box} from 'rebass';
 import { Provider as ReakitProvider } from 'reakit';
 import { LazyMotion, domAnimation as framerDom, AnimatePresence } from "framer-motion"
 
