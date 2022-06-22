@@ -1,24 +1,15 @@
 import React from 'react';
 import { Box, Flex } from 'reflexbox';
-import Link from 'next/link';
 
-import useStatus from '../lib/useStatus';
 import getPageData from '../lib/getPageData'
 
 import ColorBar from '../components/ColorBar';
 import ProjectItem from '../components/ProjectItem';
 import Abbrev from '../components/Abbrev';
 import FeaturedWorkItem from '../components/FeaturedWorkItem';
+import GHStatus from '../components/GHStatus';
 
 
-const GHStatus = () => {
-    const { data, error } = useStatus()
-    // fail silently
-    if (error || !data) return <></>
-    
-    // render data
-    return  <li>I am currently {data.message}.</li>
-}
 
 const index = ({posts, year, works}) => {
     const renderedProjects = posts.map(i => <ProjectItem title={i.title} content={i.description} url={i.href} key={i.title}/>)
@@ -43,6 +34,7 @@ const index = ({posts, year, works}) => {
             {/* Things */}
             <Box paddingY="1em" as="section">
                 <Box as="p" mb="1em">Here are some of the things that I've made in the past. More completed projects can be found on the <a href="https://collective-fullstack.github.io">Collective Fullstack website</a>. And work-in-progress projects can be found on my <a href="https://github.com/ehne?tab=repositories">GitHub</a>.</Box>
+                <Box as="p" mb="1em">A full folio of work is available on request, send me an email.</Box>
                 {renderedWorks}
                 {renderedProjects}
             </Box>
