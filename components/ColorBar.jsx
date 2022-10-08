@@ -4,18 +4,22 @@ import { color as baseColor } from '../lib/baseColor';
 
 import NoSSR from './NoSSR';
 
-const ColorBar = () => {
-    const [color, setColor] = useState(`linear-gradient(90deg, #ffc53f 0%,#ffc53f 100%)`);
+const ColorBar = ({ override = '', height = '0.2em', sx = {}}) => {
+    const isNotOverride = override === '';
+    const [color, setColor] = useState(isNotOverride ? `linear-gradient(90deg, #ffc53f 0%,#ffc53f 100%)` : override);
     useEffect(()=> {
-        setColor(baseColor('90deg'));
+        if (isNotOverride) {
+            setColor(baseColor('90deg'));
+        } 
     }, []);
 
     return (
         <Box
             sx={{
+                height,
                 width: '100%',
-                height: '0.2em',
                 backgroundImage: color,
+                ...sx
             }}
         />
     )

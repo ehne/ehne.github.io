@@ -8,6 +8,7 @@ import ProjectItem from '../components/ProjectItem';
 import Abbrev from '../components/Abbrev';
 import FeaturedWorkItem from '../components/FeaturedWorkItem';
 import GHStatus from '../components/GHStatus';
+import { rainbow } from '../lib/baseColor';
 
 
 
@@ -42,6 +43,8 @@ const index = ({posts, year, works}) => {
             <Box paddingY="1em" fontSize="0.9em" opacity="0.8" fontStyle="italic" as="footer">
                 © darcy {year} — <a href="#">Go to top.</a>
             </Box>
+
+            <ColorBar override={rainbow('90deg')}/>
         </>
     );
 }

@@ -4,10 +4,12 @@ import '../lib/styles.css';
 import Head from 'next/head';
 import {Box} from 'rebass';
 import { Provider as ReakitProvider } from 'reakit';
-import { LazyMotion, domAnimation as framerDom, AnimatePresence } from "framer-motion"
+import PageTransition from '../components/PageTransition';
 
 import { usePanelbear } from '../lib/usePanelbear';
 import { useRouter } from 'next/router';
+import { CSSTransition, SwitchTransition } from 'react-transition-group';
+
 
 
 const AppContainer = ({ Component, pageProps }) => {
@@ -16,23 +18,64 @@ const AppContainer = ({ Component, pageProps }) => {
         // debug: true
     });
     const [isFirstLoad, setIsFirstLoad] = React.useState(true);
-
+    const [oldKey, setOldKey] = React.useState(undefined);
     const router = useRouter();
+    const key = router.pathname;
+    const [anim, setAnim] = React.useState(router.pathname.includes('work') ? 'card-show': 'card-hide');
+    const oldCardRef = React.useRef(undefined);
+
+    React.useEffect(() => {
+        setOldKey(key);
+    }, [])
+
+    React.useEffect(() => {
+        console.log(anim)
+    }, [anim])
+
+    const oldCard = oldCardRef.current || <Component {...pageProps}  key={key} isFirstLoad={isFirstLoad} />;
+    const ret = <Component {...pageProps}  key={key} isFirstLoad={isFirstLoad} />;
+    oldCardRef.current = oldCard;
 
     React.useEffect(() => {
         const handleStop = () => {
             console.log('loaded');
             setIsFirstLoad(false);
+            setOldKey(key);
+            oldCardRef.current = <Component {...pageProps}  key={key} isFirstLoad={isFirstLoad} />;
+            if (!router.pathname.includes('work')) {
+                setAnim('card-to-show');
+            } else {
+                setAnim('card-to-hide');
+            }
+        }
+        const handleStart = () => {
         }
     
         router.events.on('routeChangeComplete', handleStop)
         router.events.on('routeChangeError', handleStop)
+        router.events.on('routeChangeStart', handleStart)
     
         return () => {
-          router.events.off('routeChangeComplete', handleStop)
-          router.events.off('routeChangeError', handleStop)
+            router.events.off('routeChangeComplete', handleStop)
+            router.events.off('routeChangeError', handleStop)
+            router.events.off('routeChangeStart', handleStart)
         }
-      }, [router])
+    }, [router, key])
+
+    
+
+    const onAnimationEnd = () => {
+        if (anim === 'card-to-hide') {
+            setOldKey(key)
+            console.log("OHOHO")
+            setAnim('card-hide');
+        } else if (anim === 'card-to-show') {
+            setOldKey(key)
+            setAnim('card-show')
+        }
+    }
+    
+    const isCurr =  anim !== 'card-loading' || anim === 'card-to-hide';
     return (
         <>
             <Head>
@@ -41,9 +84,8 @@ const AppContainer = ({ Component, pageProps }) => {
                     href="https://cdn.jsdelivr.net/gh/sharanda/manrope@1a6035ff9cc9ce819ae2982dfa4cceb040aad77a/fonts/web/index.css"
                     rel="stylesheet"
                 /> */}
-                <link href="https://fonts.darcylf.me/css?family=EB%20Garamond:ital,wght@0,400;1,400;0,700;1,700;0,800;1,800&display=swap" rel="stylesheet" />
-                
-                
+
+                <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />                 
                 <meta name="description" content="Hi! I'm Darcy, a web designer and developer based in Melbourne"/>
                 
                 <meta property="og:type" content="website"/>
@@ -72,17 +114,16 @@ const AppContainer = ({ Component, pageProps }) => {
                 ><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=a0dabc26a47e10521f7551a44f55c7b4"/>
             </Head>
             <ReakitProvider>
-                <LazyMotion features={framerDom}>
-                    <AnimatePresence exitBeforeEnter>
                         <Box sx={{
                             maxWidth: ['32em','34em'],
                             padding: ['1em', '2em']
-                        }} key={router.route}>
-                            <Component {...pageProps} isFirstLoad={isFirstLoad} />
+                        }} 
+                        key={router.route}
+                        className={anim} 
+                        onAnimationEnd={onAnimationEnd}
+                        >   
+                            {isCurr ? ret : oldCard}
                         </Box>
-                    </AnimatePresence>
-                    
-                </LazyMotion>
             </ReakitProvider>
         </>
     )

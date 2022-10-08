@@ -15,7 +15,7 @@ a{
     color: #05f;
 }
 
-a:hover {
+a:not(.layer-bg):hover {
     opacity: 75%
 }
 
@@ -43,4 +43,73 @@ a:hover {
 }
 .hover-arrow:hover {
     transform: translateX(0.3em)
+}
+
+/* anims */
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(100vw);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0%;
+    }
+    to {
+        opacity: 70%;
+    }
+}
+@keyframes slideOut {
+    0% {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(100vw);
+    }
+}
+@keyframes fadeOut {
+    0% {
+        opacity: 70%;
+    }
+    to {
+        opacity: 0%;
+    }
+}
+
+@keyframes nothing {
+    0% {
+        opacity: 1;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+:root {
+	--timing: cubic-bezier(.87, 0, .20, 1);
+}
+
+.card-to-hide {
+    animation: nothing 1.1s var(--timing);
+}
+.card-to-show {
+    animation: nothing 1.1s var(--timing);
+}
+
+.card-to-show .layer-card {
+    animation-name: slideIn;
+    animation-duration: 0.7s;
+    animation-timing-function: var(--timing);
+    animation-fill-mode: both;
+}
+
+.card-to-hide .layer-card {
+    animation-name: slideOut;
+    animation-duration: 0.7s;
+    animation-timing-function: var(--timing);
+    animation-fill-mode: both;
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box } from 'rebass';
 import Link from 'next/link';
-import ReactMarkdown from 'react-markdown'
+import ReactMarkdown from 'react-markdown';
 
 import IndexPage from '../index';
 import getPageData from '../../lib/getPageData';
@@ -12,20 +12,7 @@ import Layer from '../../components/Layer';
 const WorkPage = ({indexData, workData, isFirstLoad}) => {
   return (
     <>
-      <Box
-        sx={{
-          position: 'absolute', 
-          maxWidth: ['32em', '34em'],
-          zIndex: 1, 
-          top: 0, 
-          left: 0, 
-          right: 0, 
-          bottom: 0, 
-          padding: ['1em', '2em'],
-        }}
-      >
-        <IndexPage {...indexData} />
-      </Box>
+      <IndexPage {...indexData} />
       <Layer isFirstLoad={isFirstLoad}>
         <Box
           sx={{
@@ -34,7 +21,7 @@ const WorkPage = ({indexData, workData, isFirstLoad}) => {
             paddingX: ['1em', '3em']
           }}
           className="layer-content"
-        >
+          >
           <Link href="/" scroll={false}><a>← Go Back</a></Link>
           <Box as="section" my="2em">
             <h2 style={{fontSize: '2em', fontStyle: 'italic', fontWeight: '700'}}>{workData.title}</h2>
