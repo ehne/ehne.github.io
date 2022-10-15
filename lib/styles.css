@@ -48,12 +48,7 @@ a:not(.layer-bg):hover {
 /* anims */
 
 @keyframes slideIn {
-    0% {
-        transform: translateX(100vw);
-    }
-    to {
-        transform: translateX(0px);
-    }
+    0%{transform:translateX(98.3vw);}1%{transform:translateX(95.37vw);}2%{transform:translateX(91.58vw);}3%{transform:translateX(87.22vw);}4%{transform:translateX(82.51vw);}5%{transform:translateX(77.62vw);}6%{transform:translateX(72.69vw);}7%{transform:translateX(67.8vw);}8%{transform:translateX(63.03vw);}9%{transform:translateX(58.43vw);}10%{transform:translateX(54.03vw);}11%{transform:translateX(49.86vw);}12%{transform:translateX(45.92vw);}13%{transform:translateX(42.23vw);}14%{transform:translateX(38.78vw);}15%{transform:translateX(35.56vw);}16%{transform:translateX(32.58vw);}17%{transform:translateX(29.82vw);}18%{transform:translateX(27.27vw);}19%{transform:translateX(24.92vw);}20%{transform:translateX(22.76vw);}21%{transform:translateX(20.77vw);}22%{transform:translateX(18.95vw);}23%{transform:translateX(17.27vw);}24%{transform:translateX(15.74vw);}25%{transform:translateX(14.34vw);}26%{transform:translateX(13.06vw);}27%{transform:translateX(11.89vw);}28%{transform:translateX(10.83vw);}29%{transform:translateX(9.85vw);}30%{transform:translateX(8.96vw);}31%{transform:translateX(8.15vw);}32%{transform:translateX(7.42vw);}33%{transform:translateX(6.74vw);}34%{transform:translateX(6.13vw);}35%{transform:translateX(5.58vw);}36%{transform:translateX(5.07vw);}37%{transform:translateX(4.61vw);}38%{transform:translateX(4.19vw);}39%{transform:translateX(3.81vw);}40%{transform:translateX(3.46vw);}41%{transform:translateX(3.14vw);}42%{transform:translateX(2.86vw);}43%{transform:translateX(2.59vw);}44%{transform:translateX(2.36vw);}45%{transform:translateX(2.14vw);}46%{transform:translateX(1.95vw);}47%{transform:translateX(1.77vw);}48%{transform:translateX(1.61vw);}49%{transform:translateX(1.46vw);}50%{transform:translateX(1.33vw);}51%{transform:translateX(1.2vw);}52%{transform:translateX(1.09vw);}53%{transform:translateX(0.99vw);}54%{transform:translateX(0.9vw);}55%{transform:translateX(0.82vw);}56%{transform:translateX(0.74vw);}57%{transform:translateX(0.68vw);}58%{transform:translateX(0.61vw);}59%{transform:translateX(0.56vw);}60%{transform:translateX(0.51vw);}61%{transform:translateX(0.46vw);}62%{transform:translateX(0.42vw);}63%{transform:translateX(0.38vw);}64%{transform:translateX(0.34vw);}65%{transform:translateX(0.31vw);}66%{transform:translateX(0.28vw);}67%{transform:translateX(0.26vw);}68%{transform:translateX(0.23vw);}69%{transform:translateX(0.21vw);}70%{transform:translateX(0.19vw);}71%{transform:translateX(0.18vw);}72%{transform:translateX(0.16vw);}73%{transform:translateX(0.14vw);}74%{transform:translateX(0.13vw);}75%{transform:translateX(0.12vw);}76%{transform:translateX(0.11vw);}77%{transform:translateX(0.1vw);}78%{transform:translateX(0.09vw);}79%{transform:translateX(0.08vw);}80%{transform:translateX(0.07vw);}81%{transform:translateX(0.07vw);}82%{transform:translateX(0.06vw);}83%{transform:translateX(0.06vw);}84%{transform:translateX(0.05vw);}85%{transform:translateX(0.05vw);}86%{transform:translateX(0.04vw);}87%{transform:translateX(0.04vw);}88%{transform:translateX(0.03vw);}91%{transform:translateX(0.03vw);}92%{transform:translateX(0.02vw);}96%{transform:translateX(0.02vw);}97%{transform:translateX(0.01vw);}100%{transform:translateX(0.01vw);}
 }
 @keyframes fadeIn {
     0% {
@@ -90,7 +85,7 @@ a:not(.layer-bg):hover {
 }
 
 :root {
-	--timing: cubic-bezier(.87, 0, .20, 1);
+	--timing: linear;
 }
 
 .card-to-hide {
