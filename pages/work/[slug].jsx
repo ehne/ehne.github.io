@@ -1,9 +1,9 @@
 import React from 'react';
 import { Box } from 'rebass';
 import Link from 'next/link';
-import Image from 'next/image';
 import Head from 'next/head';
 import ReactMarkdown from 'react-markdown';
+import ProgressiveImage from 'react-progressive-graceful-image';
 
 import IndexPage from '../index';
 import getPageData from '../../lib/getPageData';
@@ -13,7 +13,7 @@ import { rainbow } from '../../lib/baseColor';
 import Layer from '../../components/Layer';
 import generatePlaice from '../../lib/generatePlaice';
 
-const customLoader = ({ src }) => src;
+
 
 const WorkPage = ({indexData, workData, isFirstLoad, plaice}) => {
   return (
@@ -36,14 +36,35 @@ const WorkPage = ({indexData, workData, isFirstLoad, plaice}) => {
             <h2 style={{fontSize: '2em', fontStyle: 'italic', fontWeight: '700'}}>{workData.title}</h2>
             <Box as="p">{workData.leadIn}</Box>
             <Box pt="1.2em" pb="1.5em">
-              <Image
-                src={workData.image}
-                width={plaice.width}
-                height={plaice.height}
-                placeholder="blur"
-                blurDataURL={plaice.base64}
-                unoptimized
-              />
+              <ProgressiveImage src={workData.image} placeholder={plaice.base64}>
+                {(src, loading) => (
+                  <Box
+                    sx={{
+                      backgroundImage: `url(${plaice.base64})`,
+                      backgroundSize: 'cover',
+                      paddingTop: `${100* plaice.height/plaice.width}%`,
+                      position: 'relative',
+                      filter: loading && 'blur(10px)',
+                      transition: 'all 0.1s linear',
+                      transitionDelay: '0.1s',
+                      border: '0'
+                    }}
+                  >
+                    <img 
+                      src={src} 
+                      width={`${plaice.width}px`}
+                      height={`${plaice.height}px`}
+                      style={{
+                        position: 'absolute',
+                        top: 0
+                      }}
+                    />
+                    <noscript>
+                      <Box as="img" src={workData.image} />
+                    </noscript>
+                  </Box>
+                )}
+              </ProgressiveImage>
             </Box>
             <ColorBar />
             <ReactMarkdown>{workData.content}</ReactMarkdown>
