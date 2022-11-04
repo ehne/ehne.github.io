@@ -118,8 +118,7 @@ const AppContainer = ({ Component, pageProps }) => {
                         className={isFirstLoad ? '' : state.value} 
                         onAnimationEnd={()=>send("NEXT")}
                         >   
-                        {JSON.stringify(state)}
-                            {(state.value === "show" || state.value === 'hide') ? ret : oldCard}
+                        {(state.value === "show" || state.value === 'hide') ? ret : oldCard}
                         </Box>
             </ReakitProvider>
         </>
