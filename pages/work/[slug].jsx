@@ -43,6 +43,7 @@ const WorkPage = ({indexData, workData, isFirstLoad, plaice}) => {
                 backgroundSize="cover"
                 layout="responsive"
                 unoptimized
+                loader={({src})=>src}
               />
             </Box>
             <ColorBar />
