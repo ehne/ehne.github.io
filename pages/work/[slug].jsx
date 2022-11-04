@@ -13,6 +13,8 @@ import { rainbow } from '../../lib/baseColor';
 import Layer from '../../components/Layer';
 import generatePlaice from '../../lib/generatePlaice';
 
+const customLoader = ({ src }) => src;
+
 const WorkPage = ({indexData, workData, isFirstLoad, plaice}) => {
   return (
     <>
@@ -40,10 +42,7 @@ const WorkPage = ({indexData, workData, isFirstLoad, plaice}) => {
                 height={plaice.height}
                 placeholder="blur"
                 blurDataURL={plaice.base64}
-                backgroundSize="cover"
-                layout="responsive"
                 unoptimized
-                loader={({src})=>src}
               />
             </Box>
             <ColorBar />
