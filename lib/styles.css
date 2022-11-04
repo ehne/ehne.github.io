@@ -89,21 +89,21 @@ a:not(.layer-bg):hover {
 	--timing: linear;
 }
 
-.card-to-hide {
+.hide {
     animation: nothing 1.1s var(--timing);
 }
-.card-to-show {
+.show {
     animation: nothing 1.1s var(--timing);
 }
 
-.card-to-show .layer-card {
+.show .layer-card {
     animation-name: slideIn;
     animation-duration: 0.7s;
     animation-timing-function: var(--timing);
     animation-fill-mode: both;
 }
 
-.card-to-hide .layer-card {
+.hide .layer-card {
     animation-name: slideOut;
     animation-duration: 0.7s;
     animation-timing-function: var(--timing);

@@ -7,6 +7,7 @@ import { Provider as ReakitProvider } from 'reakit';
 
 import { usePanelbear } from '../lib/usePanelbear';
 import { useRouter } from 'next/router';
+import useStateMachine from '@cassiozen/usestatemachine';
 
 
 
@@ -19,16 +20,30 @@ const AppContainer = ({ Component, pageProps }) => {
     const [oldKey, setOldKey] = React.useState(undefined);
     const router = useRouter();
     const key = router.pathname;
-    const [anim, setAnim] = React.useState(router.pathname.includes('work') ? 'card-show': 'card-hide');
+    const [state, send] = useStateMachine({
+        initial: router.pathname.includes('work') ? 'show' : 'hide',
+        states: {
+            'show': {
+                on: { TOGGLE: 'to-hide'}
+            },
+            'to-hide': {
+                on: { NEXT: 'hide'}
+            },
+            'hide': {
+                on: { TOGGLE: 'to-show'}
+            },
+            'to-show': {
+                on: { NEXT: 'show'},
+            },
+        }
+    })
+    // React.useState(router.pathname.includes('work') ? 'card-show': 'card-hide');
     const oldCardRef = React.useRef(undefined);
 
     React.useEffect(() => {
         setOldKey(key);
     }, [])
 
-    React.useEffect(() => {
-        console.log(anim)
-    }, [anim])
 
     const oldCard = oldCardRef.current || <Component {...pageProps}  key={key} isFirstLoad={isFirstLoad} />;
     const ret = <Component {...pageProps}  key={key} isFirstLoad={isFirstLoad} />;
@@ -40,13 +55,10 @@ const AppContainer = ({ Component, pageProps }) => {
             setIsFirstLoad(false);
             setOldKey(key);
             oldCardRef.current = <Component {...pageProps}  key={key} isFirstLoad={isFirstLoad} />;
-            if (!router.pathname.includes('work')) {
-                setAnim('card-to-show');
-            } else {
-                setAnim('card-to-hide');
-            }
+            send("NEXT")
         }
         const handleStart = () => {
+            send("TOGGLE")
         }
     
         router.events.on('routeChangeComplete', handleStop)
@@ -60,20 +72,6 @@ const AppContainer = ({ Component, pageProps }) => {
         }
     }, [router, key])
 
-    
-
-    const onAnimationEnd = () => {
-        if (anim === 'card-to-hide') {
-            setOldKey(key)
-            console.log("OHOHO")
-            setAnim('card-hide');
-        } else if (anim === 'card-to-show') {
-            setOldKey(key)
-            setAnim('card-show')
-        }
-    }
-    
-    const isCurr =  anim !== 'card-loading' || anim === 'card-to-hide';
     return (
         <>
             <Head>
@@ -117,10 +115,11 @@ const AppContainer = ({ Component, pageProps }) => {
                             padding: ['1em', '2em']
                         }} 
                         key={router.route}
-                        className={anim} 
-                        onAnimationEnd={onAnimationEnd}
+                        className={isFirstLoad ? '' : state.value} 
+                        onAnimationEnd={()=>send("NEXT")}
                         >   
-                            {isCurr ? ret : oldCard}
+                        {JSON.stringify(state)}
+                            {(state.value === "show" || state.value === 'hide') ? ret : oldCard}
                         </Box>
             </ReakitProvider>
         </>
