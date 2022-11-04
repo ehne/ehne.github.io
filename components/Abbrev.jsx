@@ -1,5 +1,5 @@
 import React from 'react';
-import { Tooltip, TooltipReference, useTooltipState, Button } from 'reakit/Tooltip';
+import { Tooltip, TooltipReference, useTooltipState } from 'reakit/Tooltip';
 import { Box } from 'rebass';
 
 const AbbrevSpan = (props) => <Box as="span" {...props}>{props.children}</Box>

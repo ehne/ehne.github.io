@@ -2,8 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { Box } from 'rebass';
 import { color as baseColor } from '../lib/baseColor';
 
-import NoSSR from './NoSSR';
-
 const ColorBar = ({ override = '', height = '0.2em', sx = {}}) => {
     const isNotOverride = override === '';
     const [color, setColor] = useState(isNotOverride ? `linear-gradient(90deg, #ffc53f 0%,#ffc53f 100%)` : override);

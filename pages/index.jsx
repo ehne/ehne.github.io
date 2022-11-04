@@ -34,7 +34,7 @@ const index = ({posts, year, works}) => {
 
             {/* Things */}
             <Box paddingY="1em" as="section">
-                <Box as="p" mb="1em">Here are some of the things that I've made in the past. More completed projects can be found on the <a href="https://collective-fullstack.github.io">Collective Fullstack website</a>. And work-in-progress projects can be found on my <a href="https://github.com/ehne?tab=repositories">GitHub</a>.</Box>
+                <Box as="p" mb="1em">Here are some of the things that I've made in the past. Work-in-progress projects can be found on my <a href="https://github.com/ehne?tab=repositories">GitHub</a>.</Box>
                 <Box as="p" mb="1em">A full folio of work is available on request, send me an email.</Box>
                 {renderedWorks}
                 {renderedProjects}

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { color as baseColor } from '../lib/baseColor';
-import ColorBar from './ColorBar';
 
 
 const absoluteFill = {
@@ -45,7 +44,7 @@ const Layer = ({children, isFirstLoad}) => {
         zIndex: 3,
         backgroundColor: '#fff',
         display: "flex",
-        alignItems: 'stretch'
+        alignItems: 'stretch',
       }}
       className="layer-card"
       >

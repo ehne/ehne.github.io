@@ -1,5 +1,10 @@
 // next.config.js
-module.exports = {
+
+const { withPlaiceholder } = require('@plaiceholder/next');
+
+module.exports = withPlaiceholder({
+    swcMinify: true,
+    staticPageGenerationTimeout: 200,
     i18n: {
         locales: ['en-AU'],
         defaultLocale: 'en-AU',
@@ -8,4 +13,4 @@ module.exports = {
         loader: 'custom',
     },
     experimental: { esmExternals: true }
-};
+});

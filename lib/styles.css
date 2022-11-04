@@ -36,6 +36,7 @@ a:not(.layer-bg):hover {
     margin-top: 1rem;
 }
 
+
 .hover-arrow {
     transition: ease-in-out 0.2s all;
     display: inline-block;

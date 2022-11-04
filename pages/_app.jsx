@@ -4,11 +4,9 @@ import '../lib/styles.css';
 import Head from 'next/head';
 import {Box} from 'rebass';
 import { Provider as ReakitProvider } from 'reakit';
-import PageTransition from '../components/PageTransition';
 
 import { usePanelbear } from '../lib/usePanelbear';
 import { useRouter } from 'next/router';
-import { CSSTransition, SwitchTransition } from 'react-transition-group';
 
 
 
