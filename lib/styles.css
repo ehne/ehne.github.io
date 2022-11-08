@@ -95,6 +95,15 @@ a:not(.layer-bg):hover {
 .to-show {
     animation: nothing 1.1s var(--timing);
 }
+/*
+.to-show .layer-bg {
+    animation-name: fadeIn;
+    animation-duration: 0.3s;
+    animation-timing-function: var(--timing);
+    animation-fill-mode: both;
+}
+*/
+
 
 .to-show .layer-card {
     animation-name: slideIn;
@@ -104,8 +113,9 @@ a:not(.layer-bg):hover {
 }
 
 .to-hide .layer-card {
-    animation-name: slideOut;
-    animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.7s;
+    animation-direction: reverse;
     animation-timing-function: var(--timing);
     animation-fill-mode: both;
 }
