@@ -38,37 +38,36 @@ const AppContainer = ({ Component, pageProps }) => {
         }
     })
     // React.useState(router.pathname.includes('work') ? 'card-show': 'card-hide');
-    const oldCardRef = React.useRef(undefined);
+    const cardRef = React.useRef(undefined);
 
     React.useEffect(() => {
         setOldKey(key);
     }, [])
 
+    const card = cardRef.current || <Component {...pageProps}  key={key} isFirstLoad={isFirstLoad} />;
+    const base = <Component {...pageProps}  key={key} isFirstLoad={isFirstLoad} />;
+    cardRef.current = card;
 
-    const oldCard = oldCardRef.current || <Component {...pageProps}  key={key} isFirstLoad={isFirstLoad} />;
-    const ret = <Component {...pageProps}  key={key} isFirstLoad={isFirstLoad} />;
-    oldCardRef.current = oldCard;
 
     React.useEffect(() => {
         const handleStop = () => {
             console.log('loaded');
             setIsFirstLoad(false);
-            setOldKey(key);
-            oldCardRef.current = <Component {...pageProps}  key={key} isFirstLoad={isFirstLoad} />;
-            send("NEXT")
+            send("TOGGLE");
         }
         const handleStart = () => {
-            send("TOGGLE")
+            cardRef.current = <Component {...pageProps}  key={key} isFirstLoad={isFirstLoad} />;
         }
     
         router.events.on('routeChangeComplete', handleStop)
         router.events.on('routeChangeError', handleStop)
         router.events.on('routeChangeStart', handleStart)
-    
+
         return () => {
             router.events.off('routeChangeComplete', handleStop)
             router.events.off('routeChangeError', handleStop)
             router.events.off('routeChangeStart', handleStart)
+
         }
     }, [router, key])
 
@@ -118,7 +117,7 @@ const AppContainer = ({ Component, pageProps }) => {
                         className={isFirstLoad ? '' : state.value} 
                         onAnimationEnd={()=>send("NEXT")}
                         >   
-                        {(state.value === "show" || state.value === 'hide') ? ret : oldCard}
+                        {state.value === 'to-hide' ? card : base}
                         </Box>
             </ReakitProvider>
         </>
