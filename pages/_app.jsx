@@ -5,7 +5,6 @@ import Head from 'next/head';
 import {Box} from 'rebass';
 import { Provider as ReakitProvider } from 'reakit';
 
-import { usePanelbear } from '../lib/usePanelbear';
 import { useCronitor } from '../lib/useCronitor';
 import { useRouter } from 'next/router';
 import useStateMachine from '@cassiozen/usestatemachine';
@@ -14,10 +13,6 @@ import useStateMachine from '@cassiozen/usestatemachine';
 
 const AppContainer = ({ Component, pageProps }) => {
     useCronitor('4cf29e3ec00dd7afc9a9e269070281fe', {});
-    usePanelbear('CPwwSVDDRs3', {
-        // Uncomment to allow sending events on localhost, and log to console too.
-        // debug: true
-    });
     const [isFirstLoad, setIsFirstLoad] = React.useState(true);
     const [oldKey, setOldKey] = React.useState(undefined);
     const router = useRouter();
