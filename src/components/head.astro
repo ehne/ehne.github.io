@@ -6,6 +6,12 @@
 <meta name="viewport" content="width=device-width" />
 <meta name="generator" content={Astro.generator} />
 
+<script is:inline async src="https://rum.cronitor.io/script.js"></script>
+<script is:inline>
+    window.cronitor = window.cronitor || function() { (window.cronitor.q = window.cronitor.q || []).push(arguments); };
+    cronitor('config', { clientKey: '4cf29e3ec00dd7afc9a9e269070281fe' });
+</script>
+
 <script>
   // determines the day and then updates the --bg-image-colors variable accordingly
 
