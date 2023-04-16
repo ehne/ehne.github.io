@@ -72,3 +72,9 @@ old
 out
 
 .idea
+
+
+# build output
+dist/
+# generated types
+.astro/
