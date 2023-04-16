@@ -1,0 +1,12 @@
+var e=new Date().getDate(),b=new Date().getMonth()+1;let r="#ffc53f 0%, #ffc53f 100%";switch([e,b].toString()){case"17,5":r=`rgb(243, 115, 97) 0%, 
+      rgb(243, 115, 97) 16.6%, 
+      rgb(248, 155, 60) 16.6%, 
+      rgb(248, 155, 60) 33.2%,
+      #ffc53f 33.2%, 
+      #ffc53f 49.36%, 
+      rgb(163, 187, 74) 49.36%, 
+      rgb(163, 187, 74) 65.96%, 
+      rgb(91, 199, 190) 65.96%, 
+      rgb(91, 199, 190) 82.56%, 
+      rgb(106, 80, 149) 82.56%, 
+      rgb(106, 80, 149) 100%)`;break;case"26,8":r="rgb(106, 80, 149) 0%,rgb(106, 80, 149) 100%";break;case"20,9":r="rgb(163, 187, 74) 0%, rgb(163, 187, 74) 100%";break}document.documentElement.style.setProperty("--bg-image-colors",r);
