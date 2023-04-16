@@ -1,0 +1,209 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select{margin:0}html{box-sizing:border-box}*,*::before,*::after{box-sizing:inherit}img,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+
+:root {
+  --timing: cubic-bezier(0.22, 0.25, 0.00, 1.00);
+  --bg-image-colors: #ffc53f 0%, #ffc53f 100%;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'EB Garamond', serif;
+  line-height: 1.3;
+  background-color: #fff
+}
+
+body {
+  font-size: 1.1em
+}
+
+a{
+  color: #05f;
+}
+
+a:not(.background-layer):hover {
+  opacity: 75%
+}
+
+.page-container {
+  max-width: 32em;
+  padding: 1em;
+}
+
+.color-bar {
+  height: 0.2em;
+  width: 100%;
+  background-image: linear-gradient(90deg, var(--bg-image-colors));
+}
+
+.color-bar.rainbow {
+  background-image: linear-gradient(90deg, rgb(243, 115, 97) 0%, 
+    rgb(243, 115, 97) 16.6%, 
+    rgb(248, 155, 60) 16.6%, 
+    rgb(248, 155, 60) 33.2%,
+    #ffc53f 33.2%, 
+    #ffc53f 49.36%, 
+    rgb(163, 187, 74) 49.36%, 
+    rgb(163, 187, 74) 65.96%, 
+    rgb(91, 199, 190) 65.96%, 
+    rgb(91, 199, 190) 82.56%, 
+    rgb(106, 80, 149) 82.56%, 
+    rgb(106, 80, 149) 100%)
+}
+
+.heading {
+  font-size: 2em; 
+  font-style: italic; 
+  font-weight: 700; 
+  display: inline;
+}
+
+.section {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.work-section {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.work-links {
+  box-sizing: border-box;
+  margin: 1.5rem 0px;
+  font-size: 0.9em;
+}
+
+.layer-content p:not(.section) {
+  margin-top: 1em;
+}
+
+p:not(.section) {
+  margin-bottom: 1em;
+}
+
+.work-image {
+  box-sizing: border-box;
+  margin: 0px;
+  min-width: 0px;
+  position: relative;
+  transition: all 0.1s linear 0.1s;
+  border: 0px none;
+  overflow: hidden;
+}
+
+.work-image-actual {
+  position: absolute;
+  inset: 0;
+}
+.work-image-plaice {
+  position: absolute;
+  inset: 0;
+  image-rendering: pixelated;
+}
+
+
+footer {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-size: 0.9em;
+  opacity: 0.8;
+  font-style: italic;
+}
+
+
+.layer-content {
+  max-width: 32em;
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  height: 100%;
+  overflow: scroll;
+  z-index: 4;
+  
+}
+.background-layer {
+  position: fixed;
+  inset: 0px;
+  opacity: 0.7;
+  z-index: 2;
+  background-image: linear-gradient(45deg, var(--bg-image-colors));
+  filter: brightness(0.5);
+  display: block;
+}
+
+
+.work-section {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.work-image-container {
+  padding-top: 1.2em;
+  padding-bottom: 1.5em;
+}
+
+
+@media screen and (min-width: 40em) {
+  .page-container {
+    max-width: 34em;
+    padding: 2em;
+  }
+
+  .layer-content {
+    max-width: 34em;
+    padding-top: 2em;
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+}
+
+
+/* Handles loading and animations */
+
+@keyframes slideIn {
+ 0%{transform:translateX(33.42em);}1%{transform:translateX(32.43em);}2%{transform:translateX(31.14em);}3%{transform:translateX(29.66em);}4%{transform:translateX(28.05em);}5%{transform:translateX(26.39em);}6%{transform:translateX(24.71em);}7%{transform:translateX(23.05em);}8%{transform:translateX(21.43em);}9%{transform:translateX(19.87em);}10%{transform:translateX(18.37em);}11%{transform:translateX(16.95em);}12%{transform:translateX(15.61em);}13%{transform:translateX(14.36em);}14%{transform:translateX(13.18em);}15%{transform:translateX(12.09em);}16%{transform:translateX(11.08em);}17%{transform:translateX(10.14em);}18%{transform:translateX(9.27em);}19%{transform:translateX(8.47em);}20%{transform:translateX(7.74em);}21%{transform:translateX(7.06em);}22%{transform:translateX(6.44em);}23%{transform:translateX(5.87em);}24%{transform:translateX(5.35em);}25%{transform:translateX(4.88em);}26%{transform:translateX(4.44em);}27%{transform:translateX(4.04em);}28%{transform:translateX(3.68em);}29%{transform:translateX(3.35em);}30%{transform:translateX(3.05em);}31%{transform:translateX(2.77em);}32%{transform:translateX(2.52em);}33%{transform:translateX(2.29em);}34%{transform:translateX(2.09em);}35%{transform:translateX(1.9em);}36%{transform:translateX(1.72em);}37%{transform:translateX(1.57em);}38%{transform:translateX(1.42em);}39%{transform:translateX(1.29em);}40%{transform:translateX(1.18em);}41%{transform:translateX(1.07em);}42%{transform:translateX(0.97em);}43%{transform:translateX(0.88em);}44%{transform:translateX(0.8em);}45%{transform:translateX(0.73em);}46%{transform:translateX(0.66em);}47%{transform:translateX(0.6em);}48%{transform:translateX(0.55em);}49%{transform:translateX(0.5em);}50%{transform:translateX(0.45em);}51%{transform:translateX(0.41em);}52%{transform:translateX(0.37em);}53%{transform:translateX(0.34em);}54%{transform:translateX(0.31em);}55%{transform:translateX(0.28em);}56%{transform:translateX(0.25em);}57%{transform:translateX(0.23em);}58%{transform:translateX(0.21em);}59%{transform:translateX(0.19em);}60%{transform:translateX(0.17em);}61%{transform:translateX(0.16em);}62%{transform:translateX(0.14em);}63%{transform:translateX(0.13em);}64%{transform:translateX(0.12em);}65%{transform:translateX(0.11em);}66%{transform:translateX(0.1em);}67%{transform:translateX(0.09em);}68%{transform:translateX(0.08em);}69%{transform:translateX(0.07em);}70%{transform:translateX(0.07em);}71%{transform:translateX(0.06em);}72%{transform:translateX(0.05em);}73%{transform:translateX(0.05em);}74%{transform:translateX(0.04em);}76%{transform:translateX(0.04em);}77%{transform:translateX(0.03em);}80%{transform:translateX(0.03em);}81%{transform:translateX(0.02em);}85%{transform:translateX(0.02em);}86%{transform:translateX(0.01em);}96%{transform:translateX(0.01em);}97%{transform:translateX(0);}100%{transform:translateX(0);}
+}
+
+@keyframes slideOut {
+  0% {
+    transform: translateX(0em);
+  }
+  100% {
+    transform:translateX(34em)
+  }
+}
+
+.layer[ml-state="opened"] .layer-content {
+  animation-name: slideIn;
+  animation-duration: 0.7s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+.layer[ml-state="closing"] .layer-content {
+  animation-name: slideOut;
+  animation-duration: 0.2s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: both;
+}
+
+a[data-openlayer="work"]::after {
+  content: "→";
+  font-family: "EB Garamond", serif;
+}
+
+a[ml-state="loading"] {
+  color: #555;
+  opacity: 1 !important;
+  cursor: not-allowed;
+  background-image: url("./spinner.png");
+  background-size: 0.9em 0.9em;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-y: 60%;
+  padding-right: 1.1em;
+}
+
