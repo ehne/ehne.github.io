@@ -1,0 +1,29 @@
+---
+import { getEntryBySlug } from 'astro:content';
+const entry = await getEntryBySlug('data', 'projects');
+const { Content, headings } = await entry.render();
+---
+
+<div class="page-container">
+  <header>
+    Hi! I'm<br>
+    <h1 class="heading">Darcy</h1>.
+    <br>A web designer and developer from Melbourne, Australia.
+  </header>
+  <ul class="section">
+    <li>GitHub: <a href="https://github.com/ehne">https://github.com/ehne</a></li>
+    <li>Email: darcy (at) darcylf.me — Don't send me files.</li>
+  </ul>
+  <div class="color-bar" />
+  <section class="section">
+    <p>Here are some of the things that I've made in the past. Work-in-progress projects can be found on my <a href="https://github.com/ehne?tab=repositories">GitHub</a>.</p>
+    <p>A full folio of work is available on request, send me an email.</p>
+    <p><b>Shareify: </b> a web app that democratizes music in public places. Allowing people to vote on the songs to be played from a Spotify account. <a href="/work/Shareify" data-openlayer="work">Read More </a></p>
+    <p><b>JMSS Time Updated: </b> an update to the John Monash Science School timetable site, it now supports the new timetable introduced in 2020, as well as letting users set custom images to use as the background. <a href="/work/JMSS-time" data-openlayer="work">Read More </a></p>
+    <Content />	
+  </section>
+  <footer>
+    © darcy 2023 — <a href="#">Go to top.</a>
+  </footer>
+  <div class="color-bar rainbow"></div>
+</div>

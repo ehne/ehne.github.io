@@ -1,0 +1,54 @@
+---
+import { getPlaiceholder } from 'plaiceholder';
+import '../lib/styles.css';
+import Index from "../components/indexPage.astro";
+import Head from "../components/head.astro";
+const { frontmatter } = Astro.props;
+
+const { base64, img } = await getPlaiceholder(
+  frontmatter.cover,
+  { size: 10 }
+);
+
+---
+<html>
+  <head>
+    <Head />
+    <title>{frontmatter.title} | darcylf.me</title>
+  </head>
+  <body>
+    <Index />
+    <div class="layer" data-microlayer="work">
+      <a class="background-layer" href="/" data-closelayer="work" />
+      <div class="layer-content">
+        <a href="/" data-closelayer="work">← Go Back</a>
+        <section class="work-section">
+          <h2 class="heading">{frontmatter.title}</h2>
+          <p class="section">{frontmatter.description}</p>
+          <div class="work-image-container">
+            <div class="work-image" style={{paddingTop: (img.height / img.width) * 100 + "%"}}>
+             <img src={base64} class="work-image-plaice" width={img.width} height={img.height} aria-hidden />
+             <img 
+              {...img} 
+              class="work-image-actual" 
+              alt={frontmatter.title}
+             />
+            </div>
+          </div>
+          <div class="color-bar" />
+          <slot />
+          <ul class="work-links">
+            {frontmatter.links.map((link) => (
+              <li><a href={link} style="display: block;">{link}</a></li>
+            ))}
+            </ul>
+          <div class="color-bar rainbow"></div>
+        </section>
+      </div>
+    </div>
+    <script>
+			const ML = new MicroLayers(350);
+			ML.start();
+		</script>
+  </body>
+</html>
