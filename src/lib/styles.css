@@ -199,7 +199,7 @@ a[ml-state="loading"] {
   color: #555;
   opacity: 1 !important;
   cursor: not-allowed;
-  background-image: url("./spinner.png");
+  background-image: url("../../public/spinner.png");
   background-size: 0.9em 0.9em;
   background-repeat: no-repeat;
   background-position: right;
