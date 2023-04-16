@@ -1,12 +1,12 @@
 ---
+layout: '../../layouts/workPage.astro'
 title: JMSS Time Updated
-image: https://collective-fullstack.github.io/s-images/work/Jmss-Time/JMSS-TimeTimetable.png
-leadIn: an update to the John Monash Science School timetable site, it now supports the new timetable introduced in 2020, as well as letting users set custom images to use as the background.
+cover: https://collective-fullstack.github.io/s-images/work/Jmss-Time/JMSS-TimeTimetable.png
+description: an update to the John Monash Science School timetable site, it now supports the new timetable introduced in 2020, as well as letting users set custom images to use as the background.
 links:
   - https://collective-fullstack.github.io/work/JMSS-Time
   - https://jmss-time.github.io/
   - https://github.com/JMSS-Time
-date: 2020.01
 ---
 
 JMSS Time was a website created in 2017, to let [John Monash Science School (JMSS)](https://jmss.vic.edu.au) students know when their classes are. At the start of 2020 the timetable that JMSS ran on changed, and thus the original JMSS Time website no longer worked. [Collective Fullstack](https://collective-fullstack.github.io) was brought in to update the website for the new timetable, as well as to develop extra features to help students in the transition to online and flexible learning over the 2020 COVID-19 lockdown.
