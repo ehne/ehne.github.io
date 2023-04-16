@@ -1,5 +1,5 @@
 ---
-layout: '../../layouts/workPage.astro'
+layout: '../../components/workPage.astro'
 title: Shareify
 cover: https://collective-fullstack.github.io/s-images/work/Shareify/ShareifyPlayer.png
 description: a web app that democratizes music in public places. Allowing people to vote on the songs to be played from a Spotify account.

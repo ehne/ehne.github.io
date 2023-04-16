@@ -1,5 +1,5 @@
 ---
-layout: '../../layouts/workPage.astro'
+layout: '../../components/workPage.astro'
 title: JMSS Time Updated
 cover: https://collective-fullstack.github.io/s-images/work/Jmss-Time/JMSS-TimeTimetable.png
 description: an update to the John Monash Science School timetable site, it now supports the new timetable introduced in 2020, as well as letting users set custom images to use as the background.
