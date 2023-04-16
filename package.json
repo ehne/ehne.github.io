@@ -25,6 +25,6 @@
     "@astrojs/image": "^0.16.6",
     "astro": "^2.3.0",
     "plaiceholder": "^2.5.0",
-    "sharp": "^0.32.0"
+    "sharp": "0.31.1"
   }
 }
