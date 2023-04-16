@@ -1,0 +1,18 @@
+---
+import Index from '../components/indexPage.astro';
+import Head from '../components/head.astro';
+import '../lib/styles.css';
+---
+<html lang="en">
+	<head>
+		<Head />
+		<title>darcy has a pretty good website</title>
+	</head>
+	<body>
+		<Index />
+		<script>
+			const ML = new MicroLayers(350);
+			ML.start();
+		</script>
+	</body>
+</html>
