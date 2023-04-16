@@ -14,4 +14,4 @@
 
 **JMSS Murder:** a fun real life battle royale style game, in which participants had to poke each other with plastic spoons. Created & run at John Monash Science School in 2019. https://collective-fullstack.github.io/work/JMSS-Murder
 
-**darcylf.me:** the website that you are currently on. It was built using nextjs, react & github pages. https://darcylf.me
+**darcylf.me:** the website that you are currently on. It was built using Astro & GitHub pages. https://darcylf.me
