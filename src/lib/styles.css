@@ -29,13 +29,15 @@ a:not(.background-layer):hover {
   padding: 1em;
 }
 
-.color-bar {
+hr {
+  border: none;
+  outline: none;
   height: 0.2em;
   width: 100%;
   background-image: linear-gradient(90deg, var(--bg-image-colors));
 }
 
-.color-bar.rainbow {
+hr.rainbow {
   background-image: linear-gradient(90deg, rgb(243, 115, 97) 0%, 
     rgb(243, 115, 97) 16.6%, 
     rgb(248, 155, 60) 16.6%, 

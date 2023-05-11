@@ -35,14 +35,14 @@ const { base64, img } = await getPlaiceholder(
              />
             </div>
           </div>
-          <div class="color-bar" />
+          <hr />
           <slot />
           <ul class="work-links">
             {frontmatter.links.map((link) => (
               <li><a href={link} style="display: block;">{link}</a></li>
             ))}
             </ul>
-          <div class="color-bar rainbow"></div>
+          <hr class="rainbow" />
         </section>
       </div>
     </div>
